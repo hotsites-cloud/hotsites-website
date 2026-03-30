@@ -11,8 +11,6 @@
   },
   "nav": {
     "home": "Home",
-    "about": "Over ons",
-    "services": "Diensten",
     "contact": "Contact"
   },
   "footer": {
@@ -35,14 +33,6 @@
     "home": {
       "title": "Hotsites | Websites die snel zijn, van jou blijven en in Europa staan",
       "description": "Innovatief gebouwd, Europees gehost, slim onderhouden — zonder WordPress of plugin-circus. Voor MKB in Limburg en daarbuiten."
-    },
-    "about": {
-      "title": "Over Hotsites | Marketing en webdevelopment uit Limburg",
-      "description": "Hotsites bouwt moderne, statische websites met React — snel, onderhoudbaar en zonder vendor lock-in."
-    },
-    "services": {
-      "title": "Diensten | React-websites, EU-hosting en onderhoud",
-      "description": "Van ontwerp op basis van jouw huisstijl tot livegang, support en jaarlijks onderhoud — alles in heldere stappen."
     },
     "contact": {
       "title": "Contact | Neem contact op met Hotsites",
@@ -156,37 +146,6 @@
         "Jaarlijkse review en updates van de website"
       ]
     }
-  },
-  "about": {
-    "hero": {
-      "title": "Over Hotsites",
-      "lead": "Hotsites is een marketing- en webdevelopmentbureau uit Limburg. We bouwen statische, snelle websites met React — Europees gehost en ontworpen om lang mee te gaen zonder plugin-circus."
-    },
-    "body": "We combineren marketingdenken met moderne front-end techniek. Geen eigen CMS dat je opsluit: je site is leesbare code die een andere partij kan overnemen. We werken graag met je bestaande huisstijl en maken heldere afspraken over inhoud, planning en onderhoud."
-  },
-  "services": {
-    "hero": {
-      "title": "Diensten",
-      "lead": "Van eerste gesprek tot livegang en jaarlijks onderhoud: alles onder één dak, met focus op snelheid, privacy en eigenaarschap van je site."
-    },
-    "items": [
-      {
-        "title": "React-websites (statisch)",
-        "description": "We bouwen performante sites met React en Vite, geschikt voor volledig statische hosting. Snelle laadtijden, duidelijke structuur, geen overbodige plugins."
-      },
-      {
-        "title": "EU-hosting en domein",
-        "description": "Hosting en domeinbeheer horen bij ons jaarcontract waar dat past bij je pakket — met data in Europa en transparante afspraken."
-      },
-      {
-        "title": "Onderhoud en security",
-        "description": "Jaarlijkse review, updates en beveiliging zodat je site betrouwbaar blijft — zonder dat je zelf aan techniek hoeft te sleutelen."
-      },
-      {
-        "title": "Begeleiding inhoud",
-        "description": "We helpen je inhoud te structureren en te laten aansluiten op wat je bezoekers nodig hebben — jij blijft eigenaar van teksten en beeld."
-      }
-    ]
   },
   "contact": {
     "hero": {

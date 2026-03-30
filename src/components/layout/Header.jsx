@@ -100,12 +100,6 @@ export function Header({ className }) {
               <NavLink to="/" className={navLinkClass} end>
                 {t('nav.home')}
               </NavLink>
-              <NavLink to="/about" className={navLinkClass}>
-                {t('nav.about')}
-              </NavLink>
-              <NavLink to="/services" className={navLinkClass}>
-                {t('nav.services')}
-              </NavLink>
               <NavLink to="/contact" className={navLinkClass}>
                 {t('nav.contact')}
               </NavLink>
@@ -201,20 +195,6 @@ export function Header({ className }) {
           <nav className="flex flex-col gap-1" aria-label="Mobile main">
             <NavLink to="/" className={navLinkClass} end onClick={() => setOpen(false)}>
               {t('nav.home')}
-            </NavLink>
-            <NavLink
-              to="/about"
-              className={navLinkClass}
-              onClick={() => setOpen(false)}
-            >
-              {t('nav.about')}
-            </NavLink>
-            <NavLink
-              to="/services"
-              className={navLinkClass}
-              onClick={() => setOpen(false)}
-            >
-              {t('nav.services')}
             </NavLink>
             <NavLink
               to="/contact"

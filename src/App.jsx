@@ -1,19 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import CookieConsent from 'react-cookie-consent';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import {
   COOKIE_CONSENT_NAME,
   setAnalyticsConsent,
 } from './config/cookies';
 import {
-  AboutPage,
   ContactPage,
   CookiePolicyPage,
   HomePage,
   ImprintPage,
   PrivacyPolicyPage,
-  ServicesPage,
   TermsConditionsPage,
 } from './routes';
 
@@ -67,13 +65,12 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
           <Route path="/terms" element={<TermsConditionsPage />} />
           <Route path="/cookies" element={<CookiePolicyPage />} />
           <Route path="/imprint" element={<ImprintPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </HashRouter>

@@ -11,8 +11,6 @@
   },
   "nav": {
     "home": "Home",
-    "about": "About",
-    "services": "Services",
     "contact": "Contact"
   },
   "footer": {
@@ -35,14 +33,6 @@
     "home": {
       "title": "Hotsites | Fast websites you own, hosted in Europe",
       "description": "Built with care, hosted in Europe, maintained sensibly — without WordPress or a plugin circus. For SMEs in Limburg and beyond."
-    },
-    "about": {
-      "title": "About Hotsites | Marketing and web development from Limburg",
-      "description": "Hotsites builds modern static websites with React — fast, maintainable, and without vendor lock-in."
-    },
-    "services": {
-      "title": "Services | React sites, EU hosting and maintenance",
-      "description": "From design aligned with your brand to go-live, support and annual maintenance — clear steps throughout."
     },
     "contact": {
       "title": "Contact | Get in touch with Hotsites",
@@ -156,37 +146,6 @@
         "Annual review and website updates"
       ]
     }
-  },
-  "about": {
-    "hero": {
-      "title": "About Hotsites",
-      "lead": "Hotsites is a marketing and web development studio in Limburg. We build fast static sites with React — hosted in Europe and meant to last without a plugin circus."
-    },
-    "body": "We combine marketing thinking with modern front-end engineering. No proprietary CMS lock-in: your site is readable code another team can take over. We happily work with your existing brand assets and agree clearly on content, planning and maintenance."
-  },
-  "services": {
-    "hero": {
-      "title": "Services",
-      "lead": "From first conversation to go-live and annual maintenance — one partner, focused on speed, privacy and ownership of your site."
-    },
-    "items": [
-      {
-        "title": "React websites (static)",
-        "description": "Performant sites with React and Vite, suited to fully static hosting. Fast loads, clear structure, no unnecessary plugins."
-      },
-      {
-        "title": "EU hosting and domain",
-        "description": "Hosting and domain management are included in our annual plan where that fits your package — with data in Europe and transparent agreements."
-      },
-      {
-        "title": "Maintenance and security",
-        "description": "Annual review, updates and hardening so your site stays reliable — without you touching the stack."
-      },
-      {
-        "title": "Content guidance",
-        "description": "We help structure content so it matches what visitors need — you remain owner of copy and media."
-      }
-    ]
   },
   "contact": {
     "hero": {
