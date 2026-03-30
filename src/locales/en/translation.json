@@ -1,0 +1,355 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "languageLabel": "Language",
+    "companyName": "Hotsites",
+    "logoAlt": "Hotsites logo",
+    "languageNl": "NL",
+    "languageEn": "EN",
+    "readMore": "Read more",
+    "readLess": "Show less"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "footer": {
+    "kvk": "[TO REPLACE]",
+    "btw": "[TO REPLACE]",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "cookies": "Cookie policy",
+    "imprint": "Imprint",
+    "cookieSettings": "Cookie settings",
+    "kvkBtw": "Trade reg.: {{kvk}} | VAT: {{btw}}",
+    "copyright": "© {{year}} {{company}}. All rights reserved."
+  },
+  "cookieBanner": {
+    "message": "We only use essential cookies for this site. Analytics load only after you give consent.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "seo": {
+    "home": {
+      "title": "Hotsites | Fast websites you own, hosted in Europe",
+      "description": "Built with care, hosted in Europe, maintained sensibly — without WordPress or a plugin circus. For SMEs in Limburg and beyond."
+    },
+    "about": {
+      "title": "About Hotsites | Marketing and web development from Limburg",
+      "description": "Hotsites builds modern static websites with React — fast, maintainable, and without vendor lock-in."
+    },
+    "services": {
+      "title": "Services | React sites, EU hosting and maintenance",
+      "description": "From design aligned with your brand to go-live, support and annual maintenance — clear steps throughout."
+    },
+    "contact": {
+      "title": "Contact | Get in touch with Hotsites",
+      "description": "Request a conversation or send a message — we respond quickly and keep lines short."
+    },
+    "privacy": {
+      "title": "Privacy policy | Hotsites",
+      "description": "How Hotsites processes personal data, the legal basis, and your GDPR rights."
+    },
+    "terms": {
+      "title": "Terms and conditions | Hotsites",
+      "description": "Terms for Hotsites services and websites — Dutch law, Limburg district court."
+    },
+    "cookiesPage": {
+      "title": "Cookie policy | Hotsites",
+      "description": "Which cookies we use, why, and how to withdraw consent or delete cookies."
+    },
+    "imprint": {
+      "title": "Imprint | Hotsites",
+      "description": "Company and contact details for Hotsites."
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "Built with care, hosted in Europe, maintained sensibly.",
+      "lead": "We reduce dependency and improve efficiency — without WordPress or a plugin circus. The result: a fast website that stays yours."
+    },
+    "values": {
+      "title": "What makes us better",
+      "items": [
+        {
+          "title": "Security",
+          "summary": "Your site is published as fixed pages — that is usually safer than a setup with many separate add-ons, like WordPress.",
+          "detail": "Your site is a static React build: pages are delivered as fixed files, with no database or server-side code running on every request. That greatly reduces the attack surface compared to a CMS with plugins. Lower risk of vulnerabilities, injection, and abuse through forms or email flows tied to a complex backend."
+        },
+        {
+          "title": "Beyond WordPress",
+          "summary": "Your site is fully loaded before visitors see it: pages are not rebuilt on every click, so everything loads fast.",
+          "detail": "No WordPress, Elementor or other page builders: your site is a static React build. Pages are pre-built and served as lightweight files — no PHP and database round-trips on every click, and no heavy builder scripts. Faster loads, simpler static hosting, and lower ongoing costs than a classic WordPress stack, which helps keep pricing competitive."
+        },
+        {
+          "title": "EU data and privacy",
+          "summary": "Your data is stored and processed exclusively in Europe — in line with European privacy law.",
+          "detail": "Many digital tools (including AI) are US-based; we prioritise European hosting and processing where we can, so data stays in the EU and aligns better with GDPR expectations. A static React site is straightforward to host in EU data centres — avoiding unnecessary traffic and storage outside Europe."
+        },
+        {
+          "title": "Fit for SMEs",
+          "summary": "For most small and medium-sized businesses this is more than enough: you can do what you need without complicated WordPress plugins.",
+          "detail": "Brochure sites, forms, multilingual pages, SEO, and integrations: for the vast majority of SMEs, a modern static React site is enough. You get comparable visible capabilities to WordPress — without slow page builders, plugin sprawl, or a database you often do not need for content-led sites."
+        },
+        {
+          "title": "Maintenance and reliability",
+          "summary": "With WordPress you rely on a theme, plugins, and separate integrations that each update independently and can get in each other's way. We build everything as one whole — no loose parts that can disrupt it.",
+          "detail": "No WordPress core and no chain of plugins, each with its own updates and conflicts. Your live site is pre-built files — fewer moving parts on the server and fewer sudden breakages from a theme or plugin update. Maintenance focuses on content and the build — more predictable than a CMS with constant piecemeal updates."
+        },
+        {
+          "title": "No vendor lock-in",
+          "summary": "Your site uses common, well-documented technology; another company can take it over and you do not have to stay with the same supplier forever. You are not stuck with us.",
+          "detail": "React is an open ecosystem with a large developer base and extensive documentation. Your frontend is readable code in mainstream, well-documented technologies — not a proprietary builder or data that only lives inside one WordPress install. Another team can take over, host on static/CDN, or extend — without being tied to a single vendor or stack."
+        }
+      ]
+    },
+    "journey": {
+      "eyebrow": "Client journey",
+      "title": "From idea to website — how we work together",
+      "lead": "Six clear phases. You always know what happens next, when we need your input, and how we support you after go-live.",
+      "stepLabel": "Step {{current}} of {{total}}",
+      "steps": [
+        {
+          "title": "Discovery: making your brief clear",
+          "description": "You want a new site. We listen, ask focused questions, and agree what the site must do, who it is for, and what you really need. Clarity first, then we build."
+        },
+        {
+          "title": "Design from your existing brand",
+          "description": "We are not a branding agency, but we work seamlessly with your logo and visual identity. That shapes your site’s appearance and tone — recognisable for visitors."
+        },
+        {
+          "title": "Content: copy, photos and video",
+          "description": "You provide the pages, copy and visuals that go online. We help structure everything into one clear experience for visitors."
+        },
+        {
+          "title": "Beta walkthrough and tweaks",
+          "description": "When the first version is ready, we review the site together — ideally in person: faster feedback, clearer nuance, and a shared list of what to refine."
+        },
+        {
+          "title": "After launch: short lines and quick answers",
+          "description": "After launch we stay close. Questions or small changes? We keep lines short and you get quick answers — no endless ticket queues."
+        },
+        {
+          "title": "Annual maintenance that grows with you",
+          "description": "Your site is covered by annual maintenance. We schedule a review of what changed in your business and which updates fit — so the site stays aligned with your growth."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Pricing",
+      "initialLabel": "Initial build",
+      "initialPrice": "One-off: €2,100",
+      "initialBullets": [
+        "Design and build of your site based on your brand",
+        "Technical delivery as a static React site",
+        "Guidance through go-live",
+        "Unlimited use right for your organisation"
+      ],
+      "annualLabel": "Annual maintenance",
+      "annualPrice": "€600 per year",
+      "annualBullets": [
+        "Hosting included",
+        "Domain management included",
+        "Security included",
+        "Annual review and website updates"
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Hotsites",
+      "lead": "Hotsites is a marketing and web development studio in Limburg. We build fast static sites with React — hosted in Europe and meant to last without a plugin circus."
+    },
+    "body": "We combine marketing thinking with modern front-end engineering. No proprietary CMS lock-in: your site is readable code another team can take over. We happily work with your existing brand assets and agree clearly on content, planning and maintenance."
+  },
+  "services": {
+    "hero": {
+      "title": "Services",
+      "lead": "From first conversation to go-live and annual maintenance — one partner, focused on speed, privacy and ownership of your site."
+    },
+    "items": [
+      {
+        "title": "React websites (static)",
+        "description": "Performant sites with React and Vite, suited to fully static hosting. Fast loads, clear structure, no unnecessary plugins."
+      },
+      {
+        "title": "EU hosting and domain",
+        "description": "Hosting and domain management are included in our annual plan where that fits your package — with data in Europe and transparent agreements."
+      },
+      {
+        "title": "Maintenance and security",
+        "description": "Annual review, updates and hardening so your site stays reliable — without you touching the stack."
+      },
+      {
+        "title": "Content guidance",
+        "description": "We help structure content so it matches what visitors need — you remain owner of copy and media."
+      }
+    ]
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "lead": "Let’s talk. Send a message — we will respond as soon as we can."
+    },
+    "success": "Thank you! Your message has been sent. We will get back to you.",
+    "submit": "Send",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address."
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "name@example.com",
+      "phone": "+31 …",
+      "message": "How can we help?"
+    },
+    "business": {
+      "hoursTitle": "Availability",
+      "hours": "Mon–Fri by appointment — email us or use the form.",
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email"
+    },
+    "placeholdersContact": {
+      "address": "TO REPLACE — street, postcode, city",
+      "phone": "TO REPLACE",
+      "email": "TO REPLACE@example.com"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "h1": "Privacy policy",
+      "intro": "This policy explains how {{company}} (‘we’) processes personal data in the context of our website and services, in line with the GDPR.",
+      "sections": [
+        {
+          "h2": "Controller",
+          "body": "{{company}}, based at [TO REPLACE — address]. Contact: [TO REPLACE — email], [TO REPLACE — phone]."
+        },
+        {
+          "h2": "Data we process",
+          "body": "Including: name, company name, email, phone, content of messages you send via the contact form, and technical data such as IP address and browser type (where processed by hosting/logs)."
+        },
+        {
+          "h2": "Purposes and legal bases",
+          "body": "We process data to handle contact requests (contract or legitimate interest), to operate and secure our website (legitimate interest), and to comply with legal obligations. Where required, we ask consent first (e.g. non-essential cookies or newsletters)."
+        },
+        {
+          "h2": "Retention",
+          "body": "We keep contact details as long as needed to handle your request and thereafter for statutory retention where applicable. Server logs follow our hosting provider’s policy and what is reasonably needed for security."
+        },
+        {
+          "h2": "Recipients and transfers",
+          "body": "We share data with IT and hosting providers who help run the site (processors), with agreements in place where required. Data generally stays in the EEA. If transfer outside the EEA occurs, we use appropriate safeguards (e.g. SCCs)."
+        },
+        {
+          "h2": "Your rights",
+          "body": "You have rights of access, rectification, erasure, restriction, portability and objection — where the law allows. You may withdraw consent where it is the basis."
+        },
+        {
+          "h2": "Complaints",
+          "body": "If you have a complaint about processing, contact us first. You may also lodge a complaint with the Dutch DPA: https://autoriteitpersoonsgegevens.nl"
+        }
+      ]
+    },
+    "terms": {
+      "h1": "Terms and conditions",
+      "sections": [
+        {
+          "h2": "Applicability",
+          "body": "These terms apply to all offers and agreements between {{company}} and the client unless agreed otherwise in writing."
+        },
+        {
+          "h2": "Formation",
+          "body": "An agreement is formed after written (including email) acceptance of the quote or order confirmation."
+        },
+        {
+          "h2": "Prices and payment",
+          "body": "Prices exclude VAT unless stated otherwise. Invoicing follows the quote. For late payment we may suspend work and charge statutory interest and costs where permitted."
+        },
+        {
+          "h2": "Liability",
+          "body": "Our liability is limited to direct damage and up to the fees paid in the relevant year for the service, except in case of intent or gross negligence. We are not liable for indirect or consequential damage."
+        },
+        {
+          "h2": "Force majeure",
+          "body": "Neither party must perform during force majeure, provided the other party is informed promptly."
+        },
+        {
+          "h2": "Law and venue",
+          "body": "Dutch law applies. Disputes are submitted to the competent court in Limburg, unless mandatory law dictates otherwise."
+        }
+      ]
+    },
+    "cookies": {
+      "h1": "Cookie policy",
+      "intro": "This page describes which cookies (and similar technologies) may be used and how you manage preferences.",
+      "sections": [
+        {
+          "h2": "Essential cookies",
+          "body": "Required for core functionality and security. Without them the site cannot work properly."
+        },
+        {
+          "h2": "Preferences / functional",
+          "body": "For example language preference stored in the browser (localStorage) so you see the site in your chosen language."
+        },
+        {
+          "h2": "Analytics (only after consent)",
+          "body": "If we use analytics, we load it only after explicit consent via the banner. Without consent, no non-essential tracking scripts load."
+        },
+        {
+          "h2": "Third-party cookies",
+          "body": "If we embed third-party content or tools, those parties may set their own cookies. We list them here and in the banner where relevant."
+        },
+        {
+          "h2": "Delete cookies per browser",
+          "body": "Chrome: Settings → Privacy and security → Cookies. Firefox: Settings → Privacy & Security. Safari: Preferences → Privacy. Edge: Settings → Cookies and site permissions. Use your browser’s help for ‘clear cookies’."
+        },
+        {
+          "h2": "Withdraw consent",
+          "body": "You can withdraw consent for non-essential cookies by showing the banner again via ‘Cookie settings’ in the footer, or by deleting cookies for our site in your browser."
+        }
+      ],
+      "table": {
+        "caption": "Overview (example — adjust for production)",
+        "name": "Name",
+        "purpose": "Purpose",
+        "duration": "Duration",
+        "rows": [
+          {
+            "name": "hotsites_cookie_consent (or similar)",
+            "purpose": "Stores your cookie choice",
+            "duration": "Up to 12 months (depends on settings)"
+          },
+          {
+            "name": "hotsites_i18n_language",
+            "purpose": "Language preference (localStorage)",
+            "duration": "Until you clear site data"
+          }
+        ]
+      }
+    },
+    "imprint": {
+      "h1": "Imprint",
+      "company": "Hotsites [TO REPLACE — full legal name]",
+      "legalForm": "Legal form: [TO REPLACE — e.g. BV]",
+      "kvk": "Trade register no.: [TO REPLACE]",
+      "vat": "VAT no.: [TO REPLACE]",
+      "address": "Registered address: [TO REPLACE — no P.O. box]",
+      "email": "Email: [TO REPLACE]",
+      "phone": "Phone: [TO REPLACE]",
+      "representative": "Representation: [TO REPLACE — directors if required]"
+    }
+  },
+  "structuredData": {
+    "organizationName": "Hotsites",
+    "organizationDescription": "Marketing and web development from Limburg — React websites, hosted in Europe."
+  }
+}

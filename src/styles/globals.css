@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Plus Jakarta Sans wordt geladen via @fontsource in main.jsx (self-hosted, geen Google CDN).
+*/
+
+@layer base {
+  :root {
+    --color-page: #eeeeee;
+    --color-text: #555555;
+    --color-text-muted: #6e6e6e;
+    --color-text-strong: #000000;
+    /* Tekst op zwarte / nadrukvlakken */
+    --color-on-emphasis: #eeeeee;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #e8e8e8;
+    --color-border: #d4d4d4;
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-page);
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
