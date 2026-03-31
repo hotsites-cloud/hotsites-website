@@ -158,7 +158,6 @@
     "fields": {
       "name": "Name",
       "email": "Email",
-      "phone": "Phone (optional)",
       "message": "Message"
     },
     "errors": {
@@ -170,19 +169,16 @@
     "placeholders": {
       "name": "",
       "email": "",
-      "phone": "",
       "message": ""
     },
     "business": {
       "hoursTitle": "Availability",
       "hours": "Mon–Fri by appointment — email us or use the form.",
       "addressLabel": "Address",
-      "phoneLabel": "Phone",
       "emailLabel": "Email"
     },
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
-      "phone": "",
       "email": "support@hotsites.nl"
     }
   },
@@ -197,7 +193,7 @@
         },
         {
           "h2": "Data we process",
-          "body": "Including: name, company name, email, phone, content of messages you send via the contact form, and technical data such as IP address and browser type (where processed by hosting/logs)."
+          "body": "Including: name, company name, email, content of messages you send via the contact form, and technical data such as IP address and browser type (where processed by hosting/logs)."
         },
         {
           "h2": "Purposes and legal bases",

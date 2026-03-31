@@ -29,13 +29,10 @@ export default function Contact() {
         getEmailJsConfig();
       const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
       const siteName = t('common.companyName');
-      const phoneDisplay = data.phone?.trim() ?? '';
-
       const adminPayload = {
         subject,
         from_name: data.name,
         reply_to: data.email,
-        phone: phoneDisplay,
         message: data.message,
         visitor_name: data.name,
         visitor_email: data.email,
@@ -80,7 +77,7 @@ export default function Contact() {
 
     const subjectEncoded = encodeURIComponent(subject);
     const body = encodeURIComponent(
-      `${data.message}\n\n---\n${data.name}\n${data.email}${data.phone ? `\n${data.phone}` : ''}`,
+      `${data.message}\n\n---\n${data.name}\n${data.email}`,
     );
     const mail = t('contact.placeholdersContact.email');
     const mailtoUrl = `mailto:${mail}?subject=${subjectEncoded}&body=${body}`;
@@ -187,19 +184,6 @@ export default function Contact() {
                 ) : null}
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-brand-strong">
-                  {t('contact.fields.phone')}
-                </label>
-                <input
-                  id="phone"
-                  type="tel"
-                  autoComplete="tel"
-                  placeholder={t('contact.placeholders.phone')}
-                  className="mt-1 w-full rounded-lg border border-border bg-surface px-3 py-2 text-brand shadow-sm focus:border-brand-strong focus:outline-none focus:ring-2 focus:ring-brand-strong/20"
-                  {...register('phone')}
-                />
-              </div>
-              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-brand-strong">
                   {t('contact.fields.message')}
                 </label>
@@ -236,12 +220,6 @@ export default function Contact() {
                   <dt className="font-medium text-brand-strong">{t('contact.business.addressLabel')}</dt>
                   <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.address')}</dd>
                 </div>
-                {t('contact.placeholdersContact.phone').trim() ? (
-                  <div>
-                    <dt className="font-medium text-brand-strong">{t('contact.business.phoneLabel')}</dt>
-                    <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.phone')}</dd>
-                  </div>
-                ) : null}
                 <div>
                   <dt className="font-medium text-brand-strong">{t('contact.business.emailLabel')}</dt>
                   <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.email')}</dd>

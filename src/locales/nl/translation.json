@@ -158,7 +158,6 @@
     "fields": {
       "name": "Naam",
       "email": "E-mail",
-      "phone": "Telefoon (optioneel)",
       "message": "Bericht"
     },
     "errors": {
@@ -170,19 +169,16 @@
     "placeholders": {
       "name": "",
       "email": "",
-      "phone": "",
       "message": ""
     },
     "business": {
       "hoursTitle": "Bereikbaarheid",
       "hours": "Ma–vr op afspraak — mail ons of gebruik het formulier.",
       "addressLabel": "Adres",
-      "phoneLabel": "Telefoon",
       "emailLabel": "E-mail"
     },
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
-      "phone": "",
       "email": "support@hotsites.nl"
     }
   },
@@ -197,7 +193,7 @@
         },
         {
           "h2": "Welke gegevens verwerken we?",
-          "body": "Onder meer: naam, bedrijfsnaam, e-mailadres, telefoonnummer, inhoud van berichten die je via het contactformulier stuurt, en technische gegevens zoals IP-adres en browsertype (indien door hosting/logs verwerkt)."
+          "body": "Onder meer: naam, bedrijfsnaam, e-mailadres, inhoud van berichten die je via het contactformulier stuurt, en technische gegevens zoals IP-adres en browsertype (indien door hosting/logs verwerkt)."
         },
         {
           "h2": "Doeleinden en rechtsgronden",
