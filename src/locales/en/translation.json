@@ -168,10 +168,10 @@
     },
     "sending": "Sending…",
     "placeholders": {
-      "name": "Your name",
-      "email": "name@example.com",
-      "phone": "+31 …",
-      "message": "How can we help?"
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": ""
     },
     "business": {
       "hoursTitle": "Availability",
@@ -182,7 +182,7 @@
     },
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
-      "phone": "—",
+      "phone": "",
       "email": "support@hotsites.nl"
     }
   },
@@ -280,13 +280,13 @@
         }
       ],
       "table": {
-        "caption": "Overview (example — adjust for production)",
+        "caption": "Overview",
         "name": "Name",
         "purpose": "Purpose",
         "duration": "Duration",
         "rows": [
           {
-            "name": "hotsites_cookie_consent (or similar)",
+            "name": "hotsites_cookie_consent",
             "purpose": "Stores your cookie choice",
             "duration": "Up to 12 months (depends on settings)"
           },
@@ -308,7 +308,6 @@
       "vat": "VAT no.: NL864044331B01",
       "address": "Registered address: Poststraat 1, 6135 KR Sittard",
       "email": "Email: support@hotsites.nl",
-      "phone": "Phone: —",
       "representative": "Representation: the partners of the partnership"
     }
   },

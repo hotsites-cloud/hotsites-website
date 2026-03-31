@@ -20,7 +20,6 @@ export default function Imprint() {
     'legal.imprint.vat',
     'legal.imprint.address',
     'legal.imprint.email',
-    'legal.imprint.phone',
     'legal.imprint.representative',
   ];
 

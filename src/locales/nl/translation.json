@@ -168,10 +168,10 @@
     },
     "sending": "Versturen…",
     "placeholders": {
-      "name": "Je naam",
-      "email": "naam@voorbeeld.nl",
-      "phone": "+31 6 …",
-      "message": "Waar kunnen we je mee helpen?"
+      "name": "",
+      "email": "",
+      "phone": "",
+      "message": ""
     },
     "business": {
       "hoursTitle": "Bereikbaarheid",
@@ -182,7 +182,7 @@
     },
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
-      "phone": "—",
+      "phone": "",
       "email": "support@hotsites.nl"
     }
   },
@@ -280,13 +280,13 @@
         }
       ],
       "table": {
-        "caption": "Overzicht (voorbeeld — pas aan op productie)",
+        "caption": "Overzicht",
         "name": "Naam",
         "purpose": "Doel",
         "duration": "Bewaartermijn",
         "rows": [
           {
-            "name": "hotsites_cookie_consent (of vergelijkbaar)",
+            "name": "hotsites_cookie_consent",
             "purpose": "Opslag van je cookiekeuze",
             "duration": "Max. 12 maanden (afhankelijk van instelling)"
           },
@@ -308,7 +308,6 @@
       "vat": "BTW-nummer: NL864044331B01",
       "address": "Vestigingsadres: Poststraat 1, 6135 KR Sittard",
       "email": "E-mailadres: support@hotsites.nl",
-      "phone": "Telefoon: —",
       "representative": "Vertegenwoordiging: de vennoten van de vennootschap"
     }
   },

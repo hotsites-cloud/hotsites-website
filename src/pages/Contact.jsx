@@ -29,7 +29,7 @@ export default function Contact() {
         getEmailJsConfig();
       const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
       const siteName = t('common.companyName');
-      const phoneDisplay = data.phone?.trim() ? data.phone.trim() : '—';
+      const phoneDisplay = data.phone?.trim() ?? '';
 
       const adminPayload = {
         subject,
@@ -98,7 +98,6 @@ export default function Contact() {
       '@type': 'PostalAddress',
       streetAddress: t('contact.placeholdersContact.address'),
     },
-    telephone: t('contact.placeholdersContact.phone'),
     email: t('contact.placeholdersContact.email'),
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -237,10 +236,12 @@ export default function Contact() {
                   <dt className="font-medium text-brand-strong">{t('contact.business.addressLabel')}</dt>
                   <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.address')}</dd>
                 </div>
-                <div>
-                  <dt className="font-medium text-brand-strong">{t('contact.business.phoneLabel')}</dt>
-                  <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.phone')}</dd>
-                </div>
+                {t('contact.placeholdersContact.phone').trim() ? (
+                  <div>
+                    <dt className="font-medium text-brand-strong">{t('contact.business.phoneLabel')}</dt>
+                    <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.phone')}</dd>
+                  </div>
+                ) : null}
                 <div>
                   <dt className="font-medium text-brand-strong">{t('contact.business.emailLabel')}</dt>
                   <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.email')}</dd>
