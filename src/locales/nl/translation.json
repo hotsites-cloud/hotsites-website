@@ -158,32 +158,38 @@
     "fields": {
       "name": "Naam",
       "email": "E-mail",
-      "phone": "Telefoon (optioneel)",
       "message": "Bericht"
     },
     "errors": {
       "required": "Dit veld is verplicht.",
       "email": "Vul een geldig e-mailadres in.",
-      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct."
+      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct.",
+      "configMissing": "Het formulier is tijdelijk niet beschikbaar. Neem rechtstreeks contact op via support@hotsites.nl."
     },
     "sending": "Versturen…",
     "placeholders": {
-      "name": "Je naam",
-      "email": "naam@voorbeeld.nl",
-      "phone": "+31 6 …",
-      "message": "Waar kunnen we je mee helpen?"
+      "name": "",
+      "email": "",
+      "message": ""
     },
     "business": {
       "hoursTitle": "Bereikbaarheid",
       "hours": "Ma–vr op afspraak — mail ons of gebruik het formulier.",
       "addressLabel": "Adres",
-      "phoneLabel": "Telefoon",
       "emailLabel": "E-mail"
     },
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
-      "phone": "—",
       "email": "support@hotsites.nl"
+    },
+    "emailConfirm": {
+      "subject": "Je bericht is ontvangen — Hotsites",
+      "title": "Bedankt, {{name}}!",
+      "body": "We hebben je bericht goed ontvangen. Je hoort zo snel mogelijk van ons — meestal binnen één werkdag.",
+      "summaryLabel": "Samenvatting",
+      "emailLabel": "E-mail",
+      "footer": "Vragen? Bezoek {{siteUrl}} of antwoord op deze e-mail.",
+      "tagline": "© {{siteName}} · Websites die snel zijn, van jou blijven en in Europa staan."
     }
   },
   "legal": {
@@ -197,7 +203,7 @@
         },
         {
           "h2": "Welke gegevens verwerken we?",
-          "body": "Onder meer: naam, bedrijfsnaam, e-mailadres, telefoonnummer, inhoud van berichten die je via het contactformulier stuurt, en technische gegevens zoals IP-adres en browsertype (indien door hosting/logs verwerkt)."
+          "body": "Onder meer: naam, bedrijfsnaam, e-mailadres, inhoud van berichten die je via het contactformulier stuurt, en technische gegevens zoals IP-adres en browsertype (indien door hosting/logs verwerkt)."
         },
         {
           "h2": "Doeleinden en rechtsgronden",
@@ -280,13 +286,13 @@
         }
       ],
       "table": {
-        "caption": "Overzicht (voorbeeld — pas aan op productie)",
+        "caption": "Overzicht",
         "name": "Naam",
         "purpose": "Doel",
         "duration": "Bewaartermijn",
         "rows": [
           {
-            "name": "hotsites_cookie_consent (of vergelijkbaar)",
+            "name": "hotsites_cookie_consent",
             "purpose": "Opslag van je cookiekeuze",
             "duration": "Max. 12 maanden (afhankelijk van instelling)"
           },
@@ -308,7 +314,6 @@
       "vat": "BTW-nummer: NL864044331B01",
       "address": "Vestigingsadres: Poststraat 1, 6135 KR Sittard",
       "email": "E-mailadres: support@hotsites.nl",
-      "phone": "Telefoon: —",
       "representative": "Vertegenwoordiging: de vennoten van de vennootschap"
     }
   },

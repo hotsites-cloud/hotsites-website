@@ -8,9 +8,11 @@ import { Button } from '../components/ui/Button';
 import { PatternSection } from '../components/ui/PatternSection';
 import { getEmailJsConfig, hasEmailJsConfig } from '../config/emailjs';
 import { SITE_ORIGIN } from '../config/site';
+import i18n from '../i18n';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const emailJsReady = hasEmailJsConfig();
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,70 +24,56 @@ export default function Contact() {
 
   const onSubmit = async (data) => {
     setSubmitError(null);
-    const subject = `Contact: ${data.name}`;
 
-    if (hasEmailJsConfig()) {
-      const { serviceId, userTemplateId, adminTemplateId, publicKey, mode } =
-        getEmailJsConfig();
-      const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
-      const siteName = t('common.companyName');
-      const phoneDisplay = data.phone?.trim() ? data.phone.trim() : '—';
-
-      const adminPayload = {
-        subject,
-        from_name: data.name,
-        reply_to: data.email,
-        phone: phoneDisplay,
-        message: data.message,
-        visitor_name: data.name,
-        visitor_email: data.email,
-      };
-
-      const userPayload = {
-        visitor_name: data.name,
-        visitor_email: data.email,
-        logo_url: logoUrl,
-        site_url: SITE_ORIGIN,
-        site_name: siteName,
-      };
-
-      setIsSubmitting(true);
-      try {
-        if (mode === 'dual') {
-          await Promise.all([
-            emailjs.send(serviceId, userTemplateId, userPayload, { publicKey }),
-            emailjs.send(serviceId, adminTemplateId, adminPayload, { publicKey }),
-          ]);
-        } else {
-          await emailjs.send(
-            serviceId,
-            userTemplateId,
-            {
-              ...adminPayload,
-              ...userPayload,
-            },
-            { publicKey },
-          );
-        }
-        setSubmitted(true);
-      } catch (err) {
-        const message =
-          err instanceof Error ? err.message : t('contact.errors.sendFailed');
-        setSubmitError(message);
-      } finally {
-        setIsSubmitting(false);
-      }
+    if (!hasEmailJsConfig()) {
+      setSubmitError(t('contact.errors.configMissing'));
       return;
     }
 
-    const subjectEncoded = encodeURIComponent(subject);
-    const body = encodeURIComponent(
-      `${data.message}\n\n---\n${data.name}\n${data.email}${data.phone ? `\n${data.phone}` : ''}`,
-    );
-    const mail = t('contact.placeholdersContact.email');
-    const mailtoUrl = `mailto:${mail}?subject=${subjectEncoded}&body=${body}`;
-    window.open(mailtoUrl, '_self', 'noopener,noreferrer');
-    setSubmitted(true);
+    const subject = `Contact: ${data.name}`;
+    const { serviceId, userTemplateId, adminTemplateId, publicKey } = getEmailJsConfig();
+    const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
+    const siteName = t('common.companyName');
+
+    const adminPayload = {
+      subject,
+      from_name: data.name,
+      reply_to: data.email,
+      message: data.message,
+      visitor_name: data.name,
+      visitor_email: data.email,
+    };
+
+    const nl = { lng: 'nl' };
+    const userPayload = {
+      visitor_name: data.name,
+      visitor_email: data.email,
+      logo_url: logoUrl,
+      site_url: SITE_ORIGIN,
+      site_name: siteName,
+      confirm_subject: i18n.t('contact.emailConfirm.subject', nl),
+      confirm_title: i18n.t('contact.emailConfirm.title', { ...nl, name: data.name }),
+      confirm_body: i18n.t('contact.emailConfirm.body', nl),
+      confirm_summary_label: i18n.t('contact.emailConfirm.summaryLabel', nl),
+      confirm_email_label: i18n.t('contact.emailConfirm.emailLabel', nl),
+      confirm_footer: i18n.t('contact.emailConfirm.footer', { ...nl, siteUrl: SITE_ORIGIN }),
+      confirm_tagline: i18n.t('contact.emailConfirm.tagline', { ...nl, siteName }),
+    };
+
+    setIsSubmitting(true);
+    try {
+      await Promise.all([
+        emailjs.send(serviceId, userTemplateId, userPayload, { publicKey }),
+        emailjs.send(serviceId, adminTemplateId, adminPayload, { publicKey }),
+      ]);
+      setSubmitted(true);
+    } catch (err) {
+      const message =
+        err instanceof Error ? err.message : t('contact.errors.sendFailed');
+      setSubmitError(message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const structuredData = {
@@ -98,7 +86,6 @@ export default function Contact() {
       '@type': 'PostalAddress',
       streetAddress: t('contact.placeholdersContact.address'),
     },
-    telephone: t('contact.placeholdersContact.phone'),
     email: t('contact.placeholdersContact.email'),
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -134,6 +121,11 @@ export default function Contact() {
               {submitted ? (
                 <p className="mb-6 rounded-lg border border-border bg-surface-elevated p-4 text-sm text-brand-strong">
                   {t('contact.success')}
+                </p>
+              ) : null}
+              {!emailJsReady ? (
+                <p className="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950" role="status">
+                  {t('contact.errors.configMissing')}
                 </p>
               ) : null}
               {submitError ? (
@@ -188,19 +180,6 @@ export default function Contact() {
                 ) : null}
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-brand-strong">
-                  {t('contact.fields.phone')}
-                </label>
-                <input
-                  id="phone"
-                  type="tel"
-                  autoComplete="tel"
-                  placeholder={t('contact.placeholders.phone')}
-                  className="mt-1 w-full rounded-lg border border-border bg-surface px-3 py-2 text-brand shadow-sm focus:border-brand-strong focus:outline-none focus:ring-2 focus:ring-brand-strong/20"
-                  {...register('phone')}
-                />
-              </div>
-              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-brand-strong">
                   {t('contact.fields.message')}
                 </label>
@@ -217,7 +196,7 @@ export default function Contact() {
                   </p>
                 ) : null}
               </div>
-              <Button type="submit" disabled={isSubmitting}>
+              <Button type="submit" disabled={isSubmitting || !emailJsReady}>
                 {isSubmitting ? t('contact.sending') : t('contact.submit')}
               </Button>
               </form>
@@ -236,10 +215,6 @@ export default function Contact() {
                 <div>
                   <dt className="font-medium text-brand-strong">{t('contact.business.addressLabel')}</dt>
                   <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.address')}</dd>
-                </div>
-                <div>
-                  <dt className="font-medium text-brand-strong">{t('contact.business.phoneLabel')}</dt>
-                  <dd className="mt-1 text-brand-muted">{t('contact.placeholdersContact.phone')}</dd>
                 </div>
                 <div>
                   <dt className="font-medium text-brand-strong">{t('contact.business.emailLabel')}</dt>

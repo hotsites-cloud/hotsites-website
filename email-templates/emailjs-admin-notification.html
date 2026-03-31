@@ -1,10 +1,11 @@
 <!--
-  EmailJS: create a second template for internal notifications.
-  To Email: sam@sambalerbij.nl  (set your real address in the EmailJS template settings)
+  EmailJS: internal notification template.
+
+  To Email: sam@sambalerbij.nl  (fixed in EmailJS template “To Email” field)
   Reply To: {{reply_to}}
   Subject: [Contact] {{subject}}
 
-  Variables: subject, from_name, reply_to, phone, message
+  Variables: subject, from_name, reply_to, message
 -->
 <!DOCTYPE html>
 <html lang="nl">
@@ -37,12 +38,6 @@
                   <td style="padding:12px 0;border-bottom:1px solid #e2e8f0;">
                     <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#64748b;">E-mail</p>
                     <p style="margin:0;font-size:16px;"><a href="mailto:{{reply_to}}" style="color:#2563eb;text-decoration:none;">{{reply_to}}</a></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:12px 0;border-bottom:1px solid #e2e8f0;">
-                    <p style="margin:0 0 4px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#64748b;">Telefoon</p>
-                    <p style="margin:0;font-size:16px;color:#0f172a;">{{phone}}</p>
                   </td>
                 </tr>
                 <tr>
