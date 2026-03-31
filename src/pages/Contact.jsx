@@ -25,21 +25,48 @@ export default function Contact() {
     const subject = `Contact: ${data.name}`;
 
     if (hasEmailJsConfig()) {
-      const { serviceId, templateId, publicKey } = getEmailJsConfig();
+      const { serviceId, userTemplateId, adminTemplateId, publicKey, mode } =
+        getEmailJsConfig();
+      const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
+      const siteName = t('common.companyName');
+      const phoneDisplay = data.phone?.trim() ? data.phone.trim() : '—';
+
+      const adminPayload = {
+        subject,
+        from_name: data.name,
+        reply_to: data.email,
+        phone: phoneDisplay,
+        message: data.message,
+        visitor_name: data.name,
+        visitor_email: data.email,
+      };
+
+      const userPayload = {
+        visitor_name: data.name,
+        visitor_email: data.email,
+        logo_url: logoUrl,
+        site_url: SITE_ORIGIN,
+        site_name: siteName,
+      };
+
       setIsSubmitting(true);
       try {
-        await emailjs.send(
-          serviceId,
-          templateId,
-          {
-            subject,
-            from_name: data.name,
-            reply_to: data.email,
-            phone: data.phone?.trim() ?? '',
-            message: data.message,
-          },
-          { publicKey },
-        );
+        if (mode === 'dual') {
+          await Promise.all([
+            emailjs.send(serviceId, userTemplateId, userPayload, { publicKey }),
+            emailjs.send(serviceId, adminTemplateId, adminPayload, { publicKey }),
+          ]);
+        } else {
+          await emailjs.send(
+            serviceId,
+            userTemplateId,
+            {
+              ...adminPayload,
+              ...userPayload,
+            },
+            { publicKey },
+          );
+        }
         setSubmitted(true);
       } catch (err) {
         const message =
