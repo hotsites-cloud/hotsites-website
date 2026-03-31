@@ -14,8 +14,8 @@
     "contact": "Contact"
   },
   "footer": {
-    "kvk": "[TE VERVANGEN]",
-    "btw": "[TE VERVANGEN]",
+    "kvk": "86673572",
+    "btw": "NL864044331B01",
     "privacy": "Privacybeleid",
     "terms": "Algemene voorwaarden",
     "cookies": "Cookiebeleid",
@@ -163,8 +163,10 @@
     },
     "errors": {
       "required": "Dit veld is verplicht.",
-      "email": "Vul een geldig e-mailadres in."
+      "email": "Vul een geldig e-mailadres in.",
+      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct."
     },
+    "sending": "Versturen…",
     "placeholders": {
       "name": "Je naam",
       "email": "naam@voorbeeld.nl",
@@ -179,9 +181,9 @@
       "emailLabel": "E-mail"
     },
     "placeholdersContact": {
-      "address": "TE VERVANGEN — straat en huisnummer, postcode, plaats",
-      "phone": "TE VERVANGEN",
-      "email": "TE VERVANGEN@voorbeeld.nl"
+      "address": "Poststraat 1, 6135 KR Sittard",
+      "phone": "—",
+      "email": "support@hotsites.nl"
     }
   },
   "legal": {
@@ -191,7 +193,7 @@
       "sections": [
         {
           "h2": "Identiteit van de verwerkingsverantwoordelijke",
-          "body": "{{company}}, gevestigd te [TE VERVANGEN — adres]. Contact: [TE VERVANGEN — e-mail], [TE VERVANGEN — telefoon]."
+          "body": "{{company}}, gevestigd te Poststraat 1, 6135 KR Sittard. Contact: support@hotsites.nl."
         },
         {
           "h2": "Welke gegevens verwerken we?",
@@ -298,14 +300,16 @@
     },
     "imprint": {
       "h1": "Colofon",
-      "company": "Hotsites [TE VERVANGEN — volledige bedrijfsnaam]",
-      "legalForm": "Rechtsvorm: [TE VERVANGEN — bv/vof/etc.]",
-      "kvk": "KvK-nummer: [TE VERVANGEN]",
-      "vat": "BTW-nummer: [TE VERVANGEN]",
-      "address": "Vestigingsadres: [TE VERVANGEN — geen postbus]",
-      "email": "E-mail: [TE VERVANGEN]",
-      "phone": "Telefoon: [TE VERVANGEN]",
-      "representative": "Vertegenwoordiging: [TE VERVANGEN — namen bestuurders indien vereist]"
+      "tradeName": "Handelsnaam: Hotsites",
+      "legalName": "Bedrijfsnaam: SAMBAL",
+      "company": "Hotsites (handelsnaam van SAMBAL)",
+      "legalForm": "Rechtsvorm: VOF",
+      "kvk": "KvK-nummer: 86673572",
+      "vat": "BTW-nummer: NL864044331B01",
+      "address": "Vestigingsadres: Poststraat 1, 6135 KR Sittard",
+      "email": "E-mailadres: support@hotsites.nl",
+      "phone": "Telefoon: —",
+      "representative": "Vertegenwoordiging: de vennoten van de vennootschap"
     }
   },
   "structuredData": {

@@ -14,8 +14,8 @@
     "contact": "Contact"
   },
   "footer": {
-    "kvk": "[TO REPLACE]",
-    "btw": "[TO REPLACE]",
+    "kvk": "86673572",
+    "btw": "NL864044331B01",
     "privacy": "Privacy policy",
     "terms": "Terms and conditions",
     "cookies": "Cookie policy",
@@ -163,8 +163,10 @@
     },
     "errors": {
       "required": "This field is required.",
-      "email": "Enter a valid email address."
+      "email": "Enter a valid email address.",
+      "sendFailed": "Could not send your message. Try again later or email us directly."
     },
+    "sending": "Sending…",
     "placeholders": {
       "name": "Your name",
       "email": "name@example.com",
@@ -179,9 +181,9 @@
       "emailLabel": "Email"
     },
     "placeholdersContact": {
-      "address": "TO REPLACE — street, postcode, city",
-      "phone": "TO REPLACE",
-      "email": "TO REPLACE@example.com"
+      "address": "Poststraat 1, 6135 KR Sittard",
+      "phone": "—",
+      "email": "support@hotsites.nl"
     }
   },
   "legal": {
@@ -191,7 +193,7 @@
       "sections": [
         {
           "h2": "Controller",
-          "body": "{{company}}, based at [TO REPLACE — address]. Contact: [TO REPLACE — email], [TO REPLACE — phone]."
+          "body": "{{company}}, based at Poststraat 1, 6135 KR Sittard. Contact: support@hotsites.nl."
         },
         {
           "h2": "Data we process",
@@ -298,14 +300,16 @@
     },
     "imprint": {
       "h1": "Imprint",
-      "company": "Hotsites [TO REPLACE — full legal name]",
-      "legalForm": "Legal form: [TO REPLACE — e.g. BV]",
-      "kvk": "Trade register no.: [TO REPLACE]",
-      "vat": "VAT no.: [TO REPLACE]",
-      "address": "Registered address: [TO REPLACE — no P.O. box]",
-      "email": "Email: [TO REPLACE]",
-      "phone": "Phone: [TO REPLACE]",
-      "representative": "Representation: [TO REPLACE — directors if required]"
+      "tradeName": "Trade name: Hotsites",
+      "legalName": "Legal name: SAMBAL",
+      "company": "Hotsites (trade name of SAMBAL)",
+      "legalForm": "Legal form: general partnership (VOF)",
+      "kvk": "Trade register no.: 86673572",
+      "vat": "VAT no.: NL864044331B01",
+      "address": "Registered address: Poststraat 1, 6135 KR Sittard",
+      "email": "Email: support@hotsites.nl",
+      "phone": "Phone: —",
+      "representative": "Representation: the partners of the partnership"
     }
   },
   "structuredData": {

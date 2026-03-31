@@ -12,6 +12,8 @@ export default function Imprint() {
   };
 
   const lines = [
+    'legal.imprint.tradeName',
+    'legal.imprint.legalName',
     'legal.imprint.company',
     'legal.imprint.legalForm',
     'legal.imprint.kvk',
