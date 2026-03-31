@@ -163,8 +163,10 @@
     },
     "errors": {
       "required": "Dit veld is verplicht.",
-      "email": "Vul een geldig e-mailadres in."
+      "email": "Vul een geldig e-mailadres in.",
+      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct."
     },
+    "sending": "Versturen…",
     "placeholders": {
       "name": "Je naam",
       "email": "naam@voorbeeld.nl",

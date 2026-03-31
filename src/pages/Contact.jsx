@@ -1,28 +1,62 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
 import { PatternSection } from '../components/ui/PatternSection';
+import { getEmailJsConfig, hasEmailJsConfig } from '../config/emailjs';
 import { SITE_ORIGIN } from '../config/site';
 
 export default function Contact() {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({ mode: 'onBlur' });
 
-  const onSubmit = (data) => {
-    const subject = encodeURIComponent(`Contact: ${data.name}`);
+  const onSubmit = async (data) => {
+    setSubmitError(null);
+    const subject = `Contact: ${data.name}`;
+
+    if (hasEmailJsConfig()) {
+      const { serviceId, templateId, publicKey } = getEmailJsConfig();
+      setIsSubmitting(true);
+      try {
+        await emailjs.send(
+          serviceId,
+          templateId,
+          {
+            subject,
+            from_name: data.name,
+            reply_to: data.email,
+            phone: data.phone?.trim() ?? '',
+            message: data.message,
+          },
+          { publicKey },
+        );
+        setSubmitted(true);
+      } catch (err) {
+        const message =
+          err instanceof Error ? err.message : t('contact.errors.sendFailed');
+        setSubmitError(message);
+      } finally {
+        setIsSubmitting(false);
+      }
+      return;
+    }
+
+    const subjectEncoded = encodeURIComponent(subject);
     const body = encodeURIComponent(
       `${data.message}\n\n---\n${data.name}\n${data.email}${data.phone ? `\n${data.phone}` : ''}`,
     );
     const mail = t('contact.placeholdersContact.email');
-    const mailtoUrl = `mailto:${mail}?subject=${subject}&body=${body}`;
+    const mailtoUrl = `mailto:${mail}?subject=${subjectEncoded}&body=${body}`;
     window.open(mailtoUrl, '_self', 'noopener,noreferrer');
     setSubmitted(true);
   };
@@ -73,6 +107,11 @@ export default function Contact() {
               {submitted ? (
                 <p className="mb-6 rounded-lg border border-border bg-surface-elevated p-4 text-sm text-brand-strong">
                   {t('contact.success')}
+                </p>
+              ) : null}
+              {submitError ? (
+                <p className="mb-6 rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-800" role="alert">
+                  {t('contact.errors.sendFailed')} ({submitError})
                 </p>
               ) : null}
               <form
@@ -151,7 +190,9 @@ export default function Contact() {
                   </p>
                 ) : null}
               </div>
-              <Button type="submit">{t('contact.submit')}</Button>
+              <Button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? t('contact.sending') : t('contact.submit')}
+              </Button>
               </form>
             </div>
           </AnimatedSection>
