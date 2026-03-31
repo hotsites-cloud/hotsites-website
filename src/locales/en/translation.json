@@ -163,7 +163,8 @@
     "errors": {
       "required": "This field is required.",
       "email": "Enter a valid email address.",
-      "sendFailed": "Could not send your message. Try again later or email us directly."
+      "sendFailed": "Could not send your message. Try again later or email us directly.",
+      "configMissing": "The form is temporarily unavailable. Please email support@hotsites.nl directly."
     },
     "sending": "Sending…",
     "placeholders": {
@@ -180,6 +181,15 @@
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
       "email": "support@hotsites.nl"
+    },
+    "emailConfirm": {
+      "subject": "Your message was received — Hotsites",
+      "title": "Thank you, {{name}}!",
+      "body": "We have received your message. You will hear from us as soon as possible — usually within one business day.",
+      "summaryLabel": "Summary",
+      "emailLabel": "Email",
+      "footer": "Questions? Visit {{siteUrl}} or reply to this email.",
+      "tagline": "© {{siteName}} · Fast websites you own, hosted in Europe."
     }
   },
   "legal": {

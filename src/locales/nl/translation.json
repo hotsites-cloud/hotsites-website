@@ -163,7 +163,8 @@
     "errors": {
       "required": "Dit veld is verplicht.",
       "email": "Vul een geldig e-mailadres in.",
-      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct."
+      "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct.",
+      "configMissing": "Het formulier is tijdelijk niet beschikbaar. Neem rechtstreeks contact op via support@hotsites.nl."
     },
     "sending": "Versturen…",
     "placeholders": {
@@ -180,6 +181,15 @@
     "placeholdersContact": {
       "address": "Poststraat 1, 6135 KR Sittard",
       "email": "support@hotsites.nl"
+    },
+    "emailConfirm": {
+      "subject": "Je bericht is ontvangen — Hotsites",
+      "title": "Bedankt, {{name}}!",
+      "body": "We hebben je bericht goed ontvangen. Je hoort zo snel mogelijk van ons — meestal binnen één werkdag.",
+      "summaryLabel": "Samenvatting",
+      "emailLabel": "E-mail",
+      "footer": "Vragen? Bezoek {{siteUrl}} of antwoord op deze e-mail.",
+      "tagline": "© {{siteName}} · Websites die snel zijn, van jou blijven en in Europa staan."
     }
   },
   "legal": {

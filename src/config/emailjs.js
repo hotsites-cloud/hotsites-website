@@ -2,10 +2,10 @@
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? '';
 const userTemplateId = import.meta.env.VITE_EMAILJS_USER_TEMPLATE_ID ?? '';
 const adminTemplateId = import.meta.env.VITE_EMAILJS_ADMIN_TEMPLATE_ID ?? '';
-const legacyTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? '';
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? '';
 
 /**
+ * Requires service, public key, and both templates (visitor confirmation + admin).
  * @returns {boolean}
  */
 export function hasEmailJsConfig() {
@@ -13,45 +13,17 @@ export function hasEmailJsConfig() {
   const key = String(publicKey).trim();
   const user = String(userTemplateId).trim();
   const admin = String(adminTemplateId).trim();
-  const legacy = String(legacyTemplateId).trim();
-  if (!sid || !key) {
-    return false;
-  }
-  if (user && admin) {
-    return true;
-  }
-  return Boolean(legacy);
+  return Boolean(sid && key && user && admin);
 }
 
 /**
- * @returns {{
- *   serviceId: string;
- *   userTemplateId: string;
- *   adminTemplateId: string;
- *   publicKey: string;
- *   mode: 'dual' | 'legacy';
- * }}
+ * @returns {{ serviceId: string; userTemplateId: string; adminTemplateId: string; publicKey: string }}
  */
 export function getEmailJsConfig() {
-  const sid = String(serviceId).trim();
-  const key = String(publicKey).trim();
-  const user = String(userTemplateId).trim();
-  const admin = String(adminTemplateId).trim();
-  const legacy = String(legacyTemplateId).trim();
-  if (user && admin) {
-    return {
-      serviceId: sid,
-      userTemplateId: user,
-      adminTemplateId: admin,
-      publicKey: key,
-      mode: 'dual',
-    };
-  }
   return {
-    serviceId: sid,
-    userTemplateId: legacy,
-    adminTemplateId: legacy,
-    publicKey: key,
-    mode: 'legacy',
+    serviceId: String(serviceId).trim(),
+    userTemplateId: String(userTemplateId).trim(),
+    adminTemplateId: String(adminTemplateId).trim(),
+    publicKey: String(publicKey).trim(),
   };
 }
