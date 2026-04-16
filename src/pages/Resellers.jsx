@@ -5,6 +5,7 @@ import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
 import { Card } from '../components/ui/Card';
+import { InPageAnchor } from '../components/ui/InPageAnchor';
 import { PatternSection } from '../components/ui/PatternSection';
 import { SITE_ORIGIN } from '../config/site';
 import { cn } from '../utils/cn';
@@ -102,8 +103,8 @@ export default function Resellers() {
           <ul className="flex flex-wrap gap-2">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a
-                  href={`#${item.id}`}
+                <InPageAnchor
+                  targetId={item.id}
                   className={cn(
                     'inline-block max-w-full truncate rounded-full border border-border bg-surface px-3 py-1.5',
                     'text-xs font-medium text-brand-strong shadow-sm transition-colors',
@@ -112,7 +113,7 @@ export default function Resellers() {
                   )}
                 >
                   {item.label}
-                </a>
+                </InPageAnchor>
               </li>
             ))}
           </ul>
@@ -158,9 +159,9 @@ export default function Resellers() {
                   return null;
                 }
                 return (
-                  <a
+                  <InPageAnchor
                     key={id}
-                    href={`#${id}`}
+                    targetId={id}
                     className={cn(
                       'block rounded-md py-1.5 pl-2 text-sm text-brand-muted transition-colors',
                       'hover:bg-surface-elevated/80 hover:text-brand-strong',
@@ -168,7 +169,7 @@ export default function Resellers() {
                     )}
                   >
                     {item.label}
-                  </a>
+                  </InPageAnchor>
                 );
               })}
             </nav>

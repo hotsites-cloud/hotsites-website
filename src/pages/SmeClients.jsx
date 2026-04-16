@@ -5,6 +5,7 @@ import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
 import { Card } from '../components/ui/Card';
+import { InPageAnchor } from '../components/ui/InPageAnchor';
 import { PatternSection } from '../components/ui/PatternSection';
 import { SITE_ORIGIN } from '../config/site';
 import { cn } from '../utils/cn';
@@ -106,9 +107,9 @@ export default function SmeClients() {
           <ul className="flex flex-wrap gap-2">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a href={`#${item.id}`} className={pillLinkClass}>
+                <InPageAnchor targetId={item.id} className={pillLinkClass}>
                   {item.label}
-                </a>
+                </InPageAnchor>
               </li>
             ))}
           </ul>
@@ -154,9 +155,9 @@ export default function SmeClients() {
                   return null;
                 }
                 return (
-                  <a key={id} href={`#${id}`} className={sideNavLinkClass}>
+                  <InPageAnchor key={id} targetId={id} className={sideNavLinkClass}>
                     {item.label}
-                  </a>
+                  </InPageAnchor>
                 );
               })}
             </nav>
