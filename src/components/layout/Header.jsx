@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../utils/cn';
@@ -27,8 +27,17 @@ function computeCompact(wasCompact, scrollY) {
   return scrollY > SCROLL_COMPACT_AFTER;
 }
 
+function useHomeHref() {
+  const { pathname } = useLocation();
+  if (pathname === '/resellers' || pathname === '/mkb') {
+    return pathname;
+  }
+  return '/';
+}
+
 export function Header({ className }) {
   const { t, i18n } = useTranslation();
+  const homeHref = useHomeHref();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const rafRef = useRef(0);
@@ -97,7 +106,7 @@ export function Header({ className }) {
               className="hidden flex-wrap items-center gap-1 md:flex"
               aria-label="Main"
             >
-              <NavLink to="/" className={navLinkClass} end>
+              <NavLink to={homeHref} className={navLinkClass} end>
                 {t('nav.home')}
               </NavLink>
               <NavLink to="/contact" className={navLinkClass}>
@@ -118,7 +127,7 @@ export function Header({ className }) {
 
           {/* Midden: logo + merknaam (merknaam krimpt vloeiend weg bij scroll) */}
           <NavLink
-            to="/"
+            to={homeHref}
             className={cn(
               'group flex min-w-0 flex-col items-center justify-center justify-self-center text-center outline-none focus-visible:ring-2 focus-visible:ring-brand-strong focus-visible:ring-offset-2',
               easeBrand,
@@ -193,7 +202,12 @@ export function Header({ className }) {
           className="border-t border-border bg-surface px-4 py-3 md:hidden"
         >
           <nav className="flex flex-col gap-1" aria-label="Mobile main">
-            <NavLink to="/" className={navLinkClass} end onClick={() => setOpen(false)}>
+            <NavLink
+              to={homeHref}
+              className={navLinkClass}
+              end
+              onClick={() => setOpen(false)}
+            >
               {t('nav.home')}
             </NavLink>
             <NavLink

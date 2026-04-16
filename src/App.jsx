@@ -9,9 +9,11 @@ import {
 import {
   ContactPage,
   CookiePolicyPage,
-  HomePage,
   ImprintPage,
   PrivacyPolicyPage,
+  ResellersPage,
+  SmeClientsPage,
+  StartPage,
   TermsConditionsPage,
 } from './routes';
 
@@ -64,7 +66,9 @@ export default function App() {
       <CookieBanner />
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<StartPage />} />
+          <Route path="/resellers" element={<ResellersPage />} />
+          <Route path="/mkb" element={<SmeClientsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
           <Route path="/terms" element={<TermsConditionsPage />} />
