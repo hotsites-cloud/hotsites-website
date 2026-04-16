@@ -33,7 +33,7 @@
   "seo": {
     "contact": {
       "title": "Contact | Get in touch with Hotsites",
-      "description": "Request a conversation or send a message — we respond quickly and keep lines short."
+      "description": "Request a conversation or send a message, we respond quickly and keep lines short."
     },
     "privacy": {
       "title": "Privacy policy | Hotsites",
@@ -41,7 +41,7 @@
     },
     "terms": {
       "title": "Terms and conditions | Hotsites",
-      "description": "Terms for Hotsites services and websites — Dutch law, Limburg district court."
+      "description": "Terms for Hotsites services and websites, Dutch law, Limburg district court."
     },
     "cookiesPage": {
       "title": "Cookie policy | Hotsites",
@@ -67,7 +67,7 @@
   "contact": {
     "hero": {
       "title": "Contact",
-      "lead": "Let’s talk. Send a message — we will respond as soon as we can."
+      "lead": "Let’s talk. Send a message, we will respond as soon as we can."
     },
     "success": "Thank you! Your message has been sent. We will get back to you.",
     "submit": "Send",
@@ -90,7 +90,7 @@
     },
     "business": {
       "hoursTitle": "Availability",
-      "hours": "Mon–Fri by appointment — email us or use the form.",
+      "hours": "Mon–Fri by appointment, email us or use the form.",
       "addressLabel": "Address",
       "emailLabel": "Email"
     },
@@ -99,9 +99,9 @@
       "email": "support@hotsites.nl"
     },
     "emailConfirm": {
-      "subject": "Your message was received — Hotsites",
+      "subject": "Your message was received, Hotsites",
       "title": "Thank you, {{name}}!",
-      "body": "We have received your message. You will hear from us as soon as possible — usually within one business day.",
+      "body": "We have received your message. You will hear from us as soon as possible, usually within one business day.",
       "summaryLabel": "Summary",
       "emailLabel": "Email",
       "footer": "Questions? Visit {{siteUrl}} or reply to this email.",
@@ -135,7 +135,7 @@
         },
         {
           "h2": "Your rights",
-          "body": "You have rights of access, rectification, erasure, restriction, portability and objection — where the law allows. You may withdraw consent where it is the basis."
+          "body": "You have rights of access, rectification, erasure, restriction, portability and objection, where the law allows. You may withdraw consent where it is the basis."
         },
         {
           "h2": "Complaints",
@@ -235,7 +235,7 @@
   },
   "structuredData": {
     "organizationName": "Hotsites",
-    "organizationDescription": "Marketing and web development from Limburg — React websites, hosted in Europe."
+    "organizationDescription": "Marketing and web development from Limburg, React websites, hosted in Europe."
   },
   "start": {
     "title": "Who is this site for?",
@@ -243,12 +243,12 @@
     "choiceLegend": "Choose your path",
     "resellers": {
       "title": "Technology reseller",
-      "description": "Business-like but approachable — for partners who deliver Hotsites to SME clients.",
+      "description": "Business-like but approachable, for partners who deliver Hotsites to SME clients.",
       "cta": "Read more for resellers"
     },
     "sme": {
       "title": "For business owners",
-      "description": "A website that does what it should — EU hosting, fuss-free maintenance.",
+      "description": "A website that does what it should, EU hosting, fuss-free maintenance.",
       "cta": "Read more"
     }
   },
@@ -259,17 +259,17 @@
       "navLabel": "On this page",
       "navContact": "Contact",
       "highlightsTitle": "Why resellers choose Hotsites",
-      "highlight1": "Pre-rendered React — fast loads and predictable performance.",
+      "highlight1": "Pre-rendered React, fast loads and predictable performance.",
       "highlight2": "EU hosting, domain management, and security bundled in one annual contract.",
       "highlight3": "No vendor lock-in: mainstream stack, always transferable to another provider.",
       "partnerCtaTitle": "Become a partner or talk it through?",
       "partnerCtaBody": "Get in touch if you want to deliver Hotsites to your own clients, or if you have technical or commercial questions.",
       "partnerCtaButton": "Contact us",
       "partnerCtaSecondary": "End-client page (SME)",
-      "intro": "A standardised website solution based on static React technology. Suited for delivery to SME clients with a well-scoped website need — no CMS runtime dependencies, no WordPress, and no vendor lock-in for the end client.",
+      "intro": "A standardised website solution based on static React technology. Suited for delivery to SME clients with a well-scoped website need, no CMS runtime dependencies, no WordPress, and no vendor lock-in for the end client.",
       "whatTitle": "What is Hotsites?",
       "whatBody": "Hotsites is a build system for static websites that you deploy as a reseller for clients who need a dependable, high-performing online presence. The output is always a pre-rendered React site: no runtime database, no plugin stack, and no CMS that must be updated separately.",
-      "whatBodySecond": "The codebase uses mainstream, well-documented technology. Transferability is a first-class requirement — the site can always be taken over by another party, which makes the product attractive for clients who want to avoid long-term dependency.",
+      "whatBodySecond": "The codebase uses mainstream, well-documented technology. Transferability is a first-class requirement, the site can always be taken over by another party, which makes the product attractive for clients who want to avoid long-term dependency.",
       "specsTitle": "Technical specifications",
       "specs": [
         {
@@ -298,20 +298,20 @@
         }
       ],
       "deliverTitle": "What does the end client get?",
-      "deliverLead": "The end client receives a pre-rendered website that is fully loaded before the first visit — there is no application server re-processing on every click. That typically means measurably better load performance than standard WordPress setups.",
+      "deliverLead": "The end client receives a pre-rendered website that is fully loaded before the first visit, there is no application server re-processing on every click. That typically means measurably better load performance than standard WordPress setups.",
       "deliverables": [
         "No themes or plugins that update independently and conflict",
-        "Built as one whole — one version, one deployment, no loose parts",
+        "Built as one whole, one version, one deployment, no loose parts",
         "No vendor lock-in: mainstream technology, transferable to any other provider",
         "EU hosting with domain management and security included in annual maintenance"
       ],
       "maintenanceTitle": "Maintenance and operations",
       "maintenanceBody": "After go-live the site is covered by an annual maintenance contract. This includes hosting, domain management, security updates, and monthly text changes. Each year there is a fixed review to align the site with how the end client’s business has evolved.",
-      "maintenanceFootnote": "There are no separate update chains or plugin compatibility puzzles — the system is designed to stay stable without constant hands-on CMS administration."
+      "maintenanceFootnote": "There are no separate update chains or plugin compatibility puzzles, the system is designed to stay stable without constant hands-on CMS administration."
     },
     "sme": {
       "audienceLabel": "For business owners",
-      "pageTitle": "A business website — without the technical hassle",
+      "pageTitle": "A business website, without the technical hassle",
       "navLabel": "On this page",
       "navHighlights": "Benefits",
       "navWhat": "What is Hotsites?",
@@ -321,31 +321,31 @@
       "navMaintenance": "Maintenance",
       "navContact": "Contact",
       "highlightsTitle": "Why business owners choose Hotsites",
-      "highlight1": "Fast and stable: fixed pages ready before visitors click — no slow background stack on every request.",
-      "highlight2": "EU hosting with privacy in mind (GDPR) — your data stays in Europe.",
-      "highlight3": "Everything bundled in one annual contract: hosting, domain, security, and small text updates — so you can run the business.",
+      "highlight1": "Fast and stable: fixed pages ready before visitors click, no slow background stack on every request.",
+      "highlight2": "EU hosting with privacy in mind (GDPR), your data stays in Europe.",
+      "highlight3": "Everything bundled in one annual contract: hosting, domain, security, and small text updates, so you can run the business.",
       "ctaTitle": "Questions or want to talk it through?",
       "ctaBody": "Get in touch if you want to see whether Hotsites fits your company, or to discuss anything else.",
       "ctaButton": "Contact us",
       "ctaSecondary": "Partner information (resellers)",
-      "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss — so you can focus on running your business.",
+      "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss, so you can focus on running your business.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke application. The site is fixed pages that are ready before a visitor clicks anything — there is no background stack spinning up again on every click.",
+      "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke application. The site is fixed pages that are ready before a visitor clicks anything, there is no background stack spinning up again on every click.",
       "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
       "wordPressCompareTitle": "How is it different from WordPress?",
-      "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own — and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
+      "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own, and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
       "wordPressBullets": [
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
         "No separate CMS to secure and maintain",
-        "One version, one deployment — clear and stable"
+        "One version, one deployment, clear and stable"
       ],
       "euDataTitle": "Your data stays in Europe",
       "euDataBody": "Your website is hosted only on European servers. That aligns with European privacy law (GDPR) and means your data and your visitors’ data are not processed or stored outside the EU.",
       "noLockInTitle": "No forced dependency",
-      "noLockInBody": "Hotsites uses mainstream, well-documented technology. If you ever want to work with another provider, you can — the website and its code are always transferable. You are not locked to a single supplier.",
+      "noLockInBody": "Hotsites uses mainstream, well-documented technology. If you ever want to work with another provider, you can, the website and its code are always transferable. You are not locked to a single supplier.",
       "maintenanceTitle": "Maintenance without surprises",
-      "maintenanceBody": "After go-live your site is covered by an annual maintenance contract. That includes hosting, domain management, security, and small text updates. Once a year we schedule a fixed moment to review what changed in your business and which updates fit — so your site stays current without you chasing it."
+      "maintenanceBody": "After go-live your site is covered by an annual maintenance contract. That includes hosting, domain management, security, and small text updates. Once a year we schedule a fixed moment to review what changed in your business and which updates fit, so your site stays current without you chasing it."
     }
   }
 }

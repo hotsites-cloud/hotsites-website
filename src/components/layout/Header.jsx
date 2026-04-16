@@ -7,7 +7,7 @@ import { cn } from '../../utils/cn';
 import { persistLanguage } from '../../i18n';
 import { LogoMark } from '../ui/LogoMark';
 
-/** Pas compact aan na deze scroll — voorkomt trillen bij de top. */
+/** Pas compact aan na deze scroll, voorkomt trillen bij de top. */
 const SCROLL_COMPACT_AFTER = 48;
 /** Terug naar volledige header pas als we weer bijna bovenaan zijn (hysteresis). */
 const SCROLL_EXPAND_BEFORE = 8;
