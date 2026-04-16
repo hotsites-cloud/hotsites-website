@@ -7,7 +7,8 @@
     "languageNl": "NL",
     "languageEn": "EN",
     "readMore": "Read more",
-    "readLess": "Show less"
+    "readLess": "Show less",
+    "backToStart": "Back to start"
   },
   "nav": {
     "home": "Start",
