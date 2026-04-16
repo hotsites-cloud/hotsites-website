@@ -55,8 +55,8 @@
       "description": "Are you a technology reseller or an SME looking for a website? Pick the route that fits you."
     },
     "resellers": {
-      "title": "Hotsites for resellers | Ready-made static React sites",
-      "description": "Standardised website solution based on static React. EU hosting, GDPR-friendly, easy to hand off to SME clients."
+      "title": "Hotsites | Partner information for resellers",
+      "description": "Static React sites for SME clients: no runtime CMS, no WordPress, transferable codebase, EU hosting, and predictable annual maintenance."
     },
     "sme": {
       "title": "Hotsites for SMEs | A website without WordPress hassle",
@@ -253,23 +253,49 @@
   },
   "audience": {
     "resellers": {
-      "audienceLabel": "Resellers (business-like, informal)",
-      "intro": "A standardised website solution based on static React. Hosted in Europe, GDPR-aligned, and designed for straightforward delivery to SME clients.",
+      "audienceLabel": "Partner information",
+      "intro": "A standardised website solution based on static React technology. Suited for delivery to SME clients with a well-scoped website need — no CMS runtime dependencies, no WordPress, and no vendor lock-in for the end client.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "Hotsites is an off-the-shelf web solution for clients with a clear, well-scoped website need. The output is always a static React site: no CMS, no plugin stack, no WordPress. The codebase uses mainstream, documented technology — transferable and easy to manage.",
-      "specsTitle": "Technical specs",
+      "whatBody": "Hotsites is a build system for static websites that you deploy as a reseller for clients who need a dependable, high-performing online presence. The output is always a pre-rendered React site: no runtime database, no plugin stack, and no CMS that must be updated separately.",
+      "whatBodySecond": "The codebase uses mainstream, well-documented technology. Transferability is a first-class requirement — the site can always be taken over by another party, which makes the product attractive for clients who want to avoid long-term dependency.",
+      "specsTitle": "Technical specifications",
       "specs": [
-        "Static build on React + Vite",
-        "No runtime CMS or database dependencies",
-        "Hosted on European infrastructure (GDPR-aligned)",
-        "Full transferability of the codebase"
+        {
+          "term": "Framework",
+          "detail": "React + Vite (static build)"
+        },
+        {
+          "term": "Hosting",
+          "detail": "European infrastructure, GDPR-aligned"
+        },
+        {
+          "term": "CMS",
+          "detail": "No runtime CMS or database dependencies"
+        },
+        {
+          "term": "Transferability",
+          "detail": "Full codebase handover possible"
+        },
+        {
+          "term": "Domain management",
+          "detail": "Included in annual maintenance"
+        },
+        {
+          "term": "Security",
+          "detail": "Included; no plugin dependencies"
+        }
       ],
-      "deliverTitle": "What do you deliver to the end client?",
+      "deliverTitle": "What does the end client get?",
+      "deliverLead": "The end client receives a pre-rendered website that is fully loaded before the first visit — there is no application server re-processing on every click. That typically means measurably better load performance than standard WordPress setups.",
       "deliverables": [
-        "Pre-rendered site, ready before the first visit",
-        "EU hosting with domain management and security included",
-        "Annual maintenance: updates, domain, review"
-      ]
+        "No themes or plugins that update independently and conflict",
+        "Built as one whole — one version, one deployment, no loose parts",
+        "No vendor lock-in: mainstream technology, transferable to any other provider",
+        "EU hosting with domain management and security included in annual maintenance"
+      ],
+      "maintenanceTitle": "Maintenance and operations",
+      "maintenanceBody": "After go-live the site is covered by an annual maintenance contract. This includes hosting, domain management, security updates, and monthly text changes. Each year there is a fixed review to align the site with how the end client’s business has evolved.",
+      "maintenanceFootnote": "There are no separate update chains or plugin compatibility puzzles — the system is designed to stay stable without constant hands-on CMS administration."
     },
     "sme": {
       "audienceLabel": "SME end clients (professional, accessible)",

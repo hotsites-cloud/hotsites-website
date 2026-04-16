@@ -55,8 +55,8 @@
       "description": "Ben je reseller van de technologie of zoek je als MKB een website? Kies je route voor Hotsites."
     },
     "resellers": {
-      "title": "Hotsites voor resellers | Kant-en-klare statische React-sites",
-      "description": "Gestandaardiseerde websiteoplossing op basis van statische React. EU-hosting, AVG-compliant, eenvoudig door te leveren aan MKB."
+      "title": "Hotsites | Partnerinformatie voor resellers",
+      "description": "Statische React-websites voor MKB-klanten: geen CMS-runtime, geen WordPress, overdraagbare codebase, EU-hosting en jaarlijks onderhoud."
     },
     "sme": {
       "title": "Hotsites voor MKB | Website zonder WordPress-gedoe",
@@ -253,23 +253,49 @@
   },
   "audience": {
     "resellers": {
-      "audienceLabel": "Resellers (zakelijk, informeel)",
-      "intro": "Een gestandaardiseerde websiteoplossing op basis van statische React-technologie. Europees gehost, AVG-compliant, en ontworpen voor eenvoudige doorlevering aan MKB-klanten.",
+      "audienceLabel": "Partnerinformatie",
+      "intro": "Een gestandaardiseerde websiteoplossing op basis van statische React-technologie. Geschikt voor doorlevering aan MKB-klanten met een afgebakende websitebehoefte — zonder CMS-afhankelijkheden, zonder WordPress, en zonder vendor lock-in voor de eindklant.",
       "whatTitle": "Wat is Hotsites?",
-      "whatBody": "Hotsites is een kant-en-klare weboplossing die je inzet voor klanten met een duidelijke, afgebakende websitebehoefte. De output is altijd een statische React-site: geen CMS, geen plugin-afhankelijkheden, geen WordPress. De codebase is opgebouwd in gangbare, gedocumenteerde techniek — overdraagbaar en beheersbaar.",
-      "specsTitle": "Technische specs",
+      "whatBody": "Hotsites is een bouwsysteem voor statische websites dat je als reseller inzet voor klanten die een betrouwbare, goed presterende online aanwezigheid nodig hebben. De output is altijd een pre-rendered React-site: geen runtime database, geen plugin-afhankelijkheden en geen CMS dat afzonderlijk geüpdatet moet worden.",
+      "whatBodySecond": "De codebase is opgebouwd in gangbare, goed gedocumenteerde techniek. Overdraagbaarheid is een eerste-orde vereiste — de site is altijd over te nemen door een andere partij, wat het product aantrekkelijk maakt voor klanten die geen langetermijnafhankelijkheid willen.",
+      "specsTitle": "Technische specificaties",
       "specs": [
-        "Statische build op basis van React + Vite",
-        "Geen runtime CMS of database-afhankelijkheden",
-        "Gehost op Europese infrastructuur (AVG/GDPR-compliant)",
-        "Volledige overdraagbaarheid van de codebase"
+        {
+          "term": "Framework",
+          "detail": "React + Vite (statische build)"
+        },
+        {
+          "term": "Hosting",
+          "detail": "Europese infrastructuur, AVG/GDPR-compliant"
+        },
+        {
+          "term": "CMS",
+          "detail": "Geen runtime CMS of database-afhankelijkheden"
+        },
+        {
+          "term": "Overdraagbaarheid",
+          "detail": "Volledige codebase-overdracht mogelijk"
+        },
+        {
+          "term": "Domeinbeheer",
+          "detail": "Inbegrepen in jaarlijks onderhoud"
+        },
+        {
+          "term": "Security",
+          "detail": "Inbegrepen, geen plugin-afhankelijkheden"
+        }
       ],
-      "deliverTitle": "Wat lever je aan de eindklant?",
+      "deliverTitle": "Wat levert het de eindklant op?",
+      "deliverLead": "De eindklant krijgt een pre-rendered website die volledig geladen is vóór het eerste bezoek — er draait geen achterliggende applicatieserver die bij elke klik opnieuw verwerkt. Dit levert aantoonbaar betere laadtijden op ten opzichte van standaard WordPress-implementaties.",
       "deliverables": [
-        "Pre-rendered website, ingeladen vóór het eerste bezoek",
-        "EU-hosting met domeinbeheer en security inbegrepen",
-        "Jaarlijks onderhoud: aanpassingen, domein, review"
-      ]
+        "Geen thema's of plugins die los van elkaar updaten en conflicteren",
+        "Gebouwd als één geheel — één versie, één deployment, geen losse onderdelen",
+        "Geen vendor lock-in: gangbare techniek, overdraagbaar naar elke andere partij",
+        "EU-hosting met domeinbeheer en security inbegrepen in het jaarlijkse onderhoud"
+      ],
+      "maintenanceTitle": "Onderhoud en beheer",
+      "maintenanceBody": "Na livegang valt de site onder een jaarlijks onderhoudscontract. Dit dekt hosting, domeinbeheer, security-updates en maandelijkse tekstuele aanpassingen. Jaarlijks is er een vast reviewmoment om de site te actualiseren op basis van bedrijfsontwikkelingen bij de eindklant.",
+      "maintenanceFootnote": "Er zijn geen losse update-afhankelijkheden of plugin-compatibiliteitsproblemen — het systeem is gebouwd om stabiel te blijven zonder continu beheeraandacht."
     },
     "sme": {
       "audienceLabel": "MKB-eindklanten (professioneel, toegankelijk)",

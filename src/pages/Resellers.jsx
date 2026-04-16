@@ -1,13 +1,24 @@
+import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { PatternSection } from '../components/ui/PatternSection';
 import { SITE_ORIGIN } from '../config/site';
 
+function isSpecRow(value) {
+  return (
+    value !== null &&
+    typeof value === 'object' &&
+    typeof value.term === 'string' &&
+    typeof value.detail === 'string'
+  );
+}
+
 export default function Resellers() {
   const { t } = useTranslation();
   const specs = t('audience.resellers.specs', { returnObjects: true });
   const deliverables = t('audience.resellers.deliverables', { returnObjects: true });
+  const specRows = Array.isArray(specs) ? specs.filter(isSpecRow) : [];
 
   const structuredData = [
     {
@@ -50,18 +61,26 @@ export default function Resellers() {
           <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
             {t('audience.resellers.whatBody')}
           </p>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.resellers.whatBodySecond')}
+          </p>
         </AnimatedSection>
 
         <AnimatedSection>
           <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
             {t('audience.resellers.specsTitle')}
           </h2>
-          {Array.isArray(specs) ? (
-            <ul className="mt-5 list-inside list-disc space-y-2 leading-relaxed text-brand-muted">
-              {specs.map((line) => (
-                <li key={line}>{line}</li>
+          {specRows.length > 0 ? (
+            <dl className="mt-6 space-y-4 border-t border-border pt-6 text-brand-muted">
+              {specRows.map((row) => (
+                <Fragment key={row.term}>
+                  <dt className="text-sm font-semibold uppercase tracking-wider text-brand-strong">
+                    {row.term}
+                  </dt>
+                  <dd className="mt-1 leading-relaxed">{row.detail}</dd>
+                </Fragment>
               ))}
-            </ul>
+            </dl>
           ) : null}
         </AnimatedSection>
 
@@ -69,6 +88,9 @@ export default function Resellers() {
           <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
             {t('audience.resellers.deliverTitle')}
           </h2>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.resellers.deliverLead')}
+          </p>
           {Array.isArray(deliverables) ? (
             <ul className="mt-5 list-inside list-disc space-y-2 leading-relaxed text-brand-muted">
               {deliverables.map((line) => (
@@ -76,6 +98,18 @@ export default function Resellers() {
               ))}
             </ul>
           ) : null}
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
+            {t('audience.resellers.maintenanceTitle')}
+          </h2>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.resellers.maintenanceBody')}
+          </p>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.resellers.maintenanceFootnote')}
+          </p>
         </AnimatedSection>
       </div>
     </>
