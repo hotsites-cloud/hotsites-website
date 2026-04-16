@@ -10,7 +10,7 @@
     "readLess": "Show less"
   },
   "nav": {
-    "home": "Home",
+    "home": "Start",
     "contact": "Contact"
   },
   "footer": {
@@ -30,10 +30,6 @@
     "decline": "Decline"
   },
   "seo": {
-    "home": {
-      "title": "Hotsites | Fast websites you own, hosted in Europe",
-      "description": "Built with care, hosted in Europe, maintained sensibly — without WordPress or a plugin circus. For SMEs in Limburg and beyond."
-    },
     "contact": {
       "title": "Contact | Get in touch with Hotsites",
       "description": "Request a conversation or send a message — we respond quickly and keep lines short."
@@ -53,99 +49,18 @@
     "imprint": {
       "title": "Imprint | Hotsites",
       "description": "Company and contact details for Hotsites."
-    }
-  },
-  "home": {
-    "intro": {
-      "title": "Built with care, hosted in Europe, maintained sensibly.",
-      "lead": "We reduce dependency and improve efficiency — without WordPress or a plugin circus. The result: a fast website that stays yours."
     },
-    "values": {
-      "title": "What makes us better",
-      "items": [
-        {
-          "title": "Security",
-          "summary": "Your site is published as fixed pages — that is usually safer than a setup with many separate add-ons, like WordPress.",
-          "detail": "Your site is a static React build: pages are delivered as fixed files, with no database or server-side code running on every request. That greatly reduces the attack surface compared to a CMS with plugins. Lower risk of vulnerabilities, injection, and abuse through forms or email flows tied to a complex backend."
-        },
-        {
-          "title": "Beyond WordPress",
-          "summary": "Your site is fully loaded before visitors see it: pages are not rebuilt on every click, so everything loads fast.",
-          "detail": "No WordPress, Elementor or other page builders: your site is a static React build. Pages are pre-built and served as lightweight files — no PHP and database round-trips on every click, and no heavy builder scripts. Faster loads, simpler static hosting, and lower ongoing costs than a classic WordPress stack, which helps keep pricing competitive."
-        },
-        {
-          "title": "EU data and privacy",
-          "summary": "Your data is stored and processed exclusively in Europe — in line with European privacy law.",
-          "detail": "Many digital tools (including AI) are US-based; we prioritise European hosting and processing where we can, so data stays in the EU and aligns better with GDPR expectations. A static React site is straightforward to host in EU data centres — avoiding unnecessary traffic and storage outside Europe."
-        },
-        {
-          "title": "Fit for SMEs",
-          "summary": "For most small and medium-sized businesses this is more than enough: you can do what you need without complicated WordPress plugins.",
-          "detail": "Brochure sites, forms, multilingual pages, SEO, and integrations: for the vast majority of SMEs, a modern static React site is enough. You get comparable visible capabilities to WordPress — without slow page builders, plugin sprawl, or a database you often do not need for content-led sites."
-        },
-        {
-          "title": "Maintenance and reliability",
-          "summary": "With WordPress you rely on a theme, plugins, and separate integrations that each update independently and can get in each other's way. We build everything as one whole — no loose parts that can disrupt it.",
-          "detail": "No WordPress core and no chain of plugins, each with its own updates and conflicts. Your live site is pre-built files — fewer moving parts on the server and fewer sudden breakages from a theme or plugin update. Maintenance focuses on content and the build — more predictable than a CMS with constant piecemeal updates."
-        },
-        {
-          "title": "No vendor lock-in",
-          "summary": "Your site uses common, well-documented technology; another company can take it over and you do not have to stay with the same supplier forever. You are not stuck with us.",
-          "detail": "React is an open ecosystem with a large developer base and extensive documentation. Your frontend is readable code in mainstream, well-documented technologies — not a proprietary builder or data that only lives inside one WordPress install. Another team can take over, host on static/CDN, or extend — without being tied to a single vendor or stack."
-        }
-      ]
+    "start": {
+      "title": "Hotsites | Choose your path",
+      "description": "Are you a technology reseller or an SME looking for a website? Pick the route that fits you."
     },
-    "journey": {
-      "eyebrow": "Client journey",
-      "title": "From idea to website — how we work together",
-      "lead": "Six clear phases. You always know what happens next, when we need your input, and how we support you after go-live.",
-      "stepLabel": "Step {{current}} of {{total}}",
-      "steps": [
-        {
-          "title": "Discovery: making your brief clear",
-          "description": "You want a new site. We listen, ask focused questions, and agree what the site must do, who it is for, and what you really need. Clarity first, then we build."
-        },
-        {
-          "title": "Design from your existing brand",
-          "description": "We are not a branding agency, but we work seamlessly with your logo and visual identity. That shapes your site’s appearance and tone — recognisable for visitors."
-        },
-        {
-          "title": "Content: copy, photos and video",
-          "description": "You provide the pages, copy and visuals that go online. We help structure everything into one clear experience for visitors."
-        },
-        {
-          "title": "Beta walkthrough and tweaks",
-          "description": "When the first version is ready, we review the site together — ideally in person: faster feedback, clearer nuance, and a shared list of what to refine."
-        },
-        {
-          "title": "After launch: short lines and quick answers",
-          "description": "After launch we stay close. Questions or small changes? We keep lines short and you get quick answers — no endless ticket queues."
-        },
-        {
-          "title": "Annual maintenance that grows with you",
-          "description": "Your site is covered by annual maintenance. We schedule a review of what changed in your business and which updates fit — so the site stays aligned with your growth."
-        }
-      ]
+    "resellers": {
+      "title": "Hotsites for resellers | Ready-made static React sites",
+      "description": "Standardised website solution based on static React. EU hosting, GDPR-friendly, easy to hand off to SME clients."
     },
-    "pricing": {
-      "title": "Pricing",
-      "initialLabel": "Initial build",
-      "initialPrice": "One-off: €2,100",
-      "initialBullets": [
-        "Design and build of your site based on your brand",
-        "Technical delivery as a static React site",
-        "Guidance through go-live",
-        "Unlimited use right for your organisation"
-      ],
-      "annualLabel": "Annual maintenance",
-      "annualPrice": "€600 per year",
-      "annualBullets": [
-        "Hosting included",
-        "Domain management included",
-        "Security included",
-        "Monthly text and copy updates",
-        "Annual review and website updates"
-      ]
+    "sme": {
+      "title": "Hotsites for SMEs | A website without WordPress hassle",
+      "description": "A dependable site on solid tech, hosted in Europe, with annual maintenance — without WordPress complexity."
     }
   },
   "contact": {
@@ -320,5 +235,56 @@
   "structuredData": {
     "organizationName": "Hotsites",
     "organizationDescription": "Marketing and web development from Limburg — React websites, hosted in Europe."
+  },
+  "start": {
+    "title": "Who is this site for?",
+    "lead": "Choose whether you deliver the solution to clients, or you need a website for your own business.",
+    "choiceLegend": "Choose your path",
+    "resellers": {
+      "title": "Technology reseller",
+      "description": "Business-like but approachable — for partners who deliver Hotsites to SME clients.",
+      "cta": "Read more for resellers"
+    },
+    "sme": {
+      "title": "SME: I need a website",
+      "description": "Professional and clear — for businesses that want a solid online presence.",
+      "cta": "Read more for SMEs"
+    }
+  },
+  "audience": {
+    "resellers": {
+      "audienceLabel": "Resellers (business-like, informal)",
+      "intro": "A standardised website solution based on static React. Hosted in Europe, GDPR-aligned, and designed for straightforward delivery to SME clients.",
+      "whatTitle": "What is Hotsites?",
+      "whatBody": "Hotsites is an off-the-shelf web solution for clients with a clear, well-scoped website need. The output is always a static React site: no CMS, no plugin stack, no WordPress. The codebase uses mainstream, documented technology — transferable and easy to manage.",
+      "specsTitle": "Technical specs",
+      "specs": [
+        "Static build on React + Vite",
+        "No runtime CMS or database dependencies",
+        "Hosted on European infrastructure (GDPR-aligned)",
+        "Full transferability of the codebase"
+      ],
+      "deliverTitle": "What do you deliver to the end client?",
+      "deliverables": [
+        "Pre-rendered site, ready before the first visit",
+        "EU hosting with domain management and security included",
+        "Annual maintenance: updates, domain, review"
+      ]
+    },
+    "sme": {
+      "audienceLabel": "SME end clients (professional, accessible)",
+      "intro": "A website that works the way you expect. Built on solid technology, hosted in Europe, and maintained without fuss.",
+      "whatTitle": "What is Hotsites?",
+      "whatBody": "Hotsites is a website solution for businesses that want a dependable online presence without the complexity of WordPress or similar systems. The site is fixed pages that are fully loaded before a visitor clicks — there is no background application re-running on every click.",
+      "includesTitle": "What is included?",
+      "includes": [
+        "Website based on your existing brand guidelines",
+        "Hosting only on European servers, in line with the GDPR",
+        "No vendor lock-in: mainstream technology, transferable to another provider",
+        "Annual maintenance with a fixed contact moment"
+      ],
+      "noWordPressTitle": "No WordPress",
+      "noWordPressBody": "WordPress relies on separate plugins, themes, and integrations that each update on their own and can conflict. Hotsites is built as one whole — more stable, simpler to maintain, and without unnecessary dependencies."
+    }
   }
 }

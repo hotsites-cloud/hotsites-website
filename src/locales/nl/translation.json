@@ -10,7 +10,7 @@
     "readLess": "Lees minder"
   },
   "nav": {
-    "home": "Home",
+    "home": "Start",
     "contact": "Contact"
   },
   "footer": {
@@ -30,10 +30,6 @@
     "decline": "Weigeren"
   },
   "seo": {
-    "home": {
-      "title": "Hotsites | Websites die snel zijn, van jou blijven en in Europa staan",
-      "description": "Innovatief gebouwd, Europees gehost, slim onderhouden — zonder WordPress of plugin-circus. Voor MKB in Limburg en daarbuiten."
-    },
     "contact": {
       "title": "Contact | Neem contact op met Hotsites",
       "description": "Vraag een gesprek aan of stuur je vraag — we reageren snel en houden de lijnen kort."
@@ -53,99 +49,18 @@
     "imprint": {
       "title": "Colofon | Hotsites",
       "description": "Bedrijfsgegevens en contactgegevens van Hotsites."
-    }
-  },
-  "home": {
-    "intro": {
-      "title": "Innovatief gebouwd, Europees gehost, slim onderhouden.",
-      "lead": "Zo verlagen we afhankelijkheid en verhogen we efficiëntie, zonder WordPress of plugin-circus. Het resultaat: een snelle website die van jou blijft."
     },
-    "values": {
-      "title": "Wat ons beter maakt",
-      "items": [
-        {
-          "title": "Beveiliging",
-          "summary": "Je site staat online als vaste pagina’s — dat is vaak veiliger dan een omgeving met veel losse stukjes software, zoals bij WordPress.",
-          "detail": "Je site is een statische React-build: pagina’s worden als vaste bestanden uitgeleverd, zonder database of server-side code die bij elke aanvraag draait. Dat verkleint het aanvalsoppervlak sterk vergeleken met een CMS met plugins. Minder kans op kwetsbaarheden, injecties en misbruik via formulieren of e-mailstromen die aan een complexe backend hangen."
-        },
-        {
-          "title": "Upgrade ten opzichte van WordPress",
-          "summary": "Je website is volledig geladen voordat bezoekers hem zien: de pagina’s worden niet pas bij elke klik opnieuw opgebouwd, dus alles laadt snel.",
-          "detail": "Geen WordPress, Elementor of andere pagebuilders: je site is een statische React-build. Pagina’s worden vooraf gebouwd en als lichte bestanden geserveerd — geen PHP en database bij elke klik, en geen zware extra scripts van een bouwer. Snellere laadtijden, eenvoudigere hosting (static/CDN) en lagere vaste kosten dan een klassieke WordPress-stack, waardoor prijzen scherp kunnen blijven."
-        },
-        {
-          "title": "EU-data en privacy",
-          "summary": "Je gegevens worden uitsluitend in Europa opgeslagen en verwerkt — in lijn met de Europese privacywet.",
-          "detail": "Veel digitale tools (zoals AI) komen uit de VS; wij kiezen waar mogelijk voor Europese hosting en verwerking, zodat data in de EU blijft en beter aansluit bij AVG-verwachtingen. Een statische React-site is eenvoudig in EU-datacenters te plaatsen — je vermijdt onnodig verkeer en opslag buiten Europa."
-        },
-        {
-          "title": "Geschiktheid voor MKB",
-          "summary": "Voor de meeste kleine en middelgrote bedrijven is dit meer dan genoeg: je kunt doen wat je nodig hebt, zonder ingewikkelde WordPress-plugins.",
-          "detail": "Brochure-site, formulieren, meertaligheid, SEO en koppelingen: voor het overgrote deel van het MKB volstaat een moderne statische site op React. Je krijgt vergelijkbare zichtbare mogelijkheden als met WordPress — zonder trage pagebuilders, een plugin-woud of een database die je voor puur content vaak niet nodig hebt."
-        },
-        {
-          "title": "Onderhoud en betrouwbaarheid",
-          "summary": "Bij WordPress werk je met een thema, plugins en losse koppelingen die los van elkaar updaten en elkaar in de weg kunnen zitten. Wij bouwen alles als één geheel — zonder losse onderdelen die het kunnen verstoren.",
-          "detail": "Geen WordPress-kern en geen rij plugins met elk hun eigen updates en conflicten. Je live-site bestaat uit vooraf gebouwde bestanden: minder onderdelen die op de server meedraaien en minder plotselinge uitval door een thema- of plugin-update. Onderhoud richt zich op inhoud en de build — voorspelbaarder dan een CMS dat voortdurend losse onderdelen bijwerkt."
-        },
-        {
-          "title": "Geen vendor lock-in",
-          "summary": "Je website gebruikt gangbare, goed gedocumenteerde techniek; een andere partij kan hem overnemen en je hoeft niet voor altijd bij dezelfde leverancier te blijven. Je zit dus niet aan ons vast.",
-          "detail": "React is een open ecosysteem met een grote ontwikkelaarsbasis en uitgebreide documentatie. Je front-end is leesbare code in gangbare, goed gedocumenteerde technieken — geen propriëtair bouwpakket of data die alleen in één WordPress-installatie leeft. Een andere partij kan overnemen, hosten op static/CDN of uitbreiden — zonder aan één leverancier of stack vast te zitten."
-        }
-      ]
+    "start": {
+      "title": "Hotsites | Kies je perspectief",
+      "description": "Ben je reseller van de technologie of zoek je als MKB een website? Kies je route voor Hotsites."
     },
-    "journey": {
-      "eyebrow": "Klantreis",
-      "title": "Van idee tot website — zo lopen we samen",
-      "lead": "Zes duidelijke fases. Je weet wat er gebeurt, wanneer je aan zet bent, en hoe we na de livegang blijven meedenken.",
-      "stepLabel": "Stap {{current}} van {{total}}",
-      "steps": [
-        {
-          "title": "Kennismaking: jouw vraag helder",
-          "description": "Je wilt een nieuwe site. We luisteren, stellen scherpe vragen en leggen vast wat de site moet doen, voor wie hij bedoeld is en wat je echt nodig hebt. Eerst overzicht, dan pas bouwen."
-        },
-        {
-          "title": "Ontwerp op jouw bestaande stijl",
-          "description": "We zijn geen brandingbureau, maar werken naadloos met je logo en huisstijl. Daarmee bouwen we de uitstraling van je site — herkenbaar voor je bezoekers."
-        },
-        {
-          "title": "Inhoud: tekst, foto en video",
-          "description": "Jij levert aan welke pagina’s, teksten en beelden online komen. Wij helpen om alles in één heldere structuur te zetten die klopt voor je bezoekers."
-        },
-        {
-          "title": "Beta doorlopen en bijsturen",
-          "description": "Staat de eerste versie klaar? Dan lopen we samen door de site — liefst in persoon: sneller schakelen, meer nuance en meteen duidelijk wat nog bijgeschaafd wordt."
-        },
-        {
-          "title": "Na livegang: korte lijnen en snel antwoord",
-          "description": "Na livegang blijft het contact dichtbij. Vragen of kleine aanpassingen? Je krijgt korte lijnen en snel antwoord — persoonlijk, zonder ingewikkeld ticketproces."
-        },
-        {
-          "title": "Jaarlijks onderhoud en mee met je bedrijf",
-          "description": "Je site valt onder het jaarlijkse onderhoud. We plannen een vast moment om te zien wat er bij jouw bedrijf veranderd is en welke updates daarbij horen. Zo blijft je site passend bij je groei."
-        }
-      ]
+    "resellers": {
+      "title": "Hotsites voor resellers | Kant-en-klare statische React-sites",
+      "description": "Gestandaardiseerde websiteoplossing op basis van statische React. EU-hosting, AVG-compliant, eenvoudig door te leveren aan MKB."
     },
-    "pricing": {
-      "title": "Prijsstructuur",
-      "initialLabel": "Initiële kosten",
-      "initialPrice": "Eenmalig: €2.100",
-      "initialBullets": [
-        "Ontwerp en bouw van de website op jouw huisstijl",
-        "Technische realisatie als statische React-site",
-        "Begeleiding tot en met de livegang",
-        "Oneindig gebruikersrecht"
-      ],
-      "annualLabel": "Jaarlijks onderhoud",
-      "annualPrice": "€600 per jaar",
-      "annualBullets": [
-        "Hosting inbegrepen",
-        "Domeinbeheer inbegrepen",
-        "Security inbegrepen",
-        "Maandelijkse tekstuele aanpassingen",
-        "Jaarlijkse review en updates van de website"
-      ]
+    "sme": {
+      "title": "Hotsites voor MKB | Website zonder WordPress-gedoe",
+      "description": "Betrouwbare website op solide techniek, gehost in Europa, met jaarlijks onderhoud — zonder WordPress-complexiteit."
     }
   },
   "contact": {
@@ -320,5 +235,56 @@
   "structuredData": {
     "organizationName": "Hotsites",
     "organizationDescription": "Marketing en webdevelopment uit Limburg — React-websites, Europees gehost."
+  },
+  "start": {
+    "title": "Voor wie is deze site?",
+    "lead": "Kies of je de oplossing inzet voor klanten, of zelf een website zoekt voor je bedrijf.",
+    "choiceLegend": "Kies je route",
+    "resellers": {
+      "title": "Reseller van de technologie",
+      "description": "Zakelijk, informeel — voor partijen die Hotsites doorleveren aan MKB-klanten.",
+      "cta": "Lees meer voor resellers"
+    },
+    "sme": {
+      "title": "MKB: ik zoek een website",
+      "description": "Professioneel en toegankelijk — voor bedrijven die zelf online willen staan.",
+      "cta": "Lees meer voor MKB"
+    }
+  },
+  "audience": {
+    "resellers": {
+      "audienceLabel": "Resellers (zakelijk, informeel)",
+      "intro": "Een gestandaardiseerde websiteoplossing op basis van statische React-technologie. Europees gehost, AVG-compliant, en ontworpen voor eenvoudige doorlevering aan MKB-klanten.",
+      "whatTitle": "Wat is Hotsites?",
+      "whatBody": "Hotsites is een kant-en-klare weboplossing die je inzet voor klanten met een duidelijke, afgebakende websitebehoefte. De output is altijd een statische React-site: geen CMS, geen plugin-afhankelijkheden, geen WordPress. De codebase is opgebouwd in gangbare, gedocumenteerde techniek — overdraagbaar en beheersbaar.",
+      "specsTitle": "Technische specs",
+      "specs": [
+        "Statische build op basis van React + Vite",
+        "Geen runtime CMS of database-afhankelijkheden",
+        "Gehost op Europese infrastructuur (AVG/GDPR-compliant)",
+        "Volledige overdraagbaarheid van de codebase"
+      ],
+      "deliverTitle": "Wat lever je aan de eindklant?",
+      "deliverables": [
+        "Pre-rendered website, ingeladen vóór het eerste bezoek",
+        "EU-hosting met domeinbeheer en security inbegrepen",
+        "Jaarlijks onderhoud: aanpassingen, domein, review"
+      ]
+    },
+    "sme": {
+      "audienceLabel": "MKB-eindklanten (professioneel, toegankelijk)",
+      "intro": "Een website die werkt zoals je verwacht. Gebouwd op solide techniek, gehost in Europa, en onderhouden zonder gedoe.",
+      "whatTitle": "Wat is Hotsites?",
+      "whatBody": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare online aanwezigheid willen, zonder de complexiteit van WordPress of vergelijkbare systemen. De site bestaat uit vaste pagina's die volledig geladen zijn voordat een bezoeker iets aanklikt — er is geen achterliggende software die bij elke klik opnieuw iets uitvoert.",
+      "includesTitle": "Wat zit erin?",
+      "includes": [
+        "Website op basis van jouw bestaande huisstijl",
+        "Hosting uitsluitend op Europese servers, conform de AVG",
+        "Geen vendor lock-in: gangbare techniek, overdraagbaar naar een andere partij",
+        "Jaarlijks onderhoud met een vast contactmoment"
+      ],
+      "noWordPressTitle": "Geen WordPress",
+      "noWordPressBody": "WordPress werkt met losse plugins, thema's en koppelingen die elk afzonderlijk updaten en elkaar kunnen verstoren. Hotsites is gebouwd als één geheel — stabieler, eenvoudiger te onderhouden, en zonder onnodige afhankelijkheden."
+    }
   }
 }
