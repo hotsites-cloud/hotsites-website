@@ -254,6 +254,17 @@
   "audience": {
     "resellers": {
       "audienceLabel": "Partnerinformatie",
+      "pageTitle": "Doorleverbare statische websites",
+      "navLabel": "Op deze pagina",
+      "navContact": "Contact",
+      "highlightsTitle": "Waarom resellers Hotsites inzetten",
+      "highlight1": "Pre-rendered React — snelle laadtijden en voorspelbare performance.",
+      "highlight2": "EU-hosting, domeinbeheer en security gebundeld in één jaarcontract.",
+      "highlight3": "Geen vendor lock-in: gangbare techniek, altijd overdraagbaar naar een andere partij.",
+      "partnerCtaTitle": "Partner worden of iets doorspreken?",
+      "partnerCtaBody": "Neem contact op als je Hotsites wilt doorleveren aan je eigen klanten of als je technische of commerciële vragen hebt.",
+      "partnerCtaButton": "Neem contact op",
+      "partnerCtaSecondary": "Pagina voor eindklanten (MKB)",
       "intro": "Een gestandaardiseerde websiteoplossing op basis van statische React-technologie. Geschikt voor doorlevering aan MKB-klanten met een afgebakende websitebehoefte — zonder CMS-afhankelijkheden, zonder WordPress, en zonder vendor lock-in voor de eindklant.",
       "whatTitle": "Wat is Hotsites?",
       "whatBody": "Hotsites is een bouwsysteem voor statische websites dat je als reseller inzet voor klanten die een betrouwbare, goed presterende online aanwezigheid nodig hebben. De output is altijd een pre-rendered React-site: geen runtime database, geen plugin-afhankelijkheden en geen CMS dat afzonderlijk geüpdatet moet worden.",

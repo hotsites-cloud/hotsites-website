@@ -254,6 +254,17 @@
   "audience": {
     "resellers": {
       "audienceLabel": "Partner information",
+      "pageTitle": "Static sites you can deliver to clients",
+      "navLabel": "On this page",
+      "navContact": "Contact",
+      "highlightsTitle": "Why resellers choose Hotsites",
+      "highlight1": "Pre-rendered React — fast loads and predictable performance.",
+      "highlight2": "EU hosting, domain management, and security bundled in one annual contract.",
+      "highlight3": "No vendor lock-in: mainstream stack, always transferable to another provider.",
+      "partnerCtaTitle": "Become a partner or talk it through?",
+      "partnerCtaBody": "Get in touch if you want to deliver Hotsites to your own clients, or if you have technical or commercial questions.",
+      "partnerCtaButton": "Contact us",
+      "partnerCtaSecondary": "End-client page (SME)",
       "intro": "A standardised website solution based on static React technology. Suited for delivery to SME clients with a well-scoped website need — no CMS runtime dependencies, no WordPress, and no vendor lock-in for the end client.",
       "whatTitle": "What is Hotsites?",
       "whatBody": "Hotsites is a build system for static websites that you deploy as a reseller for clients who need a dependable, high-performing online presence. The output is always a pre-rendered React site: no runtime database, no plugin stack, and no CMS that must be updated separately.",
