@@ -6,7 +6,7 @@ import { SITE_ORIGIN } from '../config/site';
 
 export default function SmeClients() {
   const { t } = useTranslation();
-  const includes = t('audience.sme.includes', { returnObjects: true });
+  const wordPressBullets = t('audience.sme.wordPressBullets', { returnObjects: true });
 
   const structuredData = [
     {
@@ -49,15 +49,21 @@ export default function SmeClients() {
           <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
             {t('audience.sme.whatBody')}
           </p>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.sme.whatBodySecond')}
+          </p>
         </AnimatedSection>
 
         <AnimatedSection>
           <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
-            {t('audience.sme.includesTitle')}
+            {t('audience.sme.wordPressCompareTitle')}
           </h2>
-          {Array.isArray(includes) ? (
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.sme.wordPressCompareBody')}
+          </p>
+          {Array.isArray(wordPressBullets) ? (
             <ul className="mt-5 list-inside list-disc space-y-2 leading-relaxed text-brand-muted">
-              {includes.map((line) => (
+              {wordPressBullets.map((line) => (
                 <li key={line}>{line}</li>
               ))}
             </ul>
@@ -66,10 +72,28 @@ export default function SmeClients() {
 
         <AnimatedSection>
           <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
-            {t('audience.sme.noWordPressTitle')}
+            {t('audience.sme.euDataTitle')}
           </h2>
           <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
-            {t('audience.sme.noWordPressBody')}
+            {t('audience.sme.euDataBody')}
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
+            {t('audience.sme.noLockInTitle')}
+          </h2>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.sme.noLockInBody')}
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
+            {t('audience.sme.maintenanceTitle')}
+          </h2>
+          <p className="mt-4 max-w-prose leading-relaxed text-brand-muted">
+            {t('audience.sme.maintenanceBody')}
           </p>
         </AnimatedSection>
       </div>

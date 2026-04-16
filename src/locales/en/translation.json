@@ -59,8 +59,8 @@
       "description": "Static React sites for SME clients: no runtime CMS, no WordPress, transferable codebase, EU hosting, and predictable annual maintenance."
     },
     "sme": {
-      "title": "Hotsites for SMEs | A website without WordPress hassle",
-      "description": "A dependable site on solid tech, hosted in Europe, with annual maintenance — without WordPress complexity."
+      "title": "Hotsites | For business owners",
+      "description": "A fast, stable website without WordPress overhead: EU hosting, transferable stack, and predictable annual maintenance so you can focus on your business."
     }
   },
   "contact": {
@@ -246,9 +246,9 @@
       "cta": "Read more for resellers"
     },
     "sme": {
-      "title": "SME: I need a website",
-      "description": "Professional and clear — for businesses that want a solid online presence.",
-      "cta": "Read more for SMEs"
+      "title": "For business owners",
+      "description": "A website that does what it should — EU hosting, fuss-free maintenance.",
+      "cta": "Read more"
     }
   },
   "audience": {
@@ -298,19 +298,25 @@
       "maintenanceFootnote": "There are no separate update chains or plugin compatibility puzzles — the system is designed to stay stable without constant hands-on CMS administration."
     },
     "sme": {
-      "audienceLabel": "SME end clients (professional, accessible)",
-      "intro": "A website that works the way you expect. Built on solid technology, hosted in Europe, and maintained without fuss.",
+      "audienceLabel": "For business owners",
+      "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss — so you can focus on running your business.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "Hotsites is a website solution for businesses that want a dependable online presence without the complexity of WordPress or similar systems. The site is fixed pages that are fully loaded before a visitor clicks — there is no background application re-running on every click.",
-      "includesTitle": "What is included?",
-      "includes": [
-        "Website based on your existing brand guidelines",
-        "Hosting only on European servers, in line with the GDPR",
-        "No vendor lock-in: mainstream technology, transferable to another provider",
-        "Annual maintenance with a fixed contact moment"
+      "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke application. The site is fixed pages that are ready before a visitor clicks anything — there is no background stack spinning up again on every click.",
+      "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
+      "wordPressCompareTitle": "How is it different from WordPress?",
+      "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own — and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
+      "wordPressBullets": [
+        "No plugins getting in each other’s way",
+        "No theme updates that break your layout",
+        "No separate CMS to secure and maintain",
+        "One version, one deployment — clear and stable"
       ],
-      "noWordPressTitle": "No WordPress",
-      "noWordPressBody": "WordPress relies on separate plugins, themes, and integrations that each update on their own and can conflict. Hotsites is built as one whole — more stable, simpler to maintain, and without unnecessary dependencies."
+      "euDataTitle": "Your data stays in Europe",
+      "euDataBody": "Your website is hosted only on European servers. That aligns with European privacy law (GDPR) and means your data and your visitors’ data are not processed or stored outside the EU.",
+      "noLockInTitle": "No forced dependency",
+      "noLockInBody": "Hotsites uses mainstream, well-documented technology. If you ever want to work with another provider, you can — the website and its code are always transferable. You are not locked to a single supplier.",
+      "maintenanceTitle": "Maintenance without surprises",
+      "maintenanceBody": "After go-live your site is covered by an annual maintenance contract. That includes hosting, domain management, security, and small text updates. Once a year we schedule a fixed moment to review what changed in your business and which updates fit — so your site stays current without you chasing it."
     }
   }
 }

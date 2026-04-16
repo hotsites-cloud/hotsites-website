@@ -59,8 +59,8 @@
       "description": "Statische React-websites voor MKB-klanten: geen CMS-runtime, geen WordPress, overdraagbare codebase, EU-hosting en jaarlijks onderhoud."
     },
     "sme": {
-      "title": "Hotsites voor MKB | Website zonder WordPress-gedoe",
-      "description": "Betrouwbare website op solide techniek, gehost in Europa, met jaarlijks onderhoud — zonder WordPress-complexiteit."
+      "title": "Hotsites | Voor ondernemers",
+      "description": "Een snelle, stabiele website zonder WordPress-gedoe: EU-hosting, overdraagbare techniek en jaarlijks onderhoud — zodat jij je op je bedrijf richt."
     }
   },
   "contact": {
@@ -246,9 +246,9 @@
       "cta": "Lees meer voor resellers"
     },
     "sme": {
-      "title": "MKB: ik zoek een website",
-      "description": "Professioneel en toegankelijk — voor bedrijven die zelf online willen staan.",
-      "cta": "Lees meer voor MKB"
+      "title": "Voor ondernemers",
+      "description": "Een website die doet wat hij moet — EU-hosting, onderhoud zonder gedoe.",
+      "cta": "Lees meer"
     }
   },
   "audience": {
@@ -298,19 +298,25 @@
       "maintenanceFootnote": "Er zijn geen losse update-afhankelijkheden of plugin-compatibiliteitsproblemen — het systeem is gebouwd om stabiel te blijven zonder continu beheeraandacht."
     },
     "sme": {
-      "audienceLabel": "MKB-eindklanten (professioneel, toegankelijk)",
-      "intro": "Een website die werkt zoals je verwacht. Gebouwd op solide techniek, gehost in Europa, en onderhouden zonder gedoe.",
+      "audienceLabel": "Voor ondernemers",
+      "intro": "Een website die doet wat hij moet doen. Gebouwd op solide techniek, gehost in Europa, en onderhouden zonder gedoe — zodat jij je op je bedrijf kunt richten.",
       "whatTitle": "Wat is Hotsites?",
-      "whatBody": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare online aanwezigheid willen, zonder de complexiteit van WordPress of vergelijkbare systemen. De site bestaat uit vaste pagina's die volledig geladen zijn voordat een bezoeker iets aanklikt — er is geen achterliggende software die bij elke klik opnieuw iets uitvoert.",
-      "includesTitle": "Wat zit erin?",
-      "includes": [
-        "Website op basis van jouw bestaande huisstijl",
-        "Hosting uitsluitend op Europese servers, conform de AVG",
-        "Geen vendor lock-in: gangbare techniek, overdraagbaar naar een andere partij",
-        "Jaarlijks onderhoud met een vast contactmoment"
+      "whatBody": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare en snelle website willen, zonder de kosten en complexiteit van een op maat gebouwde applicatie. De site bestaat uit vaste pagina's die volledig klaarstaan voordat een bezoeker iets aanklikt — er is geen achterliggende software die bij elke klik opnieuw wordt gestart.",
+      "whatBodySecond": "Het resultaat: een stabiele, snelle website die eenvoudig te onderhouden is en geen onnodige technische risico's met zich meebrengt.",
+      "wordPressCompareTitle": "Wat maakt het anders dan WordPress?",
+      "wordPressCompareBody": "WordPress werkt met een combinatie van een thema, plugins en externe koppelingen die elk afzonderlijk updaten — en die regelmatig conflicten veroorzaken. Hotsites is gebouwd als één geheel. Er zijn geen losse onderdelen die het systeem kunnen verstoren, en er is geen beheerder nodig die wekelijks updates doorvoert.",
+      "wordPressBullets": [
+        "Geen plugins die elkaar in de weg zitten",
+        "Geen thema-updates die de opmaak van je site verstoren",
+        "Geen CMS dat apart beveiligd en bijgehouden moet worden",
+        "Eén versie, één deployment — overzichtelijk en stabiel"
       ],
-      "noWordPressTitle": "Geen WordPress",
-      "noWordPressBody": "WordPress werkt met losse plugins, thema's en koppelingen die elk afzonderlijk updaten en elkaar kunnen verstoren. Hotsites is gebouwd als één geheel — stabieler, eenvoudiger te onderhouden, en zonder onnodige afhankelijkheden."
+      "euDataTitle": "Jouw gegevens blijven in Europa",
+      "euDataBody": "Je website wordt uitsluitend gehost op Europese servers. Dat is in lijn met de Europese privacywetgeving (AVG/GDPR) en betekent dat jouw gegevens en die van je bezoekers niet buiten de EU worden verwerkt of opgeslagen.",
+      "noLockInTitle": "Geen gedwongen afhankelijkheid",
+      "noLockInBody": "Hotsites is gebouwd op gangbare, goed gedocumenteerde techniek. Als je ooit met een andere partij wilt werken, is dat mogelijk — de website en de bijbehorende code zijn altijd overdraagbaar. Je zit dus niet vast aan één leverancier.",
+      "maintenanceTitle": "Onderhoud zonder verrassingen",
+      "maintenanceBody": "Na de livegang valt je site onder een jaarlijks onderhoudscontract. Dat dekt hosting, domeinbeheer, security en kleine tekstuele aanpassingen. Eén keer per jaar plannen we een vast moment om te kijken wat er bij jouw bedrijf veranderd is en welke updates daarbij horen — zodat je site actueel blijft zonder dat je er zelf achteraan hoeft."
     }
   }
 }
