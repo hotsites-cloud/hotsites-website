@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Check, Gauge, Globe2, MessageCircle, Package } from 'lucide-react';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
+import { BackToStartLink } from '../components/ui/BackToStartLink';
 import { Card } from '../components/ui/Card';
 import { PatternSection } from '../components/ui/PatternSection';
 import { SITE_ORIGIN } from '../config/site';
@@ -78,6 +79,7 @@ export default function SmeClients() {
 
       <PatternSection className="border-t-0">
         <AnimatedSection className="max-w-3xl">
+          <BackToStartLink />
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-brand-muted">
             {t('audience.sme.audienceLabel')}
           </p>
