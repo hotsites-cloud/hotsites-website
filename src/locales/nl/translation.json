@@ -242,12 +242,12 @@
     "choiceLegend": "Kies je route",
     "resellers": {
       "title": "Reseller van de technologie",
-      "description": "Zakelijk, informeel — voor partijen die Hotsites doorleveren aan MKB-klanten.",
+      "description": "Voor partijen die Hotsites doorleveren aan hun eigen klanten.",
       "cta": "Lees meer voor resellers"
     },
     "sme": {
       "title": "Voor ondernemers",
-      "description": "Een website die doet wat hij moet — EU-hosting, onderhoud zonder gedoe.",
+      "description": "De toekomst van website is snel, veilig, Europees gehost en beter te onderhouden.",
       "cta": "Lees meer"
     }
   },
