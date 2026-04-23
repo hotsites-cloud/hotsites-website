@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Check, Gauge, Globe2, MessageCircle, Package } from 'lucide-react';
+import { Check, Gauge, Globe2, MessageCircle, Package, Unlock } from 'lucide-react';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
@@ -228,12 +228,22 @@ export default function SmeClients() {
 
               <AnimatedSection id="mkb-lockin" className="scroll-mt-28">
                 <Card className="h-full border-brand-strong/10 p-6 sm:p-7">
-                  <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
-                    {t('audience.sme.noLockInTitle')}
-                  </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
-                    {t('audience.sme.noLockInBody')}
-                  </p>
+                  <div className="flex gap-4">
+                    <span
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                      aria-hidden
+                    >
+                      <Unlock className="h-5 w-5" strokeWidth={2} />
+                    </span>
+                    <div className="min-w-0">
+                      <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
+                        {t('audience.sme.noLockInTitle')}
+                      </h2>
+                      <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
+                        {t('audience.sme.noLockInBody')}
+                      </p>
+                    </div>
+                  </div>
                 </Card>
               </AnimatedSection>
             </div>
