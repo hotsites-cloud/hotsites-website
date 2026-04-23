@@ -170,9 +170,11 @@ export default function SmeClients() {
               </h2>
               <div className="mt-6 max-w-prose space-y-4 leading-relaxed text-brand-muted">
                 <p>{t('audience.sme.whatBody')}</p>
-                <p className="rounded-xl border-2 border-brand-strong/20 bg-brand-strong/[0.07] px-5 py-4 text-base font-semibold leading-relaxed text-brand-strong shadow-sm ring-1 ring-brand-strong/10 sm:rounded-2xl sm:px-6 sm:py-5 sm:text-lg">
-                  {t('audience.sme.whatBodySecond')}
-                </p>
+                <Card className="border-brand-strong/10 p-5 sm:p-6">
+                  <p className="text-sm font-medium leading-relaxed text-brand-strong md:text-base">
+                    {t('audience.sme.whatBodySecond')}
+                  </p>
+                </Card>
               </div>
             </AnimatedSection>
 
