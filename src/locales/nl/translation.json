@@ -339,7 +339,8 @@
         "Geen plugins die elkaar in de weg zitten",
         "Geen thema-updates die de opmaak van je site verstoren",
         "Geen CMS dat apart beveiligd en bijgehouden moet worden",
-        "Eén versie, één deployment, overzichtelijk en stabiel"
+        "Eén versie, één deployment, overzichtelijk en stabiel",
+        "Kleiner aanvalsoppervlak: statische pagina's, geen WordPress-stack bij elke weergave"
       ],
       "euDataTitle": "Jouw gegevens blijven in Europa",
       "euDataBody": "Je website wordt uitsluitend gehost op Europese servers. Dat is in lijn met de Europese privacywetgeving (AVG/GDPR) en betekent dat jouw gegevens en die van je bezoekers niet buiten de EU worden verwerkt of opgeslagen.",

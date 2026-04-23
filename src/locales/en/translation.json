@@ -339,7 +339,8 @@
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
         "No separate CMS to secure and maintain",
-        "One version, one deployment, clear and stable"
+        "One version, one deployment, clear and stable",
+        "Smaller attack surface: static pages, no WordPress stack on every view"
       ],
       "euDataTitle": "Your data stays in Europe",
       "euDataBody": "Your website is hosted only on European servers. That aligns with European privacy law (GDPR) and means your data and your visitors’ data are not processed or stored outside the EU.",
