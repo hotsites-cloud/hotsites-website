@@ -323,29 +323,30 @@
       "highlightsTitle": "Why business owners choose Hotsites",
       "highlight1": "Fast and stable: fixed pages ready before visitors click, no slow background stack on every request.",
       "highlight2": "EU hosting with privacy in mind (GDPR), your data stays in Europe.",
-      "highlight3": "Everything bundled in one annual contract: hosting, domain, security, and small text updates, so you can run the business.",
+      "highlight3": "One annual contract covering hosting, domain, and security: each year a fixed conversation about your website and vision, then updates so the site stays aligned with your business.",
       "ctaTitle": "Questions or want to talk it through?",
       "ctaBody": "Get in touch if you want to see whether Hotsites fits your company, or to discuss anything else.",
       "ctaButton": "Contact us",
       "ctaSecondary": "Partner information (resellers)",
       "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss, so you can focus on running your business.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke application. The site is fixed pages that are ready before a visitor clicks anything, there is no background stack spinning up again on every click.",
-      "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
+      "whatBody": "In practice your site is fixed pages that are fully ready before a visitor clicks anything—no background software spinning up again on every click. That keeps things stable and easier to maintain, with less unnecessary technical risk. Visitors usually see significantly faster loading than a comparable WordPress setup.",
+      "whatBodySecond": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website.",
       "wordPressCompareTitle": "How is it different from WordPress?",
-      "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own, and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
+      "wordPressCompareBody": "WordPress is made of many separate pieces—how the site looks, extra features, and links to other tools. Each piece updates on its own and they can get in each other’s way. Hotsites is one coherent whole. Your pages are fixed and ready for visitors, like a brochure that is already printed. Nothing has to rebuild the page from scratch every time someone opens it. That usually means fewer security weak spots, because there is less hidden machinery in the background that could be attacked.",
       "wordPressBullets": [
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
         "No separate CMS to secure and maintain",
-        "One version, one deployment, clear and stable"
+        "One version, one deployment, clear and stable",
+        "Smaller attack surface: static pages, no WordPress stack on every view"
       ],
       "euDataTitle": "Your data stays in Europe",
       "euDataBody": "Your website is hosted only on European servers. That aligns with European privacy law (GDPR) and means your data and your visitors’ data are not processed or stored outside the EU.",
       "noLockInTitle": "No forced dependency",
       "noLockInBody": "Hotsites uses mainstream, well-documented technology. If you ever want to work with another provider, you can, the website and its code are always transferable. You are not locked to a single supplier.",
       "maintenanceTitle": "Maintenance without surprises",
-      "maintenanceBody": "After go-live your site is covered by an annual maintenance contract. That includes hosting, domain management, security, and small text updates. Once a year we schedule a fixed moment to review what changed in your business and which updates fit, so your site stays current without you chasing it."
+      "maintenanceBody": "After go-live you pay one fixed annual maintenance fee. It covers everything: hosting, domain management, security, the yearly review of your website and vision, and updating the site so it stays aligned with your business—no separate line items for those. You do not have to chase it."
     }
   }
 }

@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Check, Gauge, Globe2, MessageCircle, Package } from 'lucide-react';
+import { Check, Gauge, Globe2, MessageCircle, Package, Unlock, Wrench } from 'lucide-react';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
@@ -169,10 +169,12 @@ export default function SmeClients() {
                 {t('audience.sme.whatTitle')}
               </h2>
               <div className="mt-6 max-w-prose space-y-4 leading-relaxed text-brand-muted">
+                <Card className="border-brand-strong/10 p-5 sm:p-6">
+                  <p className="text-sm font-medium leading-relaxed text-brand-strong md:text-base">
+                    {t('audience.sme.whatBodySecond')}
+                  </p>
+                </Card>
                 <p>{t('audience.sme.whatBody')}</p>
-                <p className="rounded-xl border border-dashed border-border bg-surface-elevated/50 px-4 py-3 text-sm">
-                  {t('audience.sme.whatBodySecond')}
-                </p>
               </div>
             </AnimatedSection>
 
@@ -205,23 +207,43 @@ export default function SmeClients() {
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-6">
               <AnimatedSection id="mkb-eu" className="scroll-mt-28">
                 <Card className="h-full border-brand-strong/10 p-6 sm:p-7">
-                  <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
-                    {t('audience.sme.euDataTitle')}
-                  </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
-                    {t('audience.sme.euDataBody')}
-                  </p>
+                  <div className="flex gap-4">
+                    <span
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                      aria-hidden
+                    >
+                      <Globe2 className="h-5 w-5" strokeWidth={2} />
+                    </span>
+                    <div className="min-w-0">
+                      <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
+                        {t('audience.sme.euDataTitle')}
+                      </h2>
+                      <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
+                        {t('audience.sme.euDataBody')}
+                      </p>
+                    </div>
+                  </div>
                 </Card>
               </AnimatedSection>
 
               <AnimatedSection id="mkb-lockin" className="scroll-mt-28">
                 <Card className="h-full border-brand-strong/10 p-6 sm:p-7">
-                  <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
-                    {t('audience.sme.noLockInTitle')}
-                  </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
-                    {t('audience.sme.noLockInBody')}
-                  </p>
+                  <div className="flex gap-4">
+                    <span
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                      aria-hidden
+                    >
+                      <Unlock className="h-5 w-5" strokeWidth={2} />
+                    </span>
+                    <div className="min-w-0">
+                      <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
+                        {t('audience.sme.noLockInTitle')}
+                      </h2>
+                      <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
+                        {t('audience.sme.noLockInBody')}
+                      </p>
+                    </div>
+                  </div>
                 </Card>
               </AnimatedSection>
             </div>
@@ -230,8 +252,18 @@ export default function SmeClients() {
               <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
                 {t('audience.sme.maintenanceTitle')}
               </h2>
-              <Card className="mt-6 max-w-prose border-border bg-surface p-6 leading-relaxed text-brand-muted sm:p-8">
-                {t('audience.sme.maintenanceBody')}
+              <Card className="mt-6 max-w-prose border-brand-strong/10 bg-surface p-6 sm:p-8">
+                <div className="flex gap-4">
+                  <span
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                    aria-hidden
+                  >
+                    <Wrench className="h-5 w-5" strokeWidth={2} />
+                  </span>
+                  <p className="min-w-0 text-sm leading-relaxed text-brand-muted md:text-base">
+                    {t('audience.sme.maintenanceBody')}
+                  </p>
+                </div>
               </Card>
             </AnimatedSection>
 

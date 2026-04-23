@@ -323,29 +323,30 @@
       "highlightsTitle": "Waarom ondernemers voor Hotsites kiezen",
       "highlight1": "Snel en stabiel: vaste pagina's die al klaarstaan voor je bezoekers, geen trage achtergrondsoftware bij elke klik.",
       "highlight2": "Hosting in de EU en aandacht voor privacy (AVG), jouw data blijft binnen Europa.",
-      "highlight3": "Onderhoud in één jaarcontract: hosting, domein, security en kleine tekstwijzigingen, zodat jij kunt ondernemen.",
+      "highlight3": "Eén jaarcontract met hosting, domein en security: jaarlijks een vast gesprek over je website en visie, waarna we de site bijwerken zodat die blijft aansluiten op je bedrijf.",
       "ctaTitle": "Vragen of een voorstel?",
       "ctaBody": "Neem contact op als je wilt weten of Hotsites bij je bedrijf past, of als je iets wilt bespreken.",
       "ctaButton": "Neem contact op",
       "ctaSecondary": "Informatie voor partners (resellers)",
       "intro": "Een website die doet wat hij moet doen. Gebouwd op solide techniek, gehost in Europa, en onderhouden zonder gedoe, zodat jij je op je bedrijf kunt richten.",
       "whatTitle": "Wat is Hotsites?",
-      "whatBody": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare en snelle website willen, zonder de kosten en complexiteit van een op maat gebouwde applicatie. De site bestaat uit vaste pagina's die volledig klaarstaan voordat een bezoeker iets aanklikt, er is geen achterliggende software die bij elke klik opnieuw wordt gestart.",
-      "whatBodySecond": "Het resultaat: een stabiele, snelle website die eenvoudig te onderhouden is en geen onnodige technische risico's met zich meebrengt.",
+      "whatBody": "Concreet bestaat je site uit vaste pagina's die volledig klaarstaan voordat een bezoeker iets aanklikt: er draait geen achterliggende software die bij elke klik opnieuw wordt gestart. Daardoor blijft alles stabiel en overzichtelijk te onderhouden, met weinig technische risico's. Voor bezoekers betekent dat doorgaans ook dat de site beduidend sneller laadt dan een vergelijkbare oplossing op WordPress.",
+      "whatBodySecond": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare en snelle site willen, zonder de kosten en complexiteit van een volledig op maat gebouwde website.",
       "wordPressCompareTitle": "Wat maakt het anders dan WordPress?",
-      "wordPressCompareBody": "WordPress werkt met een combinatie van een thema, plugins en externe koppelingen die elk afzonderlijk updaten, en die regelmatig conflicten veroorzaken. Hotsites is gebouwd als één geheel. Er zijn geen losse onderdelen die het systeem kunnen verstoren, en er is geen beheerder nodig die wekelijks updates doorvoert.",
+      "wordPressCompareBody": "WordPress bestaat uit veel losse onderdelen: het uiterlijk, extra functies en koppelingen met andere systemen. Die worden elk apart bijgewerkt en kunnen elkaar in de weg zitten. Hotsites is één samenhangend geheel. Je pagina's liggen vast en klaar voor je bezoek—vergelijkbaar met een brochure die al gedrukt is. Er hoeft niet telkens op de achtergrond een heel systeem te draaien om elke pagina opnieuw samen te stellen. Dat maakt het in de praktijk ook veiliger: minder verborgen techniek die misbruikt kan worden.",
       "wordPressBullets": [
         "Geen plugins die elkaar in de weg zitten",
         "Geen thema-updates die de opmaak van je site verstoren",
         "Geen CMS dat apart beveiligd en bijgehouden moet worden",
-        "Eén versie, één deployment, overzichtelijk en stabiel"
+        "Eén versie, één deployment, overzichtelijk en stabiel",
+        "Kleiner aanvalsoppervlak: statische pagina's, geen WordPress-stack bij elke weergave"
       ],
       "euDataTitle": "Jouw gegevens blijven in Europa",
       "euDataBody": "Je website wordt uitsluitend gehost op Europese servers. Dat is in lijn met de Europese privacywetgeving (AVG/GDPR) en betekent dat jouw gegevens en die van je bezoekers niet buiten de EU worden verwerkt of opgeslagen.",
       "noLockInTitle": "Geen gedwongen afhankelijkheid",
       "noLockInBody": "Hotsites is gebouwd op gangbare, goed gedocumenteerde techniek. Als je ooit met een andere partij wilt werken, is dat mogelijk, de website en de bijbehorende code zijn altijd overdraagbaar. Je zit dus niet vast aan één leverancier.",
       "maintenanceTitle": "Onderhoud zonder verrassingen",
-      "maintenanceBody": "Na de livegang valt je site onder een jaarlijks onderhoudscontract. Dat dekt hosting, domeinbeheer, security en kleine tekstuele aanpassingen. Eén keer per jaar plannen we een vast moment om te kijken wat er bij jouw bedrijf veranderd is en welke updates daarbij horen, zodat je site actueel blijft zonder dat je er zelf achteraan hoeft."
+      "maintenanceBody": "Na de livegang betaal je één vast jaarlijks onderhoudsbedrag. Daarin zit alles: hosting, domeinbeheer, security, het jaarlijkse evaluatiegesprek over je website en visie, en het bijwerken van de site zodat die aansluit op jouw bedrijf—geen aparte posten daarvoor. Jij hoeft er niet zelf achteraan."
     }
   }
 }
