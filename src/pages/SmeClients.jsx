@@ -183,10 +183,9 @@ export default function SmeClients() {
                 {t('audience.sme.wordPressCompareTitle')}
               </h2>
               <Card className="mt-8 border-brand-strong/15 bg-surface p-6 sm:p-8">
-                <div className="max-w-prose space-y-4 leading-relaxed text-brand-muted">
-                  <p>{t('audience.sme.wordPressCompareBody')}</p>
-                  <p>{t('audience.sme.wordPressCompareSecurity')}</p>
-                </div>
+                <p className="max-w-prose leading-relaxed text-brand-muted">
+                  {t('audience.sme.wordPressCompareBody')}
+                </p>
                 {Array.isArray(wordPressBullets) ? (
                   <ul className="mt-6 space-y-3" role="list">
                     {wordPressBullets.map((line) => (

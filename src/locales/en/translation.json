@@ -333,8 +333,7 @@
       "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website. The site is fixed pages that are ready before a visitor clicks anything, there is no background stack spinning up again on every click.",
       "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
       "wordPressCompareTitle": "How is it different from WordPress?",
-      "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own, and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
-      "wordPressCompareSecurity": "Security is another big difference: WordPress usually runs server-side software—logins, database, plugins—and each part can develop vulnerabilities you must keep patching. Hotsites publishes your site as fixed, static pages: what visitors see is already prepared, without a WordPress-style stack executing again on every page view. Fewer moving parts means fewer ways for attackers to get in.",
+      "wordPressCompareBody": "WordPress runs a theme, plugins, and integrations that update separately and often clash. Hotsites is one whole with fixed static pages: no loose parts and no weekly patch rounds. In practice that is safer too: less server-side software to lock down (logins, database, plugins); visitors get pages that are already built, without that stack running on every view.",
       "wordPressBullets": [
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
