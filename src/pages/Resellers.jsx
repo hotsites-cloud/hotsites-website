@@ -120,7 +120,7 @@ export default function Resellers() {
         </>
       </FullBleedPhotoSection>
 
-      <div className="sticky top-0 z-20 border-b border-border/80 bg-page/90 backdrop-blur-md lg:hidden">
+      <div className="sticky top-0 z-20 hidden border-b border-border/80 bg-page/90 backdrop-blur-md md:block lg:hidden">
         <nav
           className="mx-auto max-w-6xl px-4 py-3 sm:px-6"
           aria-label={t('audience.resellers.navLabel')}
