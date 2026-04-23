@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Check, Gauge, Globe2, MessageCircle, Package, Unlock } from 'lucide-react';
+import { Check, Gauge, Globe2, MessageCircle, Package, Unlock, Wrench } from 'lucide-react';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
@@ -252,8 +252,18 @@ export default function SmeClients() {
               <h2 className="text-2xl font-semibold tracking-tight text-brand-strong md:text-3xl">
                 {t('audience.sme.maintenanceTitle')}
               </h2>
-              <Card className="mt-6 max-w-prose border-border bg-surface p-6 leading-relaxed text-brand-muted sm:p-8">
-                {t('audience.sme.maintenanceBody')}
+              <Card className="mt-6 max-w-prose border-brand-strong/10 bg-surface p-6 sm:p-8">
+                <div className="flex gap-4">
+                  <span
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                    aria-hidden
+                  >
+                    <Wrench className="h-5 w-5" strokeWidth={2} />
+                  </span>
+                  <p className="min-w-0 text-sm leading-relaxed text-brand-muted md:text-base">
+                    {t('audience.sme.maintenanceBody')}
+                  </p>
+                </div>
               </Card>
             </AnimatedSection>
 
