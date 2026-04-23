@@ -333,7 +333,7 @@
       "whatBody": "Concreet bestaat je site uit vaste pagina's die volledig klaarstaan voordat een bezoeker iets aanklikt: er draait geen achterliggende software die bij elke klik opnieuw wordt gestart. Daardoor blijft alles stabiel en overzichtelijk te onderhouden, met weinig technische risico's.",
       "whatBodySecond": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare en snelle site willen, zonder de kosten en complexiteit van een volledig op maat gebouwde website.",
       "wordPressCompareTitle": "Wat maakt het anders dan WordPress?",
-      "wordPressCompareBody": "WordPress draait op thema, plugins en koppelingen die elk apart updaten en regelmatig botsen. Hotsites is één geheel met vaste statische pagina's: geen losse onderdelen en geen wekelijkse patch-rondes. Ook veiliger in de praktijk: minder serversoftware om te bewaken (zoals inlog, database en plugins); wat je bezoeker ziet staat al klaar, zonder zo'n stack bij elke weergave.",
+      "wordPressCompareBody": "WordPress bestaat uit veel losse onderdelen: het uiterlijk, extra functies en koppelingen met andere systemen. Die worden elk apart bijgewerkt en kunnen elkaar in de weg zitten. Hotsites is één samenhangend geheel. Je pagina's liggen vast en klaar voor je bezoek—vergelijkbaar met een brochure die al gedrukt is. Er hoeft niet telkens op de achtergrond een heel systeem te draaien om elke pagina opnieuw samen te stellen. Dat maakt het in de praktijk ook veiliger: minder verborgen techniek die misbruikt kan worden.",
       "wordPressBullets": [
         "Geen plugins die elkaar in de weg zitten",
         "Geen thema-updates die de opmaak van je site verstoren",
