@@ -207,12 +207,22 @@ export default function SmeClients() {
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-6">
               <AnimatedSection id="mkb-eu" className="scroll-mt-28">
                 <Card className="h-full border-brand-strong/10 p-6 sm:p-7">
-                  <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
-                    {t('audience.sme.euDataTitle')}
-                  </h2>
-                  <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
-                    {t('audience.sme.euDataBody')}
-                  </p>
+                  <div className="flex gap-4">
+                    <span
+                      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong text-brand-foreground"
+                      aria-hidden
+                    >
+                      <Globe2 className="h-5 w-5" strokeWidth={2} />
+                    </span>
+                    <div className="min-w-0">
+                      <h2 className="text-xl font-semibold tracking-tight text-brand-strong md:text-2xl">
+                        {t('audience.sme.euDataTitle')}
+                      </h2>
+                      <p className="mt-4 text-sm leading-relaxed text-brand-muted md:text-base">
+                        {t('audience.sme.euDataBody')}
+                      </p>
+                    </div>
+                  </div>
                 </Card>
               </AnimatedSection>
 
