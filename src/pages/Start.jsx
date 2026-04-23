@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Building2, Users } from 'lucide-react';
+import { Building2, ChevronRight, Users } from 'lucide-react';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Card } from '../components/ui/Card';
@@ -60,7 +60,7 @@ export default function Start() {
 
       <FullBleedPhotoSection
         imageUrl={sitePhotoUrl('homeHero')}
-        minHeight="min-h-[88vh]"
+        minHeight="min-h-[80vh] sm:min-h-[88vh]"
         overlay="darker"
         overlayEntrance
         backgroundSlowLoop
@@ -87,34 +87,43 @@ export default function Start() {
 
       <div
         id={START_ROUTES_ID}
-        className="mx-auto max-w-6xl scroll-mt-24 px-4 py-16 sm:scroll-mt-28 sm:px-6 sm:py-20"
+        className="mx-auto max-w-6xl scroll-mt-24 px-4 py-10 sm:scroll-mt-28 sm:px-6 sm:py-16 md:py-20"
         tabIndex={-1}
         aria-label={t('start.choiceLegend')}
       >
         <AnimatedSection>
           <ul
-            className="grid gap-8 md:grid-cols-2 md:gap-10"
+            className="grid gap-4 sm:gap-8 md:grid-cols-2 md:gap-10"
             aria-label={t('start.choiceLegend')}
           >
             <li>
-              <Link to="/resellers" className="group block h-full outline-none">
+              <Link
+                to="/resellers"
+                className="group block h-full rounded-2xl outline-none transition active:scale-[0.99] motion-reduce:transition-none motion-reduce:active:scale-100"
+              >
                 <Card
                   as="article"
-                  className="h-full min-h-[min(20rem,50vh)] p-8 transition-shadow sm:min-h-0 sm:p-10 md:p-12 group-hover:border-brand-strong/30 group-hover:shadow-lg group-focus-visible:ring-2 group-focus-visible:ring-brand-strong group-focus-visible:ring-offset-2"
+                  className="h-full min-h-0 p-5 transition-shadow sm:p-8 md:min-h-[17rem] md:p-10 lg:p-12 group-hover:border-brand-strong/30 group-hover:shadow-lg group-focus-visible:ring-2 group-focus-visible:ring-brand-strong group-focus-visible:ring-offset-2 group-active:bg-surface-elevated/40"
                 >
-                  <div className="flex h-full min-h-0 items-start gap-5 sm:gap-6">
-                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-strong/10 text-brand-strong sm:h-16 sm:w-16">
-                      <Building2 className="h-7 w-7 sm:h-8 sm:w-8" aria-hidden />
+                  <div className="flex h-full min-h-0 items-start gap-3.5 sm:gap-6">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong/10 text-brand-strong sm:h-16 sm:w-16 sm:rounded-2xl">
+                      <Building2 className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
                     </span>
                     <div className="min-w-0 flex-1 text-left">
-                      <h2 className="text-2xl font-semibold leading-snug tracking-tight text-brand-strong md:text-3xl">
+                      <h2 className="text-xl font-semibold leading-snug tracking-tight text-brand-strong sm:text-2xl md:text-3xl">
                         {t('start.resellers.title')}
                       </h2>
-                      <p className="mt-3 text-base leading-relaxed text-brand-muted sm:mt-4 sm:text-lg">
+                      <p className="mt-2 text-sm leading-relaxed text-brand-muted sm:mt-3 sm:text-base sm:text-lg">
                         {t('start.resellers.description')}
                       </p>
-                      <span className="mt-6 inline-block text-base font-medium text-brand-strong underline-offset-4 group-hover:underline sm:mt-8">
-                        {t('start.resellers.cta')}
+                      <span className="mt-4 flex min-h-11 max-w-full items-center gap-1.5 text-sm font-semibold text-brand-strong sm:mt-5 sm:min-h-0 sm:text-base">
+                        <span className="min-w-0 border-b-2 border-transparent pb-0.5 transition group-hover:border-brand-strong/40">
+                          {t('start.resellers.cta')}
+                        </span>
+                        <ChevronRight
+                          className="h-4 w-4 shrink-0 text-brand-strong/80 transition group-hover:translate-x-0.5 motion-reduce:transition-none sm:h-5 sm:w-5"
+                          aria-hidden
+                        />
                       </span>
                     </div>
                   </div>
@@ -122,24 +131,33 @@ export default function Start() {
               </Link>
             </li>
             <li>
-              <Link to="/mkb" className="group block h-full outline-none">
+              <Link
+                to="/mkb"
+                className="group block h-full rounded-2xl outline-none transition active:scale-[0.99] motion-reduce:transition-none motion-reduce:active:scale-100"
+              >
                 <Card
                   as="article"
-                  className="h-full min-h-[min(20rem,50vh)] p-8 transition-shadow sm:min-h-0 sm:p-10 md:p-12 group-hover:border-brand-strong/30 group-hover:shadow-lg group-focus-visible:ring-2 group-focus-visible:ring-brand-strong group-focus-visible:ring-offset-2"
+                  className="h-full min-h-0 p-5 transition-shadow sm:p-8 md:min-h-[17rem] md:p-10 lg:p-12 group-hover:border-brand-strong/30 group-hover:shadow-lg group-focus-visible:ring-2 group-focus-visible:ring-brand-strong group-focus-visible:ring-offset-2 group-active:bg-surface-elevated/40"
                 >
-                  <div className="flex h-full min-h-0 items-start gap-5 sm:gap-6">
-                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-brand-strong/10 text-brand-strong sm:h-16 sm:w-16">
-                      <Users className="h-7 w-7 sm:h-8 sm:w-8" aria-hidden />
+                  <div className="flex h-full min-h-0 items-start gap-3.5 sm:gap-6">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-strong/10 text-brand-strong sm:h-16 sm:w-16 sm:rounded-2xl">
+                      <Users className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
                     </span>
                     <div className="min-w-0 flex-1 text-left">
-                      <h2 className="text-2xl font-semibold leading-snug tracking-tight text-brand-strong md:text-3xl">
+                      <h2 className="text-xl font-semibold leading-snug tracking-tight text-brand-strong sm:text-2xl md:text-3xl">
                         {t('start.sme.title')}
                       </h2>
-                      <p className="mt-3 text-base leading-relaxed text-brand-muted sm:mt-4 sm:text-lg">
+                      <p className="mt-2 text-sm leading-relaxed text-brand-muted sm:mt-3 sm:text-base sm:text-lg">
                         {t('start.sme.description')}
                       </p>
-                      <span className="mt-6 inline-block text-base font-medium text-brand-strong underline-offset-4 group-hover:underline sm:mt-8">
-                        {t('start.sme.cta')}
+                      <span className="mt-4 flex min-h-11 max-w-full items-center gap-1.5 text-sm font-semibold text-brand-strong sm:mt-5 sm:min-h-0 sm:text-base">
+                        <span className="min-w-0 border-b-2 border-transparent pb-0.5 transition group-hover:border-brand-strong/40">
+                          {t('start.sme.cta')}
+                        </span>
+                        <ChevronRight
+                          className="h-4 w-4 shrink-0 text-brand-strong/80 transition group-hover:translate-x-0.5 motion-reduce:transition-none sm:h-5 sm:w-5"
+                          aria-hidden
+                        />
                       </span>
                     </div>
                   </div>
