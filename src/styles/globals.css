@@ -37,3 +37,55 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@layer components {
+  /**
+   * Full-bleed hero: scrim start lichter, animeren naar de volle donkere gradient.
+   * prefers-reduced-motion: direct volledige donkerte (geen flits).
+   */
+  .animate-hero-overlay-darken {
+    opacity: 0.4;
+    animation: hero-overlay-darken 2.5s ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-hero-overlay-darken {
+      animation: none;
+      opacity: 1;
+    }
+  }
+
+  /**
+   * Zeer trage, herhalende beweging op de cover-foto (één loop = 25s).
+   * prefers-reduced-motion: statische uitsnede, geen beweging.
+   */
+  .hero-bg-25s-loop {
+    transform-origin: center center;
+    will-change: transform;
+    animation: hero-bg-25s-loop 25s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-bg-25s-loop {
+      will-change: auto;
+      animation: none;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes hero-overlay-darken {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-bg-25s-loop {
+  0%,
+  100% {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.1) translate3d(0.4%, -0.25%, 0);
+  }
+}

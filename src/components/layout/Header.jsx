@@ -100,6 +100,9 @@ export function Header({ className }) {
               <NavLink to="/" className={navLinkClass} end>
                 {t('nav.home')}
               </NavLink>
+              <NavLink to="/werkwijze" className={navLinkClass}>
+                {t('nav.approach')}
+              </NavLink>
               <NavLink to="/contact" className={navLinkClass}>
                 {t('nav.contact')}
               </NavLink>
@@ -200,6 +203,13 @@ export function Header({ className }) {
               onClick={() => setOpen(false)}
             >
               {t('nav.home')}
+            </NavLink>
+            <NavLink
+              to="/werkwijze"
+              className={navLinkClass}
+              onClick={() => setOpen(false)}
+            >
+              {t('nav.approach')}
             </NavLink>
             <NavLink
               to="/contact"

@@ -10,11 +10,11 @@ import {
   ContactPage,
   CookiePolicyPage,
   ImprintPage,
+  ApproachPage,
   PrivacyPolicyPage,
   ResellersPage,
   SmeClientsPage,
   StartPage,
-  TermsConditionsPage,
 } from './routes';
 
 function CookieBanner() {
@@ -69,9 +69,9 @@ export default function App() {
           <Route path="/" element={<StartPage />} />
           <Route path="/resellers" element={<ResellersPage />} />
           <Route path="/mkb" element={<SmeClientsPage />} />
+          <Route path="/werkwijze" element={<ApproachPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
-          <Route path="/terms" element={<TermsConditionsPage />} />
           <Route path="/cookies" element={<CookiePolicyPage />} />
           <Route path="/imprint" element={<ImprintPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { SEO } from '../components/seo/SEO';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { Button } from '../components/ui/Button';
-import { PatternSection } from '../components/ui/PatternSection';
+import { FullBleedPhotoSection } from '../components/ui/FullBleedPhotoSection';
 import { getEmailJsConfig, hasEmailJsConfig } from '../config/emailjs';
+import { sitePhotoUrl } from '../config/photos';
 import { SITE_ORIGIN } from '../config/site';
 import i18n from '../i18n';
 
@@ -103,16 +104,20 @@ export default function Contact() {
         canonical="/contact"
         structuredData={structuredData}
       />
-      <PatternSection className="border-t-0">
-        <AnimatedSection className="max-w-3xl">
-          <h1 className="text-3xl font-bold tracking-tight text-brand-strong sm:text-4xl md:text-5xl">
-            {t('contact.hero.title')}
-          </h1>
-          <p className="mt-5 text-lg leading-relaxed text-brand md:text-xl">
-            {t('contact.hero.lead')}
-          </p>
-        </AnimatedSection>
-      </PatternSection>
+      <FullBleedPhotoSection
+        imageUrl={sitePhotoUrl('contactHero')}
+        minHeight="min-h-[60vh] sm:min-h-[70vh]"
+        overlay="darker"
+        className="border-t-0"
+        contentClassName="max-w-3xl"
+      >
+        <h1 className="text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+          {t('contact.hero.title')}
+        </h1>
+        <p className="mt-6 text-lg font-semibold leading-relaxed text-white/90 sm:text-xl md:text-2xl">
+          {t('contact.hero.lead')}
+        </p>
+      </FullBleedPhotoSection>
 
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">

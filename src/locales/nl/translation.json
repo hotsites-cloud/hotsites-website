@@ -8,11 +8,21 @@
     "languageEn": "EN",
     "readMore": "Lees meer",
     "readLess": "Lees minder",
-    "backToStart": "Terug naar start"
+    "backToStart": "Terug naar start",
+    "scrollPageHint": "Hieronder op deze pagina",
+    "scrollPageCta": "Verder lezen"
   },
   "nav": {
     "home": "Start",
+    "approach": "Werkwijze",
     "contact": "Contact"
+  },
+  "termsModal": {
+    "title": "Algemene voorwaarden",
+    "body": "Op onze diensten zijn de algemene voorwaarden van NL Digital van toepassing. Je kunt het document hieronder downloaden.",
+    "downloadPdf": "Download PDF",
+    "close": "Sluiten",
+    "closeBackdrop": "Sluit venster"
   },
   "footer": {
     "kvk": "86673572",
@@ -39,10 +49,6 @@
       "title": "Privacybeleid | Hotsites",
       "description": "Hoe Hotsites persoonsgegevens verwerkt, op welke grond en welke rechten je hebt onder de AVG."
     },
-    "terms": {
-      "title": "Algemene voorwaarden | Hotsites",
-      "description": "Voorwaarden voor diensten en websites van Hotsites, Nederlands recht, rechtbank Limburg."
-    },
     "cookiesPage": {
       "title": "Cookiebeleid | Hotsites",
       "description": "Welke cookies we gebruiken, waarom, en hoe je toestemming intrekt of cookies verwijdert."
@@ -51,12 +57,16 @@
       "title": "Colofon | Hotsites",
       "description": "Bedrijfsgegevens en contactgegevens van Hotsites."
     },
+    "approach": {
+      "title": "Werkwijze | Hotsites",
+      "description": "Hoe we werken: intake met checklist, bouw met vormgeving in het proces, revisies, livegang, en de combinatie van mens en AI voor kwaliteit en snelheid."
+    },
     "start": {
       "title": "Hotsites | Kies je perspectief",
       "description": "Ben je reseller van de technologie of zoek je als MKB een website? Kies je route voor Hotsites."
     },
     "resellers": {
-      "title": "Hotsites | Partnerinformatie voor resellers",
+      "title": "Hotsites | Resellerinformatie",
       "description": "Statische React-websites voor MKB-klanten: geen CMS-runtime, geen WordPress, overdraagbare codebase, EU-hosting en jaarlijks onderhoud."
     },
     "sme": {
@@ -143,35 +153,6 @@
         }
       ]
     },
-    "terms": {
-      "h1": "Algemene voorwaarden",
-      "sections": [
-        {
-          "h2": "Toepasselijkheid",
-          "body": "Deze voorwaarden gelden voor alle aanbiedingen en overeenkomsten tussen {{company}} en de opdrachtgever, tenzij schriftelijk anders overeengekomen."
-        },
-        {
-          "h2": "Totstandkoming",
-          "body": "Een overeenkomst komt tot stand na schriftelijke (of per e-mail bevestigde) aanvaarding van de offerte of opdrachtbevestiging."
-        },
-        {
-          "h2": "Prijzen en betaling",
-          "body": "Prijzen zijn exclusief BTW tenzij anders vermeld. Facturatie vindt plaats volgens de afspraken in de offerte. Bij niet-tijdige betaling zijn wij gerechtigd de werkzaamheden op te schorten en rente en incassokosten in rekening te brengen voor zover wettelijk toegestaan."
-        },
-        {
-          "h2": "Aansprakelijkheid",
-          "body": "Onze aansprakelijkheid is beperkt tot directe schade en tot maximaal het bedrag dat de opdrachtgever in het betreffende jaar aan ons heeft betaald voor de desbetreffende dienst, tenzij sprake is van opzet of grove schuld. Wij zijn niet aansprakelijk voor indirecte schade of gevolgschade."
-        },
-        {
-          "h2": "Overmacht",
-          "body": "Bij overmacht zijn partijen niet gehouden tot nakoming, mits de andere partij zo snel mogelijk wordt geïnformeerd."
-        },
-        {
-          "h2": "Toepasselijk recht en forum",
-          "body": "Op deze voorwaarden is Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in het arrondissement Limburg, tenzij dwingend recht anders voorschrijft."
-        }
-      ]
-    },
     "cookies": {
       "h1": "Cookiebeleid",
       "intro": "Op deze pagina lees je welke cookies (en vergelijkbare technieken) op onze site kunnen voorkomen, en hoe je je voorkeuren beheert.",
@@ -240,6 +221,8 @@
   "start": {
     "title": "Voor wie is deze site?",
     "lead": "Kies of je de oplossing inzet voor klanten, of zelf een website zoekt voor je bedrijf.",
+    "scrollHint": "Hieronder kies je je route",
+    "scrollCta": "Bekijk de opties",
     "choiceLegend": "Kies je route",
     "resellers": {
       "title": "Reseller van de technologie",
@@ -254,7 +237,7 @@
   },
   "audience": {
     "resellers": {
-      "audienceLabel": "Partnerinformatie",
+      "audienceLabel": "Resellerinformatie",
       "pageTitle": "Doorleverbare statische websites",
       "navLabel": "Op deze pagina",
       "navContact": "Contact",
@@ -266,6 +249,7 @@
       "partnerCtaBody": "Neem contact op als je Hotsites wilt doorleveren aan je eigen klanten of als je technische of commerciële vragen hebt.",
       "partnerCtaButton": "Neem contact op",
       "partnerCtaSecondary": "Pagina voor eindklanten (MKB)",
+      "contactBridgeImageAlt": "Sfeerbeeld: rustige, donkere textuur; visuele overgang naar contact voor partners.",
       "intro": "Een gestandaardiseerde websiteoplossing op basis van statische React-technologie. Geschikt voor doorlevering aan MKB-klanten met een afgebakende websitebehoefte, zonder CMS-afhankelijkheden, zonder WordPress, en zonder vendor lock-in voor de eindklant.",
       "whatTitle": "Wat is Hotsites?",
       "whatBody": "Hotsites is een bouwsysteem voor statische websites dat je als reseller inzet voor klanten die een betrouwbare, goed presterende online aanwezigheid nodig hebben. De output is altijd een pre-rendered React-site: geen runtime database, geen plugin-afhankelijkheden en geen CMS dat afzonderlijk geüpdatet moet worden.",
@@ -311,7 +295,7 @@
     },
     "sme": {
       "audienceLabel": "Voor ondernemers",
-      "pageTitle": "Website voor je bedrijf, zonder technisch gedoe",
+      "pageTitle": "Website voor je bedrijf, gebouwd om te presteren",
       "navLabel": "Op deze pagina",
       "navHighlights": "Voordelen",
       "navWhat": "Wat is Hotsites?",
@@ -321,32 +305,55 @@
       "navMaintenance": "Onderhoud",
       "navContact": "Contact",
       "highlightsTitle": "Waarom ondernemers voor Hotsites kiezen",
-      "highlight1": "Snel en stabiel: alles op je site staat van tevoren klaar. Bezoekers krijgen de pagina meteen, zonder te wachten op trage programma’s op de server bij elke klik.",
-      "highlight2": "Hosting in de EU met aandacht voor de AVG. Je site draait op Europese servers; gegevens van jou en je bezoekers blijven binnen de Europese Unie, zodat je weet waar je data staat en hoe die wordt behandeld.",
-      "highlight3": "Eén jaarcontract met hosting, domein en security: jaarlijks een vast gesprek over je website en visie, waarna we de site bijwerken zodat die blijft aansluiten op je bedrijf.",
+      "highlight1": "Merkbaar snel: korte laadtijden en directe weergave.",
+      "highlight2": "EU-hosting: gegevens van jou en bezoekers blijven binnen Europa, passend bij de AVG.",
+      "highlight3": "Eén jaarcontract: hosting, domein en security, met jaarlijks overleg en updates die aansluiten bij je bedrijf.",
       "ctaTitle": "Vragen of een voorstel?",
       "ctaBody": "Neem contact op als je wilt weten of Hotsites bij je bedrijf past, of als je iets wilt bespreken.",
       "ctaButton": "Neem contact op",
       "ctaSecondary": "Informatie voor partners (resellers)",
       "intro": "Een website die doet wat hij moet doen en mee transformeert met jouw bedrijf. Gebouwd op solide techniek, gehost in Europa, en onderhouden zonder gedoe.",
       "whatTitle": "Wat is Hotsites?",
+      "whatImageAlt": "Sfeerbeeld: rustige, donkere textuur als visuele ondersteuning bij de uitleg over Hotsites.",
       "whatBody": "Concreet bestaat je site uit vaste pagina's die volledig klaarstaan voordat een bezoeker iets aanklikt: er draait geen achterliggende software die bij elke klik opnieuw wordt gestart. Daardoor blijft alles stabiel en overzichtelijk te onderhouden, met weinig technische risico's. Voor bezoekers betekent dat doorgaans ook dat de site beduidend sneller laadt dan een vergelijkbare oplossing op WordPress.",
-      "whatBodySecond": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare en snelle site willen, zonder de kosten en complexiteit van een volledig op maat gebouwde website.",
+      "whatBodySecond": "Hotsites is een websiteoplossing voor bedrijven die een betrouwbare, snelle site willen die past bij hun merk, met transparante kosten en een strak traject, zonder eindeloze bouwfasen.",
       "wordPressCompareTitle": "Wat maakt het anders dan WordPress?",
-      "wordPressCompareBody": "WordPress bestaat uit veel losse onderdelen: het uiterlijk, extra functies en koppelingen met andere systemen. Die worden elk apart bijgewerkt en kunnen elkaar in de weg zitten. Hotsites is één samenhangend geheel. Je pagina's liggen vast en klaar voor je bezoek—vergelijkbaar met een brochure die al gedrukt is. Er hoeft niet telkens op de achtergrond een heel systeem te draaien om elke pagina opnieuw samen te stellen. Dat maakt het in de praktijk ook veiliger: minder verborgen techniek die misbruikt kan worden.",
+      "wordPressCompareBody": "WordPress bestaat uit veel losse onderdelen: het uiterlijk, extra functies en koppelingen met andere systemen. Die worden elk apart bijgewerkt en kunnen elkaar in de weg zitten. Hotsites is één samenhangend geheel. Je pagina's liggen vast en klaar voor je bezoek, vergelijkbaar met een brochure die al gedrukt is. Er hoeft niet telkens op de achtergrond een heel systeem te draaien om elke pagina opnieuw samen te stellen. Dat maakt het in de praktijk ook veiliger: minder verborgen techniek die misbruikt kan worden.",
       "wordPressBullets": [
         "Geen plugins die elkaar in de weg zitten",
         "Geen thema-updates die de opmaak van je site verstoren",
         "Geen CMS dat apart beveiligd en bijgehouden moet worden",
         "Eén versie, één deployment, overzichtelijk en stabiel",
-        "Kleiner aanvalsoppervlak: statische pagina's, geen WordPress-stack bij elke weergave"
+        "Snelheid: vaste pagina's die meteen klaarstaan, zonder wachten op de server bij elke weergave"
       ],
       "euDataTitle": "Jouw gegevens blijven in Europa",
       "euDataBody": "Je website wordt uitsluitend gehost op Europese servers. Dat is in lijn met de Europese privacywetgeving (AVG/GDPR) en betekent dat jouw gegevens en die van je bezoekers niet buiten de EU worden verwerkt of opgeslagen.",
       "noLockInTitle": "Geen gedwongen afhankelijkheid",
       "noLockInBody": "Hotsites is gebouwd op gangbare, goed gedocumenteerde techniek. Als je ooit met een andere partij wilt werken, is dat mogelijk, de website en de bijbehorende code zijn altijd overdraagbaar. Je zit dus niet vast aan één leverancier.",
       "maintenanceTitle": "Onderhoud zonder verrassingen",
-      "maintenanceBody": "Na de livegang betaal je één vast jaarlijks onderhoudsbedrag. Daarin zit alles: hosting, domeinbeheer, security, het jaarlijkse evaluatiegesprek over je website en visie, en het bijwerken van de site zodat die aansluit op jouw bedrijf—geen aparte posten daarvoor. Jij hoeft er niet zelf achteraan."
+      "maintenanceBody": "Na de livegang betaal je één vast jaarlijks onderhoudsbedrag. Daarin zit alles: hosting, domeinbeheer, security, het jaarlijkse evaluatiegesprek over je website en visie, en het bijwerken van de site zodat die aansluit op jouw bedrijf. Zonder extra kosten en zonder dat jij er zelf achteraan hoeft."
     }
+  },
+  "approach": {
+    "h1": "Werkwijze",
+    "heroKicker": "Van vraag tot website",
+    "intro": "Hier lees je in grote lijnen hoe we te werk gaan: van het eerste gesprek tot de website live. Transparant, zodat je weet wat je kunt verwachten.",
+    "processTitle": "Vier duidelijke stappen",
+    "processLead": "Geen wollige fases, wel een duidelijk traject. Zo weet je waar je staat in elk moment.",
+    "heroImageLabel": "Sfeerbeeld: overleg en rustige, professionele omgeving",
+    "step1ImageAlt": "Gesprek en afstemming: samen bepalen wat op de site moet komen",
+    "step2ImageAlt": "Bouwen en vormgeven: het ontwerp groeit mee in het traject",
+    "step3ImageAlt": "Scherp stellen: review en finetunen tot alles goed zit",
+    "step4ImageAlt": "Livegang: opleveren en de site open voor bezoekers",
+    "step1Title": "Intake en checklist",
+    "step1Body": "Bij elke aanvraag plannen we een gesprek om precies te achterhalen wat er op je website moet komen. Daaruit maken we een checklist: duidelijk wat jij als klant aanlevert en wat wij voor je regelen.",
+    "step2Title": "Bouwen (ontwerp in het traject)",
+    "step2Body": "We gaan starten met de bouw. Er is geen afzonderlijk designtraject op voorhand: vormgeving en inhoud ontwikkelen we tijdens het bouwen, zodat alles in één lijn blijft.",
+    "step3Title": "Revisierondes",
+    "step3Body": "Wanneer alles inhoudelijk akkoord is, lopen we revisierondes. Pas als jij tevreden bent over het geheel, gaan we verder richting publicatie.",
+    "step4Title": "Live",
+    "step4Body": "Livezetting en oplevering doen we samen. Daarna blijf je binnen ons vaste jaaronderhoud: o.a. hosting, domein, security, jaaroverleg en updates in één helder bedrag, zonder verrassingsposten. De volledige uitleg staat in het onderhoudsblok op de pagina voor ondernemers.",
+    "aiTitle": "Mens en AI",
+    "aiBody": "We combineren vakmanschap met de juiste inzet van AI, zodat we sneller kunnen werken en toch hoge kwaliteit kunnen leveren. Op elke stap zit een zorgvuldige controle, door ons, niet alleen door software. Dankzij AI houden we snelheid en kwaliteit haalbaar voor iedereen."
   }
 }

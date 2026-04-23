@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { cn } from '../../utils/cn';
-import { resetCookieConsentAndReload } from '../../config/cookies';
+import { TermsModal } from '../legal/TermsModal';
 import { LogoMark } from '../ui/LogoMark';
 
 export function Footer({ className }) {
   const { t } = useTranslation();
+  const [termsOpen, setTermsOpen] = useState(false);
   const year = new Date().getFullYear();
 
   return (
@@ -33,12 +35,13 @@ export function Footer({ className }) {
           >
             {t('footer.privacy')}
           </Link>
-          <Link
-            to="/terms"
-            className="text-brand-muted underline-offset-4 hover:text-brand-strong hover:underline"
+          <button
+            type="button"
+            onClick={() => setTermsOpen(true)}
+            className="text-left text-brand-muted underline-offset-4 hover:text-brand-strong hover:underline"
           >
             {t('footer.terms')}
-          </Link>
+          </button>
           <Link
             to="/cookies"
             className="text-brand-muted underline-offset-4 hover:text-brand-strong hover:underline"
@@ -51,13 +54,6 @@ export function Footer({ className }) {
           >
             {t('footer.imprint')}
           </Link>
-          <button
-            type="button"
-            onClick={resetCookieConsentAndReload}
-            className="text-left text-brand-muted underline-offset-4 hover:text-brand-strong hover:underline"
-          >
-            {t('footer.cookieSettings')}
-          </button>
         </nav>
         <p className="mt-4 text-brand-muted">
           {t('footer.kvkBtw', { kvk: t('footer.kvk'), btw: t('footer.btw') })}
@@ -68,6 +64,7 @@ export function Footer({ className }) {
             company: t('common.companyName'),
           })}
         </p>
+        <TermsModal isOpen={termsOpen} onRequestClose={() => setTermsOpen(false)} />
       </div>
     </footer>
   );

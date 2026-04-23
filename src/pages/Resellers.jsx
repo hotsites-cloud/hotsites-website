@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Check, Layers, MessageCircle, Server, Shield } from 'lucide-react';
@@ -6,7 +7,10 @@ import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { BackToStartLink } from '../components/ui/BackToStartLink';
 import { Card } from '../components/ui/Card';
 import { InPageAnchor } from '../components/ui/InPageAnchor';
+import { FullBleedPhotoSection } from '../components/ui/FullBleedPhotoSection';
+import { HeroScrollDownCta } from '../components/ui/HeroScrollDownCta';
 import { PatternSection } from '../components/ui/PatternSection';
+import { sitePhotoUrl } from '../config/photos';
 import { SITE_ORIGIN } from '../config/site';
 import { cn } from '../utils/cn';
 
@@ -18,6 +22,8 @@ function isSpecRow(value) {
     typeof value.detail === 'string'
   );
 }
+
+const RESELLERS_CONTENT_TARGET_ID = 'resellers-highlights';
 
 const navIds = [
   'resellers-highlights',
@@ -31,6 +37,17 @@ const navIds = [
 export default function Resellers() {
   const { t } = useTranslation();
   const specs = t('audience.resellers.specs', { returnObjects: true });
+
+  const scrollToPageContent = useCallback(() => {
+    const el = document.getElementById(RESELLERS_CONTENT_TARGET_ID);
+    if (!el) {
+      return;
+    }
+    const reduceMotion =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  }, []);
   const deliverables = t('audience.resellers.deliverables', { returnObjects: true });
   const specRows = Array.isArray(specs) ? specs.filter(isSpecRow) : [];
 
@@ -74,23 +91,34 @@ export default function Resellers() {
         structuredData={structuredData}
       />
 
-      <PatternSection className="border-t-0">
-        <AnimatedSection className="max-w-3xl">
-          <BackToStartLink />
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-brand-muted">
+      <FullBleedPhotoSection
+        imageUrl={sitePhotoUrl('resellersHero')}
+        minHeight="min-h-[80vh] sm:min-h-[85vh]"
+        overlay="darker"
+        className="border-t-0"
+        contentClassName="w-full max-w-3xl"
+        bottomContent={
+          <HeroScrollDownCta
+            hintId="resellers-hero-scroll-hint"
+            onScroll={scrollToPageContent}
+            hintText={t('common.scrollPageHint')}
+            ctaText={t('common.scrollPageCta')}
+          />
+        }
+      >
+        <>
+          <BackToStartLink variant="onDark" />
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-white/80 sm:text-sm">
             {t('audience.resellers.audienceLabel')}
           </p>
-          <h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-brand-strong sm:text-4xl md:text-5xl">
-            <span className="block">{t('common.companyName')}</span>
-            <span className="mt-2 block text-2xl font-semibold leading-snug text-brand sm:text-3xl md:text-4xl">
-              {t('audience.resellers.pageTitle')}
-            </span>
+          <h1 className="mt-4 text-3xl font-black leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+            {t('audience.resellers.pageTitle')}
           </h1>
-          <p className="mt-6 max-w-prose text-lg leading-relaxed text-brand md:text-xl">
+          <p className="mt-8 max-w-prose text-lg font-semibold leading-relaxed text-white/90 md:text-xl">
             {t('audience.resellers.intro')}
           </p>
-        </AnimatedSection>
-      </PatternSection>
+        </>
+      </FullBleedPhotoSection>
 
       <div className="sticky top-0 z-20 border-b border-border/80 bg-page/90 backdrop-blur-md lg:hidden">
         <nav
@@ -243,6 +271,18 @@ export default function Resellers() {
                 </p>
               </div>
             </AnimatedSection>
+
+            <figure className="w-full">
+              <div className="overflow-hidden rounded-xl border border-border/40 bg-page ring-1 ring-black/[0.03]">
+                <img
+                  src={sitePhotoUrl('resellersContactBridge')}
+                  alt={t('audience.resellers.contactBridgeImageAlt')}
+                  className="h-36 w-full object-cover sm:h-44"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </figure>
 
             <AnimatedSection id="resellers-contact" className="scroll-mt-28">
               <Card className="flex flex-col gap-6 border-brand-strong/25 bg-gradient-to-br from-surface to-surface-elevated/40 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">

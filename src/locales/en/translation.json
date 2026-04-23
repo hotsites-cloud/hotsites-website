@@ -8,11 +8,21 @@
     "languageEn": "EN",
     "readMore": "Read more",
     "readLess": "Show less",
-    "backToStart": "Back to start"
+    "backToStart": "Back to start",
+    "scrollPageHint": "More below on this page",
+    "scrollPageCta": "Continue"
   },
   "nav": {
     "home": "Start",
+    "approach": "How we work",
     "contact": "Contact"
+  },
+  "termsModal": {
+    "title": "Terms and conditions",
+    "body": "Our services are subject to the general terms and conditions of NL Digital. You can download the document below.",
+    "downloadPdf": "Download PDF",
+    "close": "Close",
+    "closeBackdrop": "Close dialog"
   },
   "footer": {
     "kvk": "86673572",
@@ -39,10 +49,6 @@
       "title": "Privacy policy | Hotsites",
       "description": "How Hotsites processes personal data, the legal basis, and your GDPR rights."
     },
-    "terms": {
-      "title": "Terms and conditions | Hotsites",
-      "description": "Terms for Hotsites services and websites, Dutch law, Limburg district court."
-    },
     "cookiesPage": {
       "title": "Cookie policy | Hotsites",
       "description": "Which cookies we use, why, and how to withdraw consent or delete cookies."
@@ -51,12 +57,16 @@
       "title": "Imprint | Hotsites",
       "description": "Company and contact details for Hotsites."
     },
+    "approach": {
+      "title": "How we work | Hotsites",
+      "description": "How we work: intake with a checklist, build with design in the flow, review rounds, go-live, and combining people and AI for quality and speed."
+    },
     "start": {
       "title": "Hotsites | Choose your path",
       "description": "Are you a technology reseller or an SME looking for a website? Pick the route that fits you."
     },
     "resellers": {
-      "title": "Hotsites | Partner information for resellers",
+      "title": "Hotsites | Reseller information",
       "description": "Static React sites for SME clients: no runtime CMS, no WordPress, transferable codebase, EU hosting, and predictable annual maintenance."
     },
     "sme": {
@@ -143,35 +153,6 @@
         }
       ]
     },
-    "terms": {
-      "h1": "Terms and conditions",
-      "sections": [
-        {
-          "h2": "Applicability",
-          "body": "These terms apply to all offers and agreements between {{company}} and the client unless agreed otherwise in writing."
-        },
-        {
-          "h2": "Formation",
-          "body": "An agreement is formed after written (including email) acceptance of the quote or order confirmation."
-        },
-        {
-          "h2": "Prices and payment",
-          "body": "Prices exclude VAT unless stated otherwise. Invoicing follows the quote. For late payment we may suspend work and charge statutory interest and costs where permitted."
-        },
-        {
-          "h2": "Liability",
-          "body": "Our liability is limited to direct damage and up to the fees paid in the relevant year for the service, except in case of intent or gross negligence. We are not liable for indirect or consequential damage."
-        },
-        {
-          "h2": "Force majeure",
-          "body": "Neither party must perform during force majeure, provided the other party is informed promptly."
-        },
-        {
-          "h2": "Law and venue",
-          "body": "Dutch law applies. Disputes are submitted to the competent court in Limburg, unless mandatory law dictates otherwise."
-        }
-      ]
-    },
     "cookies": {
       "h1": "Cookie policy",
       "intro": "This page describes which cookies (and similar technologies) may be used and how you manage preferences.",
@@ -240,6 +221,8 @@
   "start": {
     "title": "Who is this site for?",
     "lead": "Choose whether you deliver the solution to clients, or you need a website for your own business.",
+    "scrollHint": "Your options are below",
+    "scrollCta": "See the options",
     "choiceLegend": "Choose your path",
     "resellers": {
       "title": "Technology reseller",
@@ -254,7 +237,7 @@
   },
   "audience": {
     "resellers": {
-      "audienceLabel": "Partner information",
+      "audienceLabel": "Reseller information",
       "pageTitle": "Static sites you can deliver to clients",
       "navLabel": "On this page",
       "navContact": "Contact",
@@ -266,6 +249,7 @@
       "partnerCtaBody": "Get in touch if you want to deliver Hotsites to your own clients, or if you have technical or commercial questions.",
       "partnerCtaButton": "Contact us",
       "partnerCtaSecondary": "End-client page (SME)",
+      "contactBridgeImageAlt": "Mood image: calm dark texture; visual lead-in to the partner contact section.",
       "intro": "A standardised website solution based on static React technology. Suited for delivery to SME clients with a well-scoped website need, no CMS runtime dependencies, no WordPress, and no vendor lock-in for the end client.",
       "whatTitle": "What is Hotsites?",
       "whatBody": "Hotsites is a build system for static websites that you deploy as a reseller for clients who need a dependable, high-performing online presence. The output is always a pre-rendered React site: no runtime database, no plugin stack, and no CMS that must be updated separately.",
@@ -311,7 +295,7 @@
     },
     "sme": {
       "audienceLabel": "For business owners",
-      "pageTitle": "A business website, without the technical hassle",
+      "pageTitle": "A business website, built to perform",
       "navLabel": "On this page",
       "navHighlights": "Benefits",
       "navWhat": "What is Hotsites?",
@@ -321,32 +305,55 @@
       "navMaintenance": "Maintenance",
       "navContact": "Contact",
       "highlightsTitle": "Why business owners choose Hotsites",
-      "highlight1": "Fast and stable: everything on your site is ready before anyone clicks. Visitors get the page right away, with no slow background software on the server for every request.",
-      "highlight2": "EU hosting with GDPR in mind. Your site runs on European servers; your data and your visitors' data stay in the EU, so you know where it lives and how it is handled.",
-      "highlight3": "One annual contract covering hosting, domain, and security: each year a fixed conversation about your website and vision, then updates so the site stays aligned with your business.",
+      "highlight1": "Noticeably fast: short load times and instant rendering.",
+      "highlight2": "EU hosting: your and your visitors' data stays in Europe, aligned with GDPR.",
+      "highlight3": "One annual contract: hosting, domain, and security, with a yearly check-in and updates that stay aligned with your business.",
       "ctaTitle": "Questions or want to talk it through?",
       "ctaBody": "Get in touch if you want to see whether Hotsites fits your company, or to discuss anything else.",
       "ctaButton": "Contact us",
       "ctaSecondary": "Partner information (resellers)",
       "intro": "A website that does what it should and evolves with your business. Built on solid technology, hosted in Europe, and maintained without fuss.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "In practice your site is fixed pages that are fully ready before a visitor clicks anything—no background software spinning up again on every click. That keeps things stable and easier to maintain, with less unnecessary technical risk. Visitors usually see significantly faster loading than a comparable WordPress setup.",
-      "whatBodySecond": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website.",
+      "whatImageAlt": "Mood image: calm dark texture supporting the Hotsites explanation.",
+      "whatBody": "In practice your site is fixed pages that are fully ready before a visitor clicks anything, no background software spinning up again on every click. That keeps things stable and easier to maintain, with less unnecessary technical risk. Visitors usually see significantly faster loading than a comparable WordPress setup.",
+      "whatBodySecond": "Hotsites is a website solution for companies that want a dependable, fast site that fits their brand, with transparent pricing and a clear process, without endless build cycles.",
       "wordPressCompareTitle": "How is it different from WordPress?",
-      "wordPressCompareBody": "WordPress is made of many separate pieces—how the site looks, extra features, and links to other tools. Each piece updates on its own and they can get in each other’s way. Hotsites is one coherent whole. Your pages are fixed and ready for visitors, like a brochure that is already printed. Nothing has to rebuild the page from scratch every time someone opens it. That usually means fewer security weak spots, because there is less hidden machinery in the background that could be attacked.",
+      "wordPressCompareBody": "WordPress is made of many separate pieces, including how the site looks, extra features, and links to other tools. Each piece updates on its own and they can get in each other’s way. Hotsites is one coherent whole. Your pages are fixed and ready for visitors, like a brochure that is already printed. Nothing has to rebuild the page from scratch every time someone opens it. That usually means fewer security weak spots, because there is less hidden machinery in the background that could be attacked.",
       "wordPressBullets": [
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
         "No separate CMS to secure and maintain",
         "One version, one deployment, clear and stable",
-        "Smaller attack surface: static pages, no WordPress stack on every view"
+        "Speed: pre-built pages that are ready to serve, with no waiting on the server for every view"
       ],
       "euDataTitle": "Your data stays in Europe",
       "euDataBody": "Your website is hosted only on European servers. That aligns with European privacy law (GDPR) and means your data and your visitors’ data are not processed or stored outside the EU.",
       "noLockInTitle": "No forced dependency",
       "noLockInBody": "Hotsites uses mainstream, well-documented technology. If you ever want to work with another provider, you can, the website and its code are always transferable. You are not locked to a single supplier.",
       "maintenanceTitle": "Maintenance without surprises",
-      "maintenanceBody": "After go-live you pay one fixed annual maintenance fee. It covers everything: hosting, domain management, security, the yearly review of your website and vision, and updating the site so it stays aligned with your business—no separate line items for those. You do not have to chase it."
+      "maintenanceBody": "After go-live you pay one fixed annual maintenance fee. It covers everything: hosting, domain management, security, the yearly review of your website and vision, and updating the site so it stays aligned with your business. No extra costs and nothing you need to chase yourself."
     }
+  },
+  "approach": {
+    "h1": "How we work",
+    "heroKicker": "From first question to a live site",
+    "intro": "Here is an overview of how we work, from the first conversation to a live site. Open and clear, so you know what to expect.",
+    "processTitle": "Four clear steps",
+    "processLead": "No vague stages: a clear path so you always know where you are.",
+    "heroImageLabel": "Mood image: meeting and a calm, professional setting",
+    "step1ImageAlt": "Conversation and alignment: defining what the site should contain",
+    "step2ImageAlt": "Build and design: the look and feel grow as we go",
+    "step3ImageAlt": "Tight review: feedback rounds until everything fits",
+    "step4ImageAlt": "Go-live: handover and the site open to visitors",
+    "step1Title": "Intake and checklist",
+    "step1Body": "For every request we schedule a call to find out exactly what the website needs. From that, we make a checklist: what you provide as a client, and what we take care of.",
+    "step2Title": "Build (design in the process)",
+    "step2Body": "We start the build. There is no separate design phase on paper up front, design and content develop while we build, so everything stays aligned.",
+    "step3Title": "Review rounds",
+    "step3Body": "When the content is approved in principle, we run review rounds. Only when you are happy with the whole do we move towards launch.",
+    "step4Title": "Go live",
+    "step4Body": "We go live and walk you through the handover. You then move into our fixed annual care plan: hosting, domain, security, a yearly check-in, and updates in one clear fee, with no surprise line items. The full details are in the maintenance section on the business owners’ page.",
+    "aiTitle": "People and AI",
+    "aiBody": "We combine real craft with thoughtful use of AI, so we can work faster and still deliver high quality. Every step includes careful quality control, by us, not by software alone. With AI, speed and quality stay within reach for everyone."
   }
 }
