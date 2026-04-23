@@ -334,6 +334,7 @@
       "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
       "wordPressCompareTitle": "How is it different from WordPress?",
       "wordPressCompareBody": "WordPress combines a theme, plugins, and external integrations that each update on their own, and often conflict. Hotsites is built as one whole. There are no loose parts that can destabilise the system, and you do not need someone applying weekly patch rounds.",
+      "wordPressCompareSecurity": "Security is another big difference: WordPress usually runs server-side software—logins, database, plugins—and each part can develop vulnerabilities you must keep patching. Hotsites publishes your site as fixed, static pages: what visitors see is already prepared, without a WordPress-style stack executing again on every page view. Fewer moving parts means fewer ways for attackers to get in.",
       "wordPressBullets": [
         "No plugins getting in each other’s way",
         "No theme updates that break your layout",
