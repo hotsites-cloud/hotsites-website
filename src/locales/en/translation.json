@@ -61,7 +61,7 @@
     },
     "sme": {
       "title": "Hotsites | For business owners",
-      "description": "A fast, stable website without WordPress overhead: EU hosting, transferable stack, and predictable annual maintenance so you can focus on your business."
+      "description": "A fast, stable website that evolves with your business, without WordPress overhead: EU hosting, transferable stack, and predictable annual maintenance."
     }
   },
   "contact": {
@@ -321,14 +321,14 @@
       "navMaintenance": "Maintenance",
       "navContact": "Contact",
       "highlightsTitle": "Why business owners choose Hotsites",
-      "highlight1": "Fast and stable: fixed pages ready before visitors click, no slow background stack on every request.",
-      "highlight2": "EU hosting with privacy in mind (GDPR), your data stays in Europe.",
+      "highlight1": "Fast and stable: everything on your site is ready before anyone clicks. Visitors get the page right away, with no slow background software on the server for every request.",
+      "highlight2": "EU hosting with GDPR in mind. Your site runs on European servers; your data and your visitors' data stay in the EU, so you know where it lives and how it is handled.",
       "highlight3": "One annual contract covering hosting, domain, and security: each year a fixed conversation about your website and vision, then updates so the site stays aligned with your business.",
       "ctaTitle": "Questions or want to talk it through?",
       "ctaBody": "Get in touch if you want to see whether Hotsites fits your company, or to discuss anything else.",
       "ctaButton": "Contact us",
       "ctaSecondary": "Partner information (resellers)",
-      "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss, so you can focus on running your business.",
+      "intro": "A website that does what it should and evolves with your business. Built on solid technology, hosted in Europe, and maintained without fuss.",
       "whatTitle": "What is Hotsites?",
       "whatBody": "In practice your site is fixed pages that are fully ready before a visitor clicks anything—no background software spinning up again on every click. That keeps things stable and easier to maintain, with less unnecessary technical risk. Visitors usually see significantly faster loading than a comparable WordPress setup.",
       "whatBodySecond": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website.",
