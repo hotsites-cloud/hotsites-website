@@ -169,12 +169,12 @@ export default function SmeClients() {
                 {t('audience.sme.whatTitle')}
               </h2>
               <div className="mt-6 max-w-prose space-y-4 leading-relaxed text-brand-muted">
-                <p>{t('audience.sme.whatBody')}</p>
                 <Card className="border-brand-strong/10 p-5 sm:p-6">
                   <p className="text-sm font-medium leading-relaxed text-brand-strong md:text-base">
                     {t('audience.sme.whatBodySecond')}
                   </p>
                 </Card>
+                <p>{t('audience.sme.whatBody')}</p>
               </div>
             </AnimatedSection>
 

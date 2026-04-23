@@ -330,8 +330,8 @@
       "ctaSecondary": "Partner information (resellers)",
       "intro": "A website that does what it should. Built on solid technology, hosted in Europe, and maintained without fuss, so you can focus on running your business.",
       "whatTitle": "What is Hotsites?",
-      "whatBody": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website. The site is fixed pages that are ready before a visitor clicks anything, there is no background stack spinning up again on every click.",
-      "whatBodySecond": "The result is a stable, fast website that is straightforward to maintain and avoids unnecessary technical risk.",
+      "whatBody": "In practice your site is fixed pages that are fully ready before a visitor clicks anything—no background software spinning up again on every click. That keeps things stable and easier to maintain, with less unnecessary technical risk.",
+      "whatBodySecond": "Hotsites is a website solution for companies that want a dependable, fast site without the cost and complexity of a fully bespoke website.",
       "wordPressCompareTitle": "How is it different from WordPress?",
       "wordPressCompareBody": "WordPress runs a theme, plugins, and integrations that update separately and often clash. Hotsites is one whole with fixed static pages: no loose parts and no weekly patch rounds. In practice that is safer too: less server-side software to lock down (logins, database, plugins); visitors get pages that are already built, without that stack running on every view.",
       "wordPressBullets": [
