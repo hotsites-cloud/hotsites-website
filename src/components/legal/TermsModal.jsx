@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useCallback, useEffect, useId, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
@@ -14,15 +14,10 @@ const TERMS_PDF_REL = 'legal/nl-digital-voorwaarden-2025-nl.pdf';
  */
 export function TermsModal({ isOpen, onRequestClose }) {
   const { t } = useTranslation();
-  const [mounted, setMounted] = useState(false);
   const titleId = useId();
   const panelRef = useRef(null);
   const lastActive = useRef(null);
   const pdfUrl = publicAssetUrl(TERMS_PDF_REL);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const close = useCallback(() => {
     onRequestClose();
@@ -61,7 +56,7 @@ export function TermsModal({ isOpen, onRequestClose }) {
     };
   }, [isOpen, close]);
 
-  if (!isOpen || !mounted) {
+  if (!isOpen) {
     return null;
   }
 
