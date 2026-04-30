@@ -1,8 +1,7 @@
 /** EmailJS IDs from static hosting / build-time env (Vite `import.meta.env`). */
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? '';
-const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? '';
+const userTemplateId = import.meta.env.VITE_EMAILJS_USER_TEMPLATE_ID ?? '';
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? '';
-const adminEmail = import.meta.env.VITE_EMAILJS_ADMIN_EMAIL ?? '';
 
 /**
  * Skip real API calls in `npm run dev` when `.env` has VITE_MOCK_EMAILJS=true.
@@ -19,16 +18,15 @@ export function shouldMockEmailJsSend() {
 }
 
 /**
- * Requires service, public key, one template (used for visitor + admin sends), and admin inbox.
+ * Requires the three EmailJS variables configured in StaticHost.
  * Template "To Email" in EmailJS should be {{to_email}}.
  * @returns {boolean}
  */
 export function hasEmailJsConfig() {
   const sid = String(serviceId).trim();
   const key = String(publicKey).trim();
-  const tpl = String(templateId).trim();
-  const admin = String(adminEmail).trim();
-  return Boolean(sid && key && tpl && admin);
+  const tpl = String(userTemplateId).trim();
+  return Boolean(sid && key && tpl);
 }
 
 /**
@@ -40,13 +38,12 @@ export function canSubmitContactForm() {
 }
 
 /**
- * @returns {{ serviceId: string; templateId: string; publicKey: string; adminEmail: string }}
+ * @returns {{ serviceId: string; userTemplateId: string; publicKey: string }}
  */
 export function getEmailJsConfig() {
   return {
     serviceId: String(serviceId).trim(),
-    templateId: String(templateId).trim(),
+    userTemplateId: String(userTemplateId).trim(),
     publicKey: String(publicKey).trim(),
-    adminEmail: String(adminEmail).trim(),
   };
 }

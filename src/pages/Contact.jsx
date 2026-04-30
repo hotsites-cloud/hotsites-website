@@ -122,7 +122,7 @@ export default function Contact() {
       topic: topicLabel,
       name: data.name,
     });
-    const { serviceId, templateId, publicKey, adminEmail } = getEmailJsConfig();
+    const { serviceId, userTemplateId, publicKey } = getEmailJsConfig();
     const logoUrl = `${SITE_ORIGIN}/email/hotsites-logo.svg`;
     const siteName = t('common.companyName');
     const websiteDisplay = normalizeWebsiteUrl(data.website);
@@ -215,7 +215,7 @@ export default function Contact() {
     });
 
     const adminPayload = {
-      to_email: adminEmail,
+      to_email: t('contact.placeholdersContact.email'),
       subject,
       from_name: data.name,
       reply_to: data.email,
@@ -231,8 +231,8 @@ export default function Contact() {
     setIsSubmitting(true);
     try {
       await Promise.all([
-        emailjs.send(serviceId, templateId, userPayload, { publicKey }),
-        emailjs.send(serviceId, templateId, adminPayload, { publicKey }),
+        emailjs.send(serviceId, userTemplateId, userPayload, { publicKey }),
+        emailjs.send(serviceId, userTemplateId, adminPayload, { publicKey }),
       ]);
       setSubmitted(true);
     } catch (err) {
