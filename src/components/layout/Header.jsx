@@ -27,13 +27,17 @@ function computeCompact(wasCompact, scrollY) {
   return scrollY > SCROLL_COMPACT_AFTER;
 }
 
-export function Header({ className }) {
+export function Header({ className, forceExpanded }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const rafRef = useRef(0);
 
   useEffect(() => {
+    if (forceExpanded) {
+      return;
+    }
+
     const prefersReducedMotion =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -63,7 +67,9 @@ export function Header({ className }) {
         cancelAnimationFrame(rafRef.current);
       }
     };
-  }, []);
+  }, [forceExpanded]);
+
+  const showCompact = isScrolled && !forceExpanded;
 
   const setLang = (lng) => {
     void i18n.changeLanguage(lng);
@@ -87,7 +93,7 @@ export function Header({ className }) {
         className={cn(
           'mx-auto max-w-6xl px-4 sm:px-6',
           easeHeader,
-          isScrolled ? 'py-2' : 'py-4',
+          showCompact ? 'py-2' : 'py-4',
         )}
       >
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-4">
@@ -125,17 +131,17 @@ export function Header({ className }) {
             className={cn(
               'group flex min-w-0 flex-col items-center justify-center justify-self-center text-center outline-none focus-visible:ring-2 focus-visible:ring-brand-strong focus-visible:ring-offset-2',
               easeBrand,
-              isScrolled ? 'gap-0' : 'gap-1.5',
+              showCompact ? 'gap-0' : 'gap-1.5',
             )}
             aria-label={t('common.companyName')}
             end
           >
             <LogoMark
-              size={isScrolled ? 'sm' : 'md'}
+              size={showCompact ? 'sm' : 'md'}
               className={cn(
                 'object-center',
                 easeBrand,
-                isScrolled
+                showCompact
                   ? 'h-6 max-h-6 sm:h-6'
                   : 'max-sm:h-8 group-hover:scale-[1.02] motion-reduce:group-hover:scale-100',
               )}
@@ -144,9 +150,9 @@ export function Header({ className }) {
               className={cn(
                 'w-full overflow-hidden',
                 easeBrand,
-                isScrolled ? 'max-h-0 opacity-0' : 'max-h-14 opacity-100',
+                showCompact ? 'max-h-0 opacity-0' : 'max-h-14 opacity-100',
               )}
-              aria-hidden={isScrolled}
+              aria-hidden={showCompact}
             >
               <span className="block text-base font-semibold tracking-tight text-brand-strong sm:text-lg">
                 {t('common.companyName')}
@@ -227,4 +233,6 @@ export function Header({ className }) {
 
 Header.propTypes = {
   className: PropTypes.string,
+  /** Keeps tall header while the page scrolls to top (avoids compact↔expanded jank). */
+  forceExpanded: PropTypes.bool,
 };
