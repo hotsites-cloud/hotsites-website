@@ -79,25 +79,65 @@
       "title": "Contact",
       "lead": "Let’s talk. Send a message, we will respond as soon as we can."
     },
-    "success": "Thank you! Your message has been sent. We will get back to you.",
+    "success": "We will read your message and usually reply within one business day. No email? Check your spam folder.",
+    "successTitle": "Sent",
     "submit": "Send",
+    "mockEmailJsBanner": "Development mode: no real emails are sent (VITE_MOCK_EMAILJS). Turn this off to test EmailJS; for error 412, reconnect your mail service in the EmailJS dashboard.",
+    "devMockFill": "Fill test data",
+    "devMockHint": "Only visible in local development.",
+    "devMockMessage": "This is a test message from the local dev server. Use it to quickly verify the form and email flow without typing everything by hand.",
+    "formIntro": "Tell us briefly what you need — we can respond with clear next steps.",
+    "sections": {
+      "yourProject": "Your request",
+      "yourDetails": "Contact"
+    },
+    "optionalHint": "optional",
+    "topics": {
+      "new_site": "New website",
+      "redesign": "Redesign or new features",
+      "maintenance": "Maintenance or support",
+      "migration": "Migration (e.g. from WordPress)",
+      "partnership": "Partnership",
+      "other": "Something else"
+    },
+    "timelines": {
+      "asap": "As soon as possible",
+      "one_three_months": "Within 1–3 months",
+      "flexible": "Timeline is flexible",
+      "unknown": "Not sure yet"
+    },
     "fields": {
+      "topic": "What is this about?",
+      "topicPlaceholder": "Choose an option",
       "name": "Name",
       "email": "Email",
-      "message": "Message"
+      "company": "Company or organization",
+      "phone": "Phone",
+      "website": "Current website (URL)",
+      "timeline": "Preferred start or timeline",
+      "timelinePlaceholder": "No preference",
+      "message": "How can we help?"
     },
     "errors": {
       "required": "This field is required.",
+      "url": "Enter a valid URL (e.g. https://…).",
       "email": "Enter a valid email address.",
       "sendFailed": "Could not send your message. Try again later or email us directly.",
       "configMissing": "The form is temporarily unavailable. Please email support@hotsites.nl directly."
     },
     "sending": "Sending…",
     "placeholders": {
-      "name": "",
-      "email": "",
-      "message": ""
+      "name": "Alex Smith",
+      "email": "alex@example.com",
+      "company": "Your company name",
+      "phone": "+31 6 12345678",
+      "website": "https://",
+      "message": "For example: goals, pages you need, current challenges, or a rough budget."
     },
+    "privacyNote": "We only use your details to respond to this message.",
+    "privacyLink": "Privacy policy",
+    "backHome": "Back to home",
+    "emailSubject": "Contact: {{topic}} — {{name}}",
     "business": {
       "hoursTitle": "Availability",
       "hours": "Mon–Fri by appointment, email us or use the form.",
@@ -109,6 +149,7 @@
       "email": "support@hotsites.nl"
     },
     "emailConfirm": {
+      "kicker": "Received",
       "subject": "Your message was received, Hotsites",
       "title": "Thank you, {{name}}!",
       "body": "We have received your message. You will hear from us as soon as possible, usually within one business day.",
@@ -116,6 +157,20 @@
       "emailLabel": "Email",
       "footer": "Questions? Visit {{siteUrl}} or reply to this email.",
       "tagline": "© {{siteName}} · Fast websites you own, hosted in Europe."
+    },
+    "emailAdmin": {
+      "badge": "Contact form",
+      "headline": "New message via {{siteName}}",
+      "intro": "Someone just submitted the contact form on your website.",
+      "footer": "Reply to this email to respond directly to {{name}}.",
+      "labelName": "Name",
+      "labelEmail": "Email",
+      "labelTopic": "Topic",
+      "labelCompany": "Company",
+      "labelPhone": "Phone",
+      "labelWebsite": "Website",
+      "labelTimeline": "Timeline",
+      "labelMessage": "Message"
     }
   },
   "legal": {
@@ -179,7 +234,9 @@
         },
         {
           "h2": "Withdraw consent",
-          "body": "You can withdraw consent for non-essential cookies by showing the banner again via ‘Cookie settings’ in the footer, or by deleting cookies for our site in your browser."
+          "body": "You can withdraw consent for non-essential cookies by opening the cookie banner again with the button below, or by deleting cookies for our site in your browser.",
+          "showCookieBannerButton": true,
+          "cookieBannerButtonLabel": "Show cookie preferences again"
         }
       ],
       "table": {

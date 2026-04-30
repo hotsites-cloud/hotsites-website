@@ -10,6 +10,18 @@ import i18n from './i18n';
 import './styles/globals.css';
 import App from './App.jsx';
 
+/** Drop stale SW registrations in dev (e.g. old Workbox/Cursor previews) that 404 on workbox-*.js. */
+if (import.meta.env.DEV && 'serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .getRegistrations()
+    .then((regs) => {
+      regs.forEach((reg) => {
+        void reg.unregister();
+      });
+    })
+    .catch(() => {});
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>

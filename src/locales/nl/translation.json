@@ -79,25 +79,65 @@
       "title": "Contact",
       "lead": "Laten we kennismaken. Stuur een bericht, we reageren zo snel mogelijk."
     },
-    "success": "Bedankt! Je bericht is verstuurd. We nemen contact met je op.",
+    "success": "We lezen je bericht en reageren meestal binnen één werkdag. Geen mail gezien? Controleer je spamfolder.",
+    "successTitle": "Verstuurd",
     "submit": "Versturen",
+    "mockEmailJsBanner": "Ontwikkelmodus: er worden geen echte e-mails verstuurd (VITE_MOCK_EMAILJS). Zet dit uit om EmailJS te testen; bij fout 412 je Gmail-dienst in EmailJS opnieuw verbinden.",
+    "devMockFill": "Vul testgegevens in",
+    "devMockHint": "Alleen zichtbaar in de lokale ontwikkelmodus.",
+    "devMockMessage": "Dit is een testbericht vanuit de lokale ontwikkelomgeving. Zo kun je het formulier en e-mailflow snel controleren zonder alles handmatig in te vullen.",
+    "formIntro": "Vertel kort waar je mee zit — dan kunnen we gericht antwoorden.",
+    "sections": {
+      "yourProject": "Je vraag",
+      "yourDetails": "Contact"
+    },
+    "optionalHint": "optioneel",
+    "topics": {
+      "new_site": "Nieuwe website",
+      "redesign": "Redesign of uitbreiding",
+      "maintenance": "Onderhoud of support",
+      "migration": "Migratie (bijv. van WordPress)",
+      "partnership": "Samenwerking / partner",
+      "other": "Iets anders"
+    },
+    "timelines": {
+      "asap": "Zo snel mogelijk",
+      "one_three_months": "Binnen 1–3 maanden",
+      "flexible": "Planning is flexibel",
+      "unknown": "Weet ik nog niet"
+    },
     "fields": {
+      "topic": "Waar gaat het over?",
+      "topicPlaceholder": "Maak een keuze",
       "name": "Naam",
       "email": "E-mail",
-      "message": "Bericht"
+      "company": "Bedrijf of organisatie",
+      "phone": "Telefoon",
+      "website": "Huidige website (URL)",
+      "timeline": "Gewenste start of planning",
+      "timelinePlaceholder": "Geen voorkeur",
+      "message": "Waar kunnen we je mee helpen?"
     },
     "errors": {
       "required": "Dit veld is verplicht.",
+      "url": "Vul een geldige URL in (bijv. https://…).",
       "email": "Vul een geldig e-mailadres in.",
       "sendFailed": "Versturen mislukt. Probeer het later opnieuw of mail ons direct.",
       "configMissing": "Het formulier is tijdelijk niet beschikbaar. Neem rechtstreeks contact op via support@hotsites.nl."
     },
     "sending": "Versturen…",
     "placeholders": {
-      "name": "",
-      "email": "",
-      "message": ""
+      "name": "Jan Jansen",
+      "email": "jan@voorbeeld.nl",
+      "company": "Jouw bedrijfsnaam",
+      "phone": "+31 6 12345678",
+      "website": "https://",
+      "message": "Bijvoorbeeld: doelen, gewenste pagina’s, huidige uitdagingen of budgetindicatie."
     },
+    "privacyNote": "We gebruiken je gegevens alleen om te reageren op dit bericht.",
+    "privacyLink": "Privacybeleid",
+    "backHome": "Terug naar home",
+    "emailSubject": "Contact: {{topic}} — {{name}}",
     "business": {
       "hoursTitle": "Bereikbaarheid",
       "hours": "Ma–vr op afspraak, mail ons of gebruik het formulier.",
@@ -109,6 +149,7 @@
       "email": "support@hotsites.nl"
     },
     "emailConfirm": {
+      "kicker": "Ontvangen",
       "subject": "Je bericht is ontvangen, Hotsites",
       "title": "Bedankt, {{name}}!",
       "body": "We hebben je bericht goed ontvangen. Je hoort zo snel mogelijk van ons, meestal binnen één werkdag.",
@@ -116,6 +157,20 @@
       "emailLabel": "E-mail",
       "footer": "Vragen? Bezoek {{siteUrl}} of antwoord op deze e-mail.",
       "tagline": "© {{siteName}} · Websites die snel zijn, van jou blijven en in Europa staan."
+    },
+    "emailAdmin": {
+      "badge": "Contactformulier",
+      "headline": "Nieuw bericht via {{siteName}}",
+      "intro": "Iemand heeft zojuist het contactformulier op de website ingevuld.",
+      "footer": "Antwoord op deze e-mail om direct aan {{name}} te antwoorden.",
+      "labelName": "Naam",
+      "labelEmail": "E-mail",
+      "labelTopic": "Onderwerp",
+      "labelCompany": "Bedrijf",
+      "labelPhone": "Telefoon",
+      "labelWebsite": "Website",
+      "labelTimeline": "Planning",
+      "labelMessage": "Bericht"
     }
   },
   "legal": {
@@ -179,7 +234,9 @@
         },
         {
           "h2": "Toestemming intrekken",
-          "body": "Je kunt je eerder gegeven toestemming voor niet-essentiële cookies intrekken door de cookiebanner opnieuw te tonen via ‘Cookie-instellingen’ in de footer, of door cookies voor onze site te verwijderen in je browser."
+          "body": "Je kunt je eerder gegeven toestemming voor niet-essentiële cookies intrekken door de cookiebanner opnieuw te tonen met de knop hieronder, of door cookies voor onze site te verwijderen in je browser.",
+          "showCookieBannerButton": true,
+          "cookieBannerButtonLabel": "Cookiebanner opnieuw tonen"
         }
       ],
       "table": {

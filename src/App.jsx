@@ -60,9 +60,14 @@ function CookieBanner() {
   );
 }
 
+const routerFuture = {
+  v7_startTransition: true,
+  v7_relativeSplatPath: true,
+};
+
 export default function App() {
   return (
-    <HashRouter>
+    <HashRouter future={routerFuture}>
       <CookieBanner />
       <Routes>
         <Route element={<Layout />}>
