@@ -1,71 +1,44 @@
 import PropTypes from 'prop-types';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { cn } from '../../utils/cn';
 
+function scrollWindowToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'auto',
+  });
+}
+
 export function Layout({ className }) {
   const { pathname } = useLocation();
-  const [pinHeaderExpanded, setPinHeaderExpanded] = useState(false);
   const scrollPollRaf = useRef(0);
 
   useLayoutEffect(() => {
-    const prefersReducedMotion =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
     let cancelled = false;
+    const previousScrollRestoration = window.history.scrollRestoration;
 
-    queueMicrotask(() => {
-      if (cancelled) {
-        return;
-      }
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: prefersReducedMotion ? 'auto' : 'smooth',
-      });
-      if (prefersReducedMotion) {
-        return;
-      }
-      setPinHeaderExpanded(true);
-    });
-
-    const releasePin = () => {
-      if (!cancelled) {
-        setPinHeaderExpanded(false);
-      }
-    };
-
-    if (prefersReducedMotion) {
-      return () => {
-        cancelled = true;
-      };
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
     }
 
-    const pollUntilTop = () => {
-      if (cancelled) {
-        return;
-      }
-      if (window.scrollY <= 0.5) {
-        releasePin();
-        return;
-      }
-      scrollPollRaf.current = requestAnimationFrame(pollUntilTop);
-    };
+    scrollWindowToTop();
 
-    queueMicrotask(() => {
+    scrollPollRaf.current = requestAnimationFrame(() => {
       if (cancelled) {
         return;
       }
-      scrollPollRaf.current = requestAnimationFrame(pollUntilTop);
+      scrollWindowToTop();
     });
-    const safetyTimeoutId = window.setTimeout(releasePin, 1200);
 
     return () => {
       cancelled = true;
-      window.clearTimeout(safetyTimeoutId);
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = previousScrollRestoration;
+      }
       if (scrollPollRaf.current !== 0) {
         cancelAnimationFrame(scrollPollRaf.current);
         scrollPollRaf.current = 0;
@@ -75,7 +48,7 @@ export function Layout({ className }) {
 
   return (
     <div className={cn('flex min-h-screen flex-col', className)}>
-      <Header key={pathname} forceExpanded={pinHeaderExpanded} />
+      <Header key={pathname} />
       <main className="flex-1">
         <Outlet />
       </main>
