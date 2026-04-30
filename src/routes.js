@@ -1,10 +1,8 @@
-import { lazy } from 'react';
-
-export const StartPage = lazy(() => import('./pages/Start.jsx'));
-export const ResellersPage = lazy(() => import('./pages/Resellers.jsx'));
-export const SmeClientsPage = lazy(() => import('./pages/SmeClients.jsx'));
-export const ContactPage = lazy(() => import('./pages/Contact.jsx'));
-export const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicy.jsx'));
-export const CookiePolicyPage = lazy(() => import('./pages/CookiePolicy.jsx'));
-export const ImprintPage = lazy(() => import('./pages/Imprint.jsx'));
-export const ApproachPage = lazy(() => import('./pages/Approach.jsx'));
+export { default as StartPage } from './pages/Start.jsx';
+export { default as ResellersPage } from './pages/Resellers.jsx';
+export { default as SmeClientsPage } from './pages/SmeClients.jsx';
+export { default as ContactPage } from './pages/Contact.jsx';
+export { default as PrivacyPolicyPage } from './pages/PrivacyPolicy.jsx';
+export { default as CookiePolicyPage } from './pages/CookiePolicy.jsx';
+export { default as ImprintPage } from './pages/Imprint.jsx';
+export { default as ApproachPage } from './pages/Approach.jsx';
