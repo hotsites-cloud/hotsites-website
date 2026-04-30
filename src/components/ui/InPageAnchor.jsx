@@ -8,10 +8,11 @@ import { useLocation } from 'react-router-dom';
  */
 export function InPageAnchor({ targetId, className, children, ...rest }) {
   const { pathname } = useLocation();
-  const routeHref = `#${pathname}`;
+  const routeHref = `#${pathname}#${targetId}`;
 
   const handleClick = (event) => {
     event.preventDefault();
+    window.history.replaceState(null, '', routeHref);
     const prefersReduced =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;

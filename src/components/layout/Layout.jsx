@@ -6,11 +6,26 @@ import { Footer } from './Footer';
 import { cn } from '../../utils/cn';
 
 export function Layout({ className }) {
-  const { pathname } = useLocation();
+  const { hash, pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-  }, [pathname]);
+    const frame = requestAnimationFrame(() => {
+      if (hash) {
+        const targetId = decodeURIComponent(hash.slice(1));
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ block: 'start', behavior: 'auto' });
+          return;
+        }
+      }
+
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    });
+
+    return () => {
+      cancelAnimationFrame(frame);
+    };
+  }, [hash, pathname]);
 
   return (
     <div className={cn('flex min-h-screen flex-col', className)}>
